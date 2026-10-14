@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://semoheva123.github.io/WALEED-FOREX/sitemap.xml
