@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>وليد فوركس — بوّابتك الموثوقة إلى الأسواق العالمية</title>
-<meta name="description" content="تعرّف على وليد فوركس: وسيط تقديمي يربطك بمنصات التداول العالمية JustMarkets وExness وVantage، مع دعم عربي وإرشاد تعليمي وتوضيح لمخاطر التداول.">
+<title>VALID VX — بوّابتك الموثوقة إلى الأسواق العالمية</title>
+<meta name="description" content="تعرّف على VALID VX: وسيط تقديمي يربطك بمنصات التداول العالمية JustMarkets وExness وVantage، مع دعم عربي وإرشاد تعليمي وتوضيح لمخاطر التداول.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="googlebot" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#04070F">
 <link rel="canonical" href="https://semoheva123.github.io/WALEED-FOREX/">
+<link rel="alternate" hreflang="ar" href="https://semoheva123.github.io/WALEED-FOREX/">
+<link rel="alternate" hreflang="en" href="https://semoheva123.github.io/WALEED-FOREX/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://semoheva123.github.io/WALEED-FOREX/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
-<meta property="og:site_name" content="وليد فوركس">
-<meta property="og:title" content="وليد فوركس — بوّابتك إلى الأسواق العالمية">
+<meta property="og:site_name" content="VALID VX">
+<meta property="og:title" content="VALID VX — بوّابتك إلى الأسواق العالمية">
 <meta property="og:description" content="دعم عربي وإرشاد تعليمي للتعرّف على منصات التداول العالمية. التداول ينطوي على مخاطر عالية وقد يؤدي إلى خسارة رأس المال.">
 <meta property="og:url" content="https://semoheva123.github.io/WALEED-FOREX/">
 <meta name="twitter:card" content="summary">
@@ -21,7 +24,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   WALEED FOREX — Design Tokens
+  VALID VX — Design Tokens
    ============================================================ */
 :root{
   /* Backgrounds — كحلي أعمق وأفخم */
@@ -227,6 +230,8 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + var(--trust-h) + 10px)}
 }
 .btn--gold:hover{transform:translateY(-4px);background-position:100% 0;box-shadow:0 0 0 1px rgba(255,243,196,.6),0 26px 64px -16px rgba(247,215,116,.95),0 0 46px -6px rgba(247,215,116,.75)}
 .btn--lg{padding:1.2rem 2.4rem;font-size:1.08rem}
+.lang-toggle{padding:.58rem .95rem;font-size:.84rem;min-height:42px}
+.mobile-menu .lang-toggle{width:100%;margin-top:.35rem}
 
 /* ============================================================
    NAVBAR
@@ -519,7 +524,7 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + var(--trust-h) + 10px)}
 .acc__note strong{color:var(--cyan-400);font-weight:800}
 
 /* ============================================================
-   BIG CTA — قسم "انضم إلى وكالة وليد فوركس"
+  BIG CTA — قسم الانضمام إلى VALID VX
    ============================================================ */
 .cta-section{position:relative}
 .cta-panel{
@@ -816,6 +821,7 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + var(--trust-h) + 10px)}
 @media (max-width:860px){
   :root{--sp-6:3.4rem;--sp-7:4.6rem}
   .burger{display:flex}
+  .nav__actions .lang-toggle{display:none}
   .nav__links{display:none}
   .nav__actions .btn--primary{display:none}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -995,9 +1001,9 @@ body.page-broker .hero{display:none}
 <!-- ============================ NAVBAR ============================ -->
 <header class="nav" id="navbar">
   <div class="nav__inner">
-    <a href="#home" class="brand" aria-label="وليد فوركس">
-      <span class="brand__mark">WF</span>
-      <span>وليد فوركس<small>WALEED FOREX · IB</small></span>
+    <a href="#home" class="brand" aria-label="VALID VX">
+      <span class="brand__mark">VX</span>
+      <span>VALID VX<small>وسيط تقديمي · IB</small></span>
     </a>
     <nav class="nav__links" aria-label="التنقل الرئيسي">
       <a href="#/home" class="active">الرئيسية</a>
@@ -1010,6 +1016,7 @@ body.page-broker .hero{display:none}
       <a href="#contact">تواصل معنا</a>
     </nav>
     <div class="nav__actions">
+      <button class="btn btn--ghost lang-toggle" type="button" data-language-toggle aria-label="Switch language to English">English</button>
       <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -1031,6 +1038,7 @@ body.page-broker .hero{display:none}
   <a href="#strategy">استراتيجيتنا</a>
   <a href="#faq">الأسئلة الشائعة</a>
   <a href="#contact">تواصل معنا</a>
+  <button class="btn btn--ghost lang-toggle" type="button" data-language-toggle aria-label="Switch language to English">English</button>
   <a href="#join" class="btn btn--primary">انضم الآن</a>
 </nav>
 
@@ -1057,17 +1065,17 @@ body.page-broker .hero{display:none}
       <g id="sealRing">
         <circle cx="60" cy="60" r="42" fill="none" stroke="rgba(247,215,116,.5)" stroke-width="1"/>
         <text font-size="9.5" letter-spacing="1.5" font-weight="700">
-          <textPath href="#sealArc" startOffset="2%">شريك تقديمي معتمد · IB · WALEED FOREX · </textPath>
+          <textPath href="#sealArc" startOffset="2%">شريك تقديمي · VALID VX · IB ·</textPath>
         </text>
       </g>
       <path d="M60 40l4.7 9.6 10.6 1.5-7.7 7.5 1.8 10.5L60 64.2l-9.4 4.9 1.8-10.5-7.7-7.5 10.6-1.5z" fill="url(#sealGold)"/>
-      <text x="60" y="88" text-anchor="middle" font-size="8" letter-spacing="1" fill="#F7D774">CERTIFIED PARTNER</text>
+          <text x="60" y="88" text-anchor="middle" font-size="8" letter-spacing="1" fill="#F7D774">شريك تقديمي</text>
     </svg>
 
     <div class="hero__content reveal">
       <span class="eyebrow">وسيط تقديمي معتمد (IB) — Introducing Broker</span>
       <span class="title-rule" aria-hidden="true"></span>
-      <h1><span class="wf-name grad-text">وليد فوركس</span> <span class="wf-rest">— بوّابتك الموثوقة إلى الأسواق العالمية</span></h1>
+      <h1><span class="wf-name grad-text">VALID VX</span> <span class="wf-rest">— بوّابتك الموثوقة إلى الأسواق العالمية</span></h1>
       <span class="title-rule title-rule--bottom" aria-hidden="true"></span>
       <p class="hero__lead">وسيط تقديمي متخصّص يربطك بأقوى منصات التداول العالمية، بخدمة عملاء استثنائية، واستراتيجية تداول صارمة تقوم على صفقات قليلة لكنها فعّالة ومحسوبة.</p>
       <div class="hero__cta">
@@ -1096,7 +1104,7 @@ body.page-broker .hero{display:none}
   <div class="section-head reveal">
     <span class="eyebrow">من نحن</span>
     <h2>وساطة تقديمية قائمة على <span class="grad-text">الشفافية والمهنية</span></h2>
-    <p>وليد فوركس هو وسيط تقديمي (Introducing Broker) يعمل وفق مبادئ الشفافية والمهنية، ويسهّل على المتداولين الانضمام إلى منصات مرخّصة، مع تقديم إرشاد تعليمي وتحليل مسؤول يساعد العميل على فهم السوق واتخاذ قرارات مدروسة.</p>
+    <p>VALID VX هو وسيط تقديمي (Introducing Broker) يعمل وفق مبادئ الشفافية والمهنية، ويسهّل على المتداولين الانضمام إلى منصات مرخّصة، مع تقديم إرشاد تعليمي وتحليل مسؤول يساعد العميل على فهم السوق واتخاذ قرارات مدروسة.</p>
   </div>
   <div class="grid grid-3">
     <article class="card reveal d-1">
@@ -1184,12 +1192,12 @@ body.page-broker .hero{display:none}
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
             انضم إلينا
           </div>
-          <p class="join-panel__desc">ابدأ التداول عبر وكالة وليد فوركس واستفد من السبريد التنافسي مع دعم شخصي مباشر.</p>
+          <p class="join-panel__desc">ابدأ التداول عبر وكالة VALID VX واستفد من السبريد التنافسي مع دعم شخصي مباشر.</p>
           <a class="btn btn--ghost btn--sm" href="#/justmarkets" style="margin-bottom:.6rem">تفاصيل المنصة</a>
           <a class="btn btn--gold" data-referral="justmarkets" target="_blank" rel="noopener noreferrer"
-             href="https://one.justmarkets.link/a/enxod02x74" aria-label="انضم مباشرة إلى وكالة وليد عبر JustMarkets">
+            href="https://one.justmarkets.link/a/enxod02x74" aria-label="انضم عبر VALID VX إلى JustMarkets">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            انضم مباشرة إلى وكالة وليد
+            انضم مباشرة عبر VALID VX
           </a>
           <span class="join-panel__sub">رابط تسجيل مباشر — خطوة واحدة</span>
         </div>
@@ -1250,12 +1258,12 @@ body.page-broker .hero{display:none}
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
             انضم إلينا
           </div>
-          <p class="join-panel__desc">انضم عبر وكالة وليد فوركس وتمتّع بسيولة عالية وتنفيذ مستقر ومرافقة من أول خطوة.</p>
+          <p class="join-panel__desc">انضم عبر وكالة VALID VX وتمتّع بسيولة عالية وتنفيذ مستقر ومرافقة من أول خطوة.</p>
           <a class="btn btn--ghost btn--sm" href="#/exness" style="margin-bottom:.6rem">تفاصيل المنصة</a>
           <a class="btn btn--gold" data-referral="exness" target="_blank" rel="noopener noreferrer"
-             href="https://one.exnessonelink.com/a/e08424j835" aria-label="انضم مباشرة إلى وكالة وليد عبر Exness">
+            href="https://one.exnessonelink.com/a/e08424j835" aria-label="انضم عبر VALID VX إلى Exness">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            انضم مباشرة إلى وكالة وليد
+            انضم مباشرة عبر VALID VX
           </a>
           <span class="join-panel__sub">رابط تسجيل مباشر — خطوة واحدة</span>
         </div>
@@ -1308,12 +1316,12 @@ body.page-broker .hero{display:none}
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
             انضم إلينا
           </div>
-          <p class="join-panel__desc">انضم عبر وكالة وليد فوركس واحصل على إعداد حساب احترافي ودعم مستمر.</p>
+          <p class="join-panel__desc">انضم عبر وكالة VALID VX واحصل على إعداد حساب احترافي ودعم مستمر.</p>
           <a class="btn btn--ghost btn--sm" href="#/vantage" style="margin-bottom:.6rem">تفاصيل المنصة</a>
           <a class="btn btn--gold" data-referral="vantage" target="_blank" rel="noopener noreferrer"
-             href="https://vigco.co/la-com-inv/JysLN5Ux" aria-label="انضم مباشرة إلى وكالة وليد عبر Vantage">
+            href="https://vigco.co/la-com-inv/JysLN5Ux" aria-label="انضم عبر VALID VX إلى Vantage">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            انضم مباشرة إلى وكالة وليد
+            انضم مباشرة عبر VALID VX
           </a>
           <span class="join-panel__sub">رابط تسجيل مباشر — خطوة واحدة</span>
         </div>
@@ -1325,11 +1333,11 @@ body.page-broker .hero{display:none}
 
 <div class="divider"></div>
 
-<!-- ============================ BIG CTA — انضم إلى وكالة وليد فوركس ============================ -->
+<!-- ============================ BIG CTA — الانضمام إلى VALID VX ============================ -->
 <section class="section section--sep cta-section" id="join"><div class="container">
   <div class="cta-panel reveal">
     <span class="eyebrow">انضم إلينا</span>
-    <h2>انضم إلى وكالة <span class="grad-text">وليد فوركس</span></h2>
+    <h2>انضم إلى وكالة <span class="grad-text">VALID VX</span></h2>
     <p>اختيار الوكالة التي تنضم عبرها يغيّر تجربتك من أول خطوة. نمنحك طريقاً واضحاً ومباشراً نحو المنصة الأنسب لك، مع مرافقة صادقة من البداية وحتى أول صفقة.</p>
     <div class="cta-points">
       <div class="cta-point">
@@ -1484,7 +1492,7 @@ body.page-broker .hero{display:none}
 <!-- ============================ WHY US ============================ -->
 <section class="section section--sep" id="why"><div class="container">
   <div class="section-head center reveal">
-    <span class="eyebrow">لماذا وليد فوركس</span>
+    <span class="eyebrow">لماذا VALID VX</span>
     <h2>خدمة عملاء <span class="grad-text">استثنائية</span> وسريعة</h2>
     <p>الدعم لدينا ليس قناة رقمية جامدة، بل علاقة متواصلة وسريعة ترافقك من فتح الحساب حتى أول صفقة وما بعدها.</p>
   </div>
@@ -1550,7 +1558,7 @@ body.page-broker .hero{display:none}
   <div class="section-head center reveal">
     <span class="eyebrow">الأسئلة الشائعة</span>
     <h2>إجابات واضحة ومباشرة</h2>
-    <p>جمعنا أكثر ما يسأل عنه المتداولون الجدد قبل البدء عبر وليد فوركس.</p>
+    <p>جمعنا أكثر ما يسأل عنه المتداولون الجدد قبل البدء عبر VALID VX.</p>
   </div>
   <div class="faq" id="faqList">
     <div class="faq-item reveal d-1">
@@ -1567,7 +1575,7 @@ body.page-broker .hero{display:none}
     </div>
     <div class="faq-item reveal d-3">
       <button class="faq-q" aria-expanded="false">
-        كيف أفتح حساباً عبر وليد فوركس؟<span class="faq-q__icon"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        كيف أفتح حساباً عبر VALID VX؟<span class="faq-q__icon"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
       </button>
       <div class="faq-a"><div class="faq-a__inner">راسلنا عبر قسم "تواصل معنا" أو الواتساب، وسنرشّح لك المنصة الأنسب ثم نرسل لك رابط التسجيل الخاص. تتبع خطوات التسجيل والتحقق من الهوية، وبعد التفعيل نساعدك في الإعداد الأولي حتى أول صفقة.</div></div>
     </div>
@@ -1591,7 +1599,7 @@ body.page-broker .hero{display:none}
   <div class="section-head center reveal">
     <span class="eyebrow">تواصل معنا</span>
     <h2>ابدأ رحلتك <span class="grad-text">اليوم</span></h2>
-    <p>أرسل بياناتك وسيتواصل معك فريق وليد فوركس لتحديد المنصة الأنسب وخطوات فتح الحساب.</p>
+    <p>أرسل بياناتك وسيتواصل معك فريق VALID VX لتحديد المنصة الأنسب وخطوات فتح الحساب.</p>
   </div>
   <div class="contact-grid">
     <form class="card form-card reveal d-1" id="contactForm" novalidate>
@@ -1607,7 +1615,7 @@ body.page-broker .hero{display:none}
       </div>
       <div class="field">
         <label for="phone">رقم الهاتف</label>
-        <input type="tel" id="phone" name="phone" placeholder="+966 5X XXX XXXX" required>
+          <input type="tel" id="phone" name="phone" placeholder="+90 539 XXX XX XX" required>
       </div>
       <div class="field">
         <label for="message">نص الرسالة</label>
@@ -1728,11 +1736,11 @@ body.page-broker .hero{display:none}
       <p class="broker-p">المبتدئون (Standard Cent / Standard) والمتداولون النشطون (Pro / Raw Spread).</p>
     </section>
 
-    <!-- 6) كيف تنضم عبر وليد فوركس -->
+    <!-- 6) خطوات التسجيل عبر VALID VX -->
     <section class="broker-block reveal d-1">
-      <h2 class="broker-block__title">كيف تنضم عبر وليد فوركس</h2>
+      <h2 class="broker-block__title">كيف تنضم عبر VALID VX</h2>
       <ol class="steps-list">
-        <li>تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة وليد فوركس.</li>
+        <li>تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة VALID VX.</li>
         <li>نرسل لك رابط التسجيل المباشر الخاص بالمنصة.</li>
         <li>أنشئ حسابك وأكمل التحقق (KYC) واختر نوع الحساب المناسب.</li>
         <li>أولّد إيداعك وابدأ التداول بإرشاد مباشر من فريقنا.</li>
@@ -1740,7 +1748,7 @@ body.page-broker .hero{display:none}
       <div class="broker-cta">
         <a class="btn btn--gold btn--lg" data-referral="justmarkets" href="https://one.justmarkets.link/a/enxod02x74" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          انضم مباشرة إلى وكالة وليد
+          انضم مباشرة عبر VALID VX
         </a>
       </div>
     </section>
@@ -1835,11 +1843,11 @@ body.page-broker .hero{display:none}
       <p class="broker-p">من المبتدئ (Cent/Standard) إلى المحترف (Pro / Raw Spread / Zero).</p>
     </section>
 
-    <!-- 6) كيف تنضم عبر وليد فوركس -->
+    <!-- 6) خطوات التسجيل عبر VALID VX -->
     <section class="broker-block reveal d-1">
-      <h2 class="broker-block__title">كيف تنضم عبر وليد فوركس</h2>
+      <h2 class="broker-block__title">كيف تنضم عبر VALID VX</h2>
       <ol class="steps-list">
-        <li>تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة وليد فوركس.</li>
+        <li>تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة VALID VX.</li>
         <li>نرسل لك رابط التسجيل المباشر الخاص بالمنصة.</li>
         <li>أنشئ حسابك وأكمل التحقق (KYC) واختر نوع الحساب المناسب.</li>
         <li>أولّد إيداعك وابدأ التداول بإرشاد مباشر من فريقنا.</li>
@@ -1847,7 +1855,7 @@ body.page-broker .hero{display:none}
       <div class="broker-cta">
         <a class="btn btn--gold btn--lg" data-referral="exness" href="https://one.exnessonelink.com/a/e08424j835" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          انضم مباشرة إلى وكالة وليد
+          انضم مباشرة عبر VALID VX
         </a>
       </div>
     </section>
@@ -1934,11 +1942,11 @@ body.page-broker .hero{display:none}
       <p class="broker-p">المبتدئ (Standard) والمتداول النشط (Raw ECN) والمحترف (Pro ECN).</p>
     </section>
 
-    <!-- 6) كيف تنضم عبر وليد فوركس -->
+    <!-- 6) خطوات التسجيل عبر VALID VX -->
     <section class="broker-block reveal d-1">
-      <h2 class="broker-block__title">كيف تنضم عبر وليد فوركس</h2>
+      <h2 class="broker-block__title">كيف تنضم عبر VALID VX</h2>
       <ol class="steps-list">
-        <li>تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة وليد فوركس.</li>
+        <li>تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة VALID VX.</li>
         <li>نرسل لك رابط التسجيل المباشر الخاص بالمنصة.</li>
         <li>أنشئ حسابك وأكمل التحقق (KYC) واختر نوع الحساب المناسب.</li>
         <li>أولّد إيداعك وابدأ التداول بإرشاد مباشر من فريقنا.</li>
@@ -1946,7 +1954,7 @@ body.page-broker .hero{display:none}
       <div class="broker-cta">
         <a class="btn btn--gold btn--lg" data-referral="vantage" href="https://vigco.co/la-com-inv/JysLN5Ux" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          انضم مباشرة إلى وكالة وليد
+          انضم مباشرة عبر VALID VX
         </a>
       </div>
     </section>
@@ -1976,9 +1984,9 @@ body.page-broker .hero{display:none}
 <footer class="site-footer"><div class="container">
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="#home" class="brand" aria-label="وليد فوركس">
-        <span class="brand__mark">WF</span>
-        <span>وليد فوركس<small>WALEED FOREX · IB</small></span>
+      <a href="#home" class="brand" aria-label="VALID VX">
+        <span class="brand__mark">VX</span>
+        <span>VALID VX<small>وسيط تقديمي · IB</small></span>
       </a>
       <p>وسيط تقديمي معتمد (IB) يربطك بأقوى منصات التداول العالمية، بإرشاد مهني وشفافية كاملة وخدمة عملاء استثنائية.</p>
       <!-- SOCIAL ICONS — منصات التواصل الاجتماعي -->
@@ -2023,7 +2031,7 @@ body.page-broker .hero{display:none}
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
     <span><b>تحذير المخاطر:</b> التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية. يُرجى التداول بمسؤولية.</span>
   </div>
-  <p class="copyright">© 2026 وليد فوركس. جميع الحقوق محفوظة.</p>
+  <p class="copyright">© 2026 VALID VX. جميع الحقوق محفوظة.</p>
 </div></footer>
 
 <script type="module">
@@ -2031,6 +2039,216 @@ body.page-broker .hero{display:none}
    JS core: nav scroll, burger, reveal observer, counters
    ============================================================ */
 const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Arabic/English copy. The same source text is retained so the language can
+   be switched back and forth without reloading the page. */
+const ENGLISH = {
+  'VALID VX':'WALID VX','الرئيسية':'Home','من نحن':'About us','المنصات':'Brokers',
+  'شريط الثقة':'Trust banner','التنقل الرئيسي':'Main navigation','قائمة الجوال':'Mobile navigation','منصات التواصل الاجتماعي':'Social media links',
+  'وكالة تقديمية مرخّصة':'Introducing Broker agency','نعمل مع أقوى منصات التداول العالمية':'We connect clients with global trading platforms',
+  'شريك تقديمي · VALID VX · IB ·':'Introducing Broker · WALID VX · IB ·',
+  'انضم إلينا':'Join us','خدماتنا':'Services','استراتيجيتنا':'Our strategy','الأسئلة الشائعة':'FAQs',
+  'تواصل معنا':'Contact','انضم الآن':'Join now','تفاصيل JustMarkets':'JustMarkets details',
+  'تفاصيل Exness':'Exness details','تفاصيل Vantage':'Vantage details','كيف تنضم في 3 خطوات':'How to join in 3 steps',
+  'لماذا يثق المتداولون بنا':'Why traders trust us',
+  'شريك تقديمي · VALID VX · IB · ':'Introducing Broker · WALID VX · ',
+  'شريك تقديمي معتمد':'Introducing Broker','وسيط تقديمي معتمد (IB) — Introducing Broker':'Introducing Broker (IB)',
+  '— بوّابتك الموثوقة إلى الأسواق العالمية':'— Your trusted gateway to global markets',
+  'وسيط تقديمي متخصّص يربطك بأقوى منصات التداول العالمية، بخدمة عملاء استثنائية، واستراتيجية تداول صارمة تقوم على صفقات قليلة لكنها فعّالة ومحسوبة.':'An introducing broker connecting you with leading global trading platforms, with responsive support and a disciplined approach focused on fewer, carefully considered trades.',
+  'افتح حسابك الآن':'Open an account','انضم إلى الوكالة':'Join our agency','شركاؤنا التنفيذيون':'Our broker partners',
+  'منصات عالمية':'Global brokers','دعم على مدار الساعة':'24/7 support','صفقات مركّزة وفعّالة':'Focused, disciplined trading','خبرة في الأسواق المالية':'Financial market experience',
+  'وساطة تقديمية قائمة على':'Introducing brokerage built on','الشفافية والمهنية':'transparency and professionalism',
+  'VALID VX هو وسيط تقديمي (Introducing Broker) يعمل وفق مبادئ الشفافية والمهنية، ويسهّل على المتداولين الانضمام إلى منصات مرخّصة، مع تقديم إرشاد تعليمي وتحليل مسؤول يساعد العميل على فهم السوق واتخاذ قرارات مدروسة.':'VALID VX is an introducing broker committed to transparency and professionalism. We help traders connect with regulated platforms and provide educational guidance to support informed decisions.',
+  'شراكة موثوقة':'Trusted partnerships','علاقة شفافة مع منصات عالمية مرخّصة، تحفظ مصلحة المتداول عبر اتفاقيات واضحة وبنود معلنة بلا عمولات خفية.':'Transparent relationships with regulated global platforms, clear terms, and no hidden fees from our side.',
+  'إرشاد مهني':'Professional guidance','مرافقة تعليمية عملية من إعداد المنصة وحتى قراءة الرسوم البيانية، بإرشاد صريح بعيد عن الوعود المبالغ فيها.':'Practical educational guidance, from setting up a platform to understanding charts—without exaggerated promises.',
+  'شفافية كاملة':'Full transparency','أسعار وسبريد ومخاطر معلنة أمام العميل قبل أي خطوة، مع توضيح كامل لطبيعة العلاقة بين الوسيط التقديمي والمنصة.':'We explain costs, spreads, risks, and the relationship between the introducing broker and each platform before you proceed.',
+  'المنصات التي نتعامل معها':'Our broker partners','نربطك بثلاث من أبرز منصات التداول العالمية المعتمدة، ونرافقك في اختيار الأنسب لطبيعة تداولك وشروطك.':'Explore three global trading platforms and compare their terms to find the one that best fits your needs.',
+  'الأكثر شهرة':'Popular choice','Award-winning broker':'Award-winning broker',
+  'منصة عالمية حائزة على جوائز، تشتهر بسبريد تنافسي وتنفيذ سريع وسرعة إيداع وسحب.':'A global broker known for competitive spreads, fast execution, and convenient deposits and withdrawals.',
+  'سبريد منخفض':'Competitive spreads','تنفيذ فوري':'Fast execution','إيداع وسحب سريع':'Fast deposits and withdrawals','أنواع الحسابات':'Account types',
+  'ستاندرد سنت':'Standard Cent','للمبتدئين؛ الرصيد يُحسب بالسنت (إيداع 10$ = 1000 سنت)؛ سبريد من 0.3 نقطة؛ بدون عمولة؛ عدد أدوات أقل.':'For beginners. The balance is shown in cents; spreads from 0.3 pips, no commission, and a more limited range of instruments.',
+  'ستاندرد':'Standard','سبريد من 0.3 نقطة؛ بدون عمولة (التكلفة داخل السبريد)؛ حد أدنى للإيداع 10$؛ تشكيلة واسعة من الأدوات.':'Spreads from 0.3 pips, no commission (costs are included in the spread), and a broad range of instruments. Minimum deposit may vary.',
+  'برو':'Pro','سبريد من 0.1 نقطة؛ بدون عمولة؛ حد أدنى للإيداع حوالي 100–200$؛ مناسب للتداول اليومي.':'Spreads from 0.1 pips with no commission. Minimum deposit and availability vary by region; suited to active traders.',
+  'راو سبريد':'Raw Spread','سبريد من 0.0 نقطة + عمولة ثابتة؛ الأفضل للسكالبينج والتداول عالي التكرار؛ حد أدنى حوالي 100–200$.':'Raw spreads from 0.0 pips plus commission. Minimum deposit, fees, and availability vary by region.',
+  'ملاحظة عامة:':'General note:','رافعة حتى 1:3000، وحسابات إسلامية (بدون سواب) متاحة.':'Leverage and swap-free account availability depend on the entity, account type, and region.',
+  'ابدأ التداول عبر وكالة VALID VX واستفد من السبريد التنافسي مع دعم شخصي مباشر.':'Join through VALID VX for personal onboarding support. Trading costs and terms are set by the broker.',
+  'تفاصيل المنصة':'Broker details','انضم مباشرة عبر VALID VX':'Register through VALID VX','رابط تسجيل مباشر — خطوة واحدة':'Registration link · one step',
+  'انضم عبر VALID VX إلى JustMarkets':'Register through VALID VX at JustMarkets','انضم عبر VALID VX إلى Exness':'Register through VALID VX at Exness','انضم عبر VALID VX إلى Vantage':'Register through VALID VX at Vantage',
+  'سيولة عالية':'High liquidity','Global liquidity':'Global liquidity','من أشهر المنصات العالمية، تتميّز بالسيولة العالية وثبات الأسعار وتعدّد أنواع الحسابات.':'A well-known global broker offering a range of account types and trading conditions.',
+  'شروط مرنة':'Flexible conditions','سمعة عالمية':'Global presence','تداول بالسنت برصيد صغير جداً؛ بدون عمولة؛ مقدمة مثالية للمبتدئ.':'Cent-based trading with no commission; account availability and terms vary by region.',
+  'بدون عمولة؛ سبريد من نحو 0.3 نقطة؛ تنفيذ سوقي؛ مناسبة لكل المستويات.':'No commission, spreads from around 0.3 pips, and market execution. Terms vary by region and instrument.',
+  'بدون عمولة؛ سبريد ضيق؛ تنفيذ فوري؛ مناسبة للمتداول اليومي والمتأرجح (Swing).':'No commission, tight spreads, and instant execution. Availability and conditions depend on the entity and instrument.',
+  'سبريد من 0.0 نقطة + عمولة صغيرة؛ ممتازة للسكالبينج.':'Spreads from 0.0 pips plus commission. Fees vary by account and region.',
+  'زيرو':'Zero','سبريد صفر تقريباً على الأزواج الرئيسية + عمولة؛ مخصصة للسكالبينج والخوارزميات.':'Near-zero spreads on selected major pairs plus commission. Fees and availability vary by region.',
+  'يمكن فتح عدة حسابات من نفس الملف الشخصي؛ حد الإيداع الأدنى يختلف حسب المنطقة ونوع الحساب.':'Multiple accounts may be available under one profile. Minimum deposits depend on region and account type.',
+  'انضم عبر وكالة VALID VX وتمتّع بسيولة عالية وتنفيذ مستقر ومرافقة من أول خطوة.':'Join through VALID VX for onboarding support. Execution and liquidity conditions are determined by the broker.',
+  'تجربة حديثة':'Modern platform','Modern experience':'Modern experience','منصة حديثة تركّز على تجربة تداول سلسة وأدوات متقدّمة ودعم احترافي.':'A modern trading experience with advanced tools. Features and support vary by region and account.',
+  'واجهة متقدّمة':'Advanced platform','أدوات تحليلية':'Analytical tools','دعم محترف':'Professional support','ستاندرد STP':'Standard STP',
+  'بدون عمولة (التكلفة داخل السبريد)؛ حد أدنى للإيداع 50$ (وفي بعض المناطق من 5$)؛ خيار بسيط للمبتدئين.':'No commission (costs are included in the spread). Minimum deposit and availability vary by region.',
+  'راو ECN':'Raw ECN','سبريد خام من 0.0 نقطة + عمولة 3$ لكل لوت قياسي لكل جهة (أي 6$ ذهاباً وإياباً)؛ حد أدنى 50$.':'Raw spreads from 0.0 pips plus commission. Fees and minimum deposit depend on region and entity.',
+  'برو ECN':'Pro ECN','حساب مميّز للعملاء المحترفين بمتطلبات أعلى (نشاط تداول ورصيد أكبر).':'An account for experienced traders with higher eligibility requirements. Check current terms with the broker.',
+  'أكثر من 1000 أداة مالية؛ حساب إسلامي بدون سواب متاح؛ مستوى نداء الهامش 50% والإيقاف 20% لحسابات STP/ECN.':'Instrument selection, swap-free availability, margin call, and stop-out levels vary by entity and account. Confirm current terms with the broker.',
+  'انضم عبر وكالة VALID VX واحصل على إعداد حساب احترافي ودعم مستمر.':'Join through VALID VX for account setup guidance and ongoing support.',
+  'اختيار المنصة يتم بعد محادثة قصيرة لفهم أهدافك — لا نرشّح لك منصة إلا بما يناسب أسلوب تداولك.':'We discuss your needs before comparing platforms; the choice is yours and should reflect your own research and risk tolerance.',
+  'انضم إلى وكالة':'Join VALID VX','اختيار الوكالة التي تنضم عبرها يغيّر تجربتك من أول خطوة. نمنحك طريقاً واضحاً ومباشراً نحو المنصة الأنسب لك، مع مرافقة صادقة من البداية وحتى أول صفقة.':'Get clear onboarding guidance and compare broker platforms. You remain in control of your account and trading decisions.',
+  'تسجيل مبسّط خطوة واحدة':'Simple registration','رابط مباشر للتسجيل، بلا تعقيد وبلا خطوات زائدة.':'A direct broker registration link with clear next steps.','دعم شخصي من البداية':'Personal support from the start',
+  'تواصل مباشر مع فريق يعرفك ويتابعك بالاسم، لا رسائل آلية.':'Contact our team for help with onboarding questions.','إرشاد لاختيار المنصة الأنسب':'Guidance to compare platforms',
+  'نساعدك على الموازنة بين الشروط والسبريد وأسلوب تداولك.':'We help you review broker terms and spreads against your preferences.','تواصل معنا لاختيار المنصة المناسبة':'Contact us to compare platforms',
+  'خطوات بسيطة':'Simple steps','كيف تنضم في':'How to join in','3 خطوات':'3 steps','بدون تعقيد — ثلاث خطوات واضحة تفصلك عن بداية رحلتك في الأسواق.':'Three clear steps to get started with a broker.',
+  'اضغط زر الانضمام أو تواصل معنا':'Choose a broker or contact us','اضغط زر "انضم مباشرة" لأي منصة تفضّلها لبدء التسجيل فوراً، أو راسلنا عبر نموذج التواصل.':'Choose a broker registration link or contact us with questions before you proceed.',
+  'نختار معك المنصة وننشئ الحساب':'Compare platforms and open an account','نناقش أهدافك وأسلوب تداولك، ثم نرشّح المنصة الأنسب ونرافقك خطوة بخطوة حتى تفعيل الحساب.':'Review each broker’s terms and complete its account-opening process directly with the broker.',
+  'نرافقك في أول صفقة':'Get familiar with the platform','نساعدك في الإعداد الأولي وإدارة المخاطر، ونبقى بجانبك خلال أول صفقة وما بعدها.':'Learn the platform features and risk controls. We do not manage your account or guarantee trading outcomes.',
+  'خدمات متكاملة من أول خطوة إلى السوق':'Support from your first step','نتولّى الجوانب التقنية والإدارية لتتفرّغ أنت لاتخاذ قراراتك التداولية بثقة ووضوح.':'We provide general onboarding assistance so you can make your own informed decisions.',
+  'فتح وتفعيل الحسابات':'Account opening guidance','إجراء كامل لفتح الحساب وتفعيله والتحقق من المستندات، خطوة بخطوة وبدون تعقيد.':'Guidance through the broker’s account registration and identity-verification process.',
+  'دعم فني وعملاء على مدار الساعة':'Customer support','فريق متاح ٢٤/٧ للإجابة على استفساراتك وحل أي مشكلة تقنية في أسرع وقت.':'Contact us for assistance; response times and availability may vary.',
+  'إرشاد تعليمي وتحليل السوق':'Educational market information','محتوى تعليمي ومناقشات تحليلية مسؤولة تشرح السياق بدل تقديم توصيات جاهزة.':'Educational content to help explain market concepts. It is not investment advice or a trading recommendation.',
+  'متابعة الإيداع والسحب':'Deposit and withdrawal guidance','مساعدة في اختيار وسيلة الدفع الأنسب ومتابعة المعاملات حتى وصولها بأمان.':'For payment methods, fees, and transaction status, contact your broker directly.',
+  'اختيار المنصة والإعداد الأولي':'Platform comparison and setup','مقارنة موضوعية بين المنصات وإعداد أولي للحساب يناسب أهدافك ودرجة تحمّلك للمخاطر.':'Compare available platform features and learn basic setup steps; trading decisions remain yours.',
+  'القليل':'Fewer','الفعّال':'Better considered','فلسفتنا تقوم على الانتقائية والانضباط: عدد قليل من الصفقات المدروسة عالية الجودة أفضل بكثير من صفقات كثيرة عشوائية تستهلك رأس المال والأعصاب.':'We value patience and disciplined planning. This does not imply that any strategy will be profitable or prevent losses.',
+  'انتقائية عالية الجودة':'Selective trading','لا نتداول لمجرد التداول — ننتظر الإعداد الجيد ونستبعد الفرص غير الواضحة.':'Avoid trading without a clear plan; no setup guarantees a positive outcome.',
+  'إدارة مخاطر صارمة':'Risk management','تحديد حجم الصفقة ووقف الخسارة قبل الدخول، والحفاظ على رأس المال أولوية دائمة.':'Consider position sizing and risk limits. Stop-loss orders do not eliminate the risk of loss.',
+  'انضباط وخطط واضحة':'Plan and discipline','خطة مكتوبة ونقاط دخول وخروج محددة مسبقاً، بعيداً عن القرارات الانفعالية.':'A written plan can support consistent decisions but cannot guarantee results.',
+  'صفقات قليلة مُنتقاة مقابل صفقات كثيرة عشوائية':'Illustration: fewer planned trades vs. frequent trades','عشوائي':'Frequent','حجم مرتفع · جودة منخفضة':'More activity · not a performance measure','فعّال':'Planned','حجم منخفض · جودة عالية':'Fewer trades · illustrative only',
+  'تداول عشوائي مكثّف':'Frequent, unplanned trading','صفقات منتقاة فعّالة':'Selected, planned trades',
+  'لماذا VALID VX':'Why VALID VX','خدمة عملاء':'Customer support','استثنائية':'that puts you first','وسريعة':'Responsive assistance','الدعم لدينا ليس قناة رقمية جامدة، بل علاقة متواصلة وسريعة ترافقك من فتح الحساب حتى أول صفقة وما بعدها.':'We aim to provide helpful onboarding support from account setup onward. Availability may vary.',
+  'استجابة سريعة':'Responsive assistance','ردود في دقائق خلال ساعات العمل، بلا رسائل آلية ولا انتظار طويل.':'We aim to respond promptly during business hours. Response times are not guaranteed.',
+  'مرافقة من الحساب حتى أول صفقة':'Guidance with platform setup','نخطو معك كل خطوة: من التسجيل والتفعيل إلى إعداد المنصة وتنفيذ أول صفقة.':'We can explain general setup steps. You control your account and every trade.',
+  'دعم يتحدّث لغتك':'Arabic-language assistance','تواصل بلغة عربية واضحة، بمصطلحات مفهومة وبلا تعقيد تقني.':'We aim to explain platform and market terminology clearly.',
+  'علاقة طويلة الأمد':'Ongoing support','نبني ثقة مستمرة عبر المتابعة والشفافية، لا عبر صفقة واحدة عابرة.':'Our goal is to offer clear, ongoing onboarding support.',
+  'ثقة قائمة على الوضوح':'Trust through transparency','لماذا يثق المتداولون':'Why traders trust','بنا':'our approach','لا نعتمد على أرقام مبالَغ فيها ولا وعود غير واقعية — بل على مبادئ ثابتة نلتزم بها مع كل عميل.':'We aim to communicate clearly and avoid promises of trading performance or guaranteed returns.',
+  'نوضّح طبيعة العلاقة بين الوسيط التقديمي والمنصة، والسبريد والمخاطر قبل أي خطوة.':'We explain the introducing-broker relationship and direct you to the broker for current fees, spreads, and risk disclosures.',
+  'دعم متواصل':'Ongoing assistance','نجيب على أسئلتك بأسرع وقت، ونرافقك في المتابعة خطوة بخطوة دون انقطاع.':'Contact us with onboarding questions; response times may vary.',
+  'انتقائية في الصفقات':'Disciplined decisions','نؤمن بأن نجاح التداول يعني صفقات قليلة ومدروسة، لا نشاطاً متسرّعاً متكرّراً.':'Careful planning does not guarantee trading success. Markets can move against you.',
+  'مرافقة شخصية':'Personal assistance','علاقة مباشرة مع فريق يعرفك ويتابعك بالاسم، من أول تواصل حتى أول صفقة.':'We provide general onboarding assistance; we do not control your broker account.',
+  'إجابات واضحة ومباشرة':'Clear answers to common questions','جمعنا أكثر ما يسأل عنه المتداولون الجدد قبل البدء عبر VALID VX.':'Answers to common questions about brokers, accounts, and trading risks.',
+  'ما هو الوسيط التقديمي IB؟':'What is an introducing broker (IB)?',
+  'الوسيط التقديمي (Introducing Broker) هو وسيط يساعد المتداولين على الانضمام والتسجيل في منصات تداول مرخّصة، ويقدّم لهم الدعم والإرشاد التعليمي، مقابلاً من المنصة مقابل ذلك — دون أن يحتفظ بأموال العميل التي تبقى داخل المنصة نفسها.':'An introducing broker refers clients to a broker and may provide onboarding support. Client funds are held by the broker, not VALID VX. The IB may receive compensation from the broker; ask us for applicable disclosures.',
+  'هل التداول آمن؟':'Is trading safe?','أمان التداول يعتمد على عاملين: المنصة المرخّصة، وإدارة المخاطر الشخصية. نحن نوجّهك نحو منصات مرخّصة، لكن التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. لذلك نؤكّد دائماً على إدارة المخاطر والالتزام بخطة واضحة.':'Trading is risky and may result in the loss of your capital. Regulation varies by broker entity and country. Verify the broker’s legal entity and authorization with the relevant regulator, and never trade money you cannot afford to lose.',
+  'كيف أفتح حساباً عبر VALID VX؟':'How do I open an account through VALID VX?','راسلنا عبر قسم "تواصل معنا" أو الواتساب، وسنرشّح لك المنصة الأنسب ثم نرسل لك رابط التسجيل الخاص. تتبع خطوات التسجيل والتحقق من الهوية، وبعد التفعيل نساعدك في الإعداد الأولي حتى أول صفقة.':'Choose a broker link on this website or contact us with questions. Account registration and identity checks are completed directly with the broker.',
+  'ما المبلغ الأدنى للبدء؟':'What is the minimum amount to start?','يختلف الحد الأدنى من منصة إلى أخرى، وغالباً يبدأ بمبالغ متوسطة أو صغيرة نسبياً. اختر دائماً مبلغاً لا يؤثّر على التزاماتك الأساسية، ومن الأفضل البدء بحساب تجريبي للتعوّد على المنصة قبل الانتقال إلى الحساب الحقيقي.':'Minimum deposits vary by broker, account, and country. Check the broker’s current terms. Consider a demo account first and never deposit money needed for essential expenses.',
+  'كيف تتّم عملية الإيداع والسحب؟':'How do deposits and withdrawals work?','تتم عبر طرق متعدّدة مثل التحويل البنكي، البطاقات، والمحافظ الإلكترونية حسب المتاح في كل منصة. نساعدك في اختيار الوسيلة الأنسب من حيث السرعة والتكلفة، ونبقى على متابعة مستمرة حتى وصول المعاملة بأمان.':'Available payment methods, fees, and processing times are set by each broker and vary by location. Confirm details directly with your broker.',
+  'ابدأ رحلتك':'Start your journey','اليوم':'today','أرسل بياناتك وسيتواصل معك فريق VALID VX لتحديد المنصة الأنسب وخطوات فتح الحساب.':'Send us a message to ask about broker platforms and account-opening steps.',
+  'الاسم الكامل':'Full name','البريد الإلكتروني':'Email address','رقم الهاتف':'Phone number','نص الرسالة':'Your message','إرسال':'Prepare email',
+  'بريد إلكتروني صحيح':'Valid email address','رقم هاتف صحيح':'Valid phone number',
+  'هاتف / واتساب':'Phone / WhatsApp','راسلنا عبر واتساب':'Message us on WhatsApp','ساعات العمل':'Availability','دعم على مدار الساعة ٢٤/٧':'Support availability may vary',
+  'تابعنا على منصات التواصل':'Follow us on social media','→ رجوع إلى كل المنصات':'→ Back to all brokers','وسيط عالمي متعدد الأدوات':'Global multi-asset broker',
+  'انضم مباشرة':'Register with broker','نبذة عن المنصة':'About this broker','منصة تداول عالمية تقدّم عقود الفروقات (CFD) على الفوركس والمؤشرات والسلع والأسهم والعملات الرقمية، عبر منصّتي MT4 و MT5، بحد أدنى منخفض للإيداع ورافعة تصل إلى 1:3000، مع إتاحة الحسابات الإسلامية (بدون سواب).':'This broker offers CFDs on forex, indices, commodities, shares, and cryptocurrencies through MT4 and MT5. Products, leverage, fees, and swap-free account availability vary by legal entity and country. CFDs carry a high risk of loss.',
+  'سبريد من 0.3 نقطة؛ بدون عمولة (التكلفة داخل السبريد)؛ حد أدنى 10$؛ تشكيلة واسعة من الأدوات.':'Spreads from 0.3 pips; no commission (costs included in spread). Minimum deposit and instrument availability vary by region.',
+  'سبريد من 0.1 نقطة؛ بدون عمولة؛ حد أدنى يقارب 100–200$؛ مناسب للتداول اليومي.':'Spreads from 0.1 pips with no commission. Minimum deposit and terms vary by region; check the broker’s current schedule.',
+  'سبريد من 0.0 نقطة + عمولة ثابتة؛ الأفضل للسكالبينج والتداول عالي التكرار؛ حد أدنى حوالي 100–200$.':'Raw spreads from 0.0 pips plus commission. Fees and eligibility vary by region and account.',
+  'سبريد من 0.0 نقطة + عمولة ثابتة؛ الأفضل للسكالبينج والتداول عالي التكرار؛ حد أدنى يقارب 100–200$.':'Raw spreads from 0.0 pips plus commission. Fees and eligibility vary by region and account.',
+  'ملاحظة:':'Note:','المزايا الرئيسية':'Key features','MT4/MT5':'MT4/MT5','رافعة حتى 1:3000':'Leverage varies by region','إيداع منخفض':'Low minimum deposit may vary',
+  'سبريد تنافسي':'Competitive spreads may vary','سحب سريع':'Withdrawal times vary','خيار إسلامي':'Swap-free option may be available',
+  'لمن تصلح هذه المنصة':'Who may consider this broker','المبتدئون (Standard Cent / Standard) والمتداولون النشطون (Pro / Raw Spread).':'Account types may suit different experience levels. Review the broker’s terms and risks before choosing.',
+  'كيف تنضم عبر VALID VX':'How to register through VALID VX','تواصل معنا وتأكيد رغبتك في الانضمام عبر وكالة VALID VX.':'Choose the broker registration link provided on this page.','نرسل لك رابط التسجيل المباشر الخاص بالمنصة.':'Complete registration directly with the broker.','أنشئ حسابك وأكمل التحقق (KYC) واختر نوع الحساب المناسب.':'Complete the broker’s identity verification and review its account terms.','أولّد إيداعك وابدأ التداول بإرشاد مباشر من فريقنا.':'Only deposit if you understand the risks. VALID VX does not provide personalized investment advice.',
+  'أسئلة شائعة':'Frequently asked questions','هل توجد حسابات إسلامية؟':'Are swap-free accounts available?','نعم، حسابات بدون سواب متاحة.':'Availability depends on account type and region. Confirm with the broker.','ما الرافعة القصوى؟':'What is the maximum leverage?','حتى 1:3000 حسب نوع الحساب والمنطقة.':'Leverage depends on the broker entity, account, and region; verify current terms with the broker.',
+  'تحذير المخاطر: التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية.':'Risk warning: Trading CFDs and other financial products involves significant risk and may result in the loss of your capital. This content is for information only and is not investment advice.',
+  'الأرقام والشروط قد تختلف حسب المنطقة وقد تتغيّر مع الوقت.':'Figures and terms may vary by region and can change. Verify current details with the broker.',
+  'سيولة عالية عالمية':'Global liquidity','من أشهر المنصات العالمية، تشتهر بالسيولة العالية وثبات الأسعار وتعدّد أنواع الحسابات، مع إمكانية فتح أكثر من حساب من نفس الملف الشخصي عبر MT4 و MT5.':'A global broker with multiple account types and access through MT4 and MT5. Features and conditions vary by entity and region.',
+  'تداول بالسنت برصيد صغير جداً؛ بدون عمولة.':'Cent-based trading with no commission; availability varies by region.','بدون عمولة؛ سبريد من نحو 0.3 نقطة؛ تنفيذ سوقي.':'No commission; spreads from around 0.3 pips; market execution. Verify current broker terms.',
+  'بدون عمولة؛ سبريد ضيق؛ تنفيذ فوري؛ للمتداول اليومي والمتأرجح.':'No commission with tight spreads and instant execution; availability and terms vary by region.',
+  'سبريد شبه صفري على الأزواج الرئيسية + عمولة؛ للسكالبينج والخوارزميات.':'Near-zero spreads on selected pairs plus commission. Fees and conditions vary by region.',
+  'يمكن فتح عدة حسابات من نفس الملف؛ لحد الإيداع الأدنى اختلاف حسب المنطقة والنوع.':'Multiple accounts may be available under one profile. Minimum deposits vary by region and account type.',
+  'تنفيذ سريع':'Fast execution','عدة حسابات بملف واحد':'Multiple accounts may be available','رافعة مرنة':'Leverage varies by region',
+  'من المبتدئ (Cent/Standard) إلى المحترف (Pro / Raw Spread / Zero).':'Account availability depends on experience, country, and broker terms.',
+  'هل يمكن فتح أكثر من حساب؟':'Can I open multiple accounts?','نعم، من نفس الملف الشخصي.':'Multiple accounts may be available under one profile; confirm with the broker.',
+  'هل توجد عمولة؟':'Are there commissions?','Standard بدون عمولة، أما Raw/Zero فبعمولة مقابل سبريد أقل.':'Commissions depend on account type and instrument. Check the broker’s fee schedule.',
+  'تنفيذ سريع وأدوات متقدّمة':'Advanced tools and execution','منصة حديثة تركّز على تنفيذ منخفض التأخير وأدوات متقدّمة، وتوفّر أكثر من 1000 أداة مالية عبر MT4/MT5 وتطبيق خاص، مع إتاحة الحساب الإسلامي.':'A platform offering a range of instruments and trading tools. Product availability and account features vary by country and legal entity.',
+  'بدون عمولة (التكلفة داخل السبريد)؛ حد أدنى للإيداع 50$ (وفي بعض المناطق من 5$).':'No commission (costs included in the spread). Minimum deposits vary by region.',
+  'أكثر من 1000 أداة؛ حساب إسلامي بدون سواب؛ مستوى نداء الهامش 50% والإيقاف 20% لحسابات STP/ECN.':'Instrument count, swap-free availability, margin call, and stop-out levels vary by entity and account. Verify current terms.',
+  'سبريد من 0.0': 'Spreads from 0.0 pips; commission may apply','+1000 أداة':'1,000+ instruments may be available','دعم 24/7':'Broker support availability varies',
+  'المبتدئ (Standard) والمتداول النشط (Raw ECN) والمحترف (Pro ECN).':'Account types and eligibility vary by region. Review the broker’s terms before applying.',
+  'هل يوجد حساب إسلامي؟':'Is a swap-free account available?','نعم، بدون سواب.':'Swap-free availability depends on region and account type. Confirm with the broker.',
+  'ما عمولة Raw ECN؟':'What is the Raw ECN commission?','3$ لكل لوت قياسي لكل جهة.':'Commission depends on the broker entity, account, and instrument. Check current fees.',
+  'وسيط تقديمي معتمد (IB) يربطك بأقوى منصات التداول العالمية، بإرشاد مهني وشفافية كاملة وخدمة عملاء استثنائية.':'VALID VX provides broker introductions and onboarding information. Trading involves risk; review each broker’s legal terms.',
+  'تابعنا':'Follow us','روابط سريعة':'Quick links','تحذير المخاطر:':'Risk warning:',
+  'التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية. يُرجى التداول بمسؤولية.':'Trading financial markets involves significant risk and may result in the loss of capital. Information is educational and is not investment advice. Trade responsibly.',
+  '© 2026 VALID VX. جميع الحقوق محفوظة.':'© 2026 WALID VX. All rights reserved.',
+  'وسيط تقديمي · IB':'INTRODUCING BROKER · IB','شريك تقديمي':'INTRODUCING BROKER',
+  'فيسبوك':'Facebook','تيك توك':'TikTok','إنستغرام':'Instagram','تيليجرام':'Telegram','القائمة':'Menu',
+  'أدخل اسمك الكامل':'Enter your full name','أخبرنا عن اهتمامك: المنصة المفضلة، رأس المال التقريبي، أو أي سؤال.':'Tell us what you would like to know about broker platforms.',
+  'تم تجهيز الرسالة، ولم تُرسل بعد':'Your email is ready, but has not been sent','اضغط الرابط لفتح تطبيق البريد وإرسالها بنفسك. ':'Open your email app and send it yourself. ',
+  'فتح تطبيق البريد':'Open email app','يرجى مراجعة البيانات التالية':'Please check the following information','الاسم الكامل · بريد إلكتروني صحيح · رقم هاتف صحيح · نص الرسالة':'Full name · valid email · valid phone · message',
+  'صغير':'Small'
+};
+
+const TITLES = {
+  ar: {home:'VALID VX — بوّابتك الموثوقة إلى الأسواق العالمية',justmarkets:'JustMarkets — VALID VX',exness:'Exness — VALID VX',vantage:'Vantage — VALID VX'},
+  en: {home:'WALID VX — Your gateway to global markets',justmarkets:'JustMarkets — WALID VX',exness:'Exness — WALID VX',vantage:'Vantage — WALID VX'}
+};
+const originalTextNodes = new WeakMap();
+const originalAttributes = new WeakMap();
+let currentLanguage = (()=>{
+  if(new URLSearchParams(location.search).get('lang')==='en') return 'en';
+  try{return localStorage.getItem('valid-vx-language')==='en'?'en':'ar'}catch{return 'ar'}
+})();
+
+function setLanguage(language){
+  currentLanguage = language === 'en' ? 'en' : 'ar';
+  const isEnglish = currentLanguage === 'en';
+  document.documentElement.lang = currentLanguage;
+  document.documentElement.dir = isEnglish ? 'ltr' : 'rtl';
+
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  while(walker.nextNode()){
+    const node = walker.currentNode;
+    if(!originalTextNodes.has(node)) originalTextNodes.set(node,node.nodeValue);
+    const source = originalTextNodes.get(node);
+    const trimmed = source.trim();
+    const translation = isEnglish ? ENGLISH[trimmed] : trimmed;
+    if(translation !== undefined){
+      const leading = source.match(/^\s*/)?.[0] || '';
+      const trailing = source.match(/\s*$/)?.[0] || '';
+      node.nodeValue = leading + translation + trailing;
+    }
+  }
+
+  document.querySelectorAll('[aria-label],[placeholder],[title]').forEach(el=>{
+    ['aria-label','placeholder','title'].forEach(attr=>{
+      if(!el.hasAttribute(attr)) return;
+      let originals = originalAttributes.get(el);
+      if(!originals){ originals = {}; originalAttributes.set(el,originals); }
+      if(!(attr in originals)) originals[attr] = el.getAttribute(attr);
+      const source = originals[attr];
+      el.setAttribute(attr,isEnglish ? (ENGLISH[source] || source) : source);
+    });
+  });
+
+  document.querySelectorAll('.brand').forEach(el=>el.setAttribute('aria-label',isEnglish?'WALID VX':'VALID VX'));
+  document.querySelectorAll('[data-language-toggle]').forEach(button=>{
+    button.textContent = isEnglish ? 'العربية' : 'English';
+    button.setAttribute('aria-label',isEnglish?'Switch to Arabic':'التبديل إلى الإنجليزية');
+  });
+  const routeKey = (location.hash || '').replace(/^#\/?/,'').trim();
+  const titleKey = ['justmarkets','exness','vantage'].includes(routeKey) ? routeKey : 'home';
+  document.title = TITLES[currentLanguage][titleKey];
+  document.querySelector('meta[name="description"]').content = isEnglish
+    ? 'WALID VX introduces global trading platforms JustMarkets, Exness, and Vantage, with onboarding information and clear risk disclosures.'
+    : 'تعرّف على VALID VX: وسيط تقديمي يربطك بمنصات التداول العالمية JustMarkets وExness وVantage، مع دعم عربي وإرشاد تعليمي وتوضيح لمخاطر التداول.';
+  document.querySelector('meta[property="og:site_name"]').content = isEnglish?'WALID VX':'VALID VX';
+  document.querySelector('meta[property="og:title"]').content = isEnglish?'WALID VX — Your gateway to global markets':'VALID VX — بوّابتك إلى الأسواق العالمية';
+  document.querySelector('meta[property="og:description"]').content = isEnglish
+    ? 'Broker introductions and onboarding information. Trading involves significant risk and may result in the loss of capital.'
+    : 'دعم عربي ومعلومات للتعرّف على منصات التداول العالمية. التداول ينطوي على مخاطر عالية وقد يؤدي إلى خسارة رأس المال.';
+  const pageUrl = new URL('https://semoheva123.github.io/WALEED-FOREX/');
+  if(isEnglish) pageUrl.searchParams.set('lang','en');
+  const canonicalUrl = pageUrl.href;
+  document.querySelector('link[rel="canonical"]').href = canonicalUrl;
+  document.querySelector('meta[property="og:url"]').content = canonicalUrl;
+  const shareUrl = new URL(location.href);
+  if(isEnglish) shareUrl.searchParams.set('lang','en');
+  else shareUrl.searchParams.delete('lang');
+  shareUrl.hash = location.hash;
+  history.replaceState(null,'',shareUrl.pathname + shareUrl.search + shareUrl.hash);
+  if(typeof window.__refreshContactStatus === 'function') window.__refreshContactStatus();
+  try{localStorage.setItem('valid-vx-language',currentLanguage)}catch{}
+}
+
+document.querySelectorAll('[data-language-toggle]').forEach(button=>button.addEventListener('click',()=>{
+  setLanguage(currentLanguage==='ar'?'en':'ar');
+  if(button.closest('.mobile-menu')) closeMobileMenu();
+}));
+setLanguage(currentLanguage);
 
 /* --- Navbar background on scroll --- */
 const navbar = document.getElementById('navbar');
@@ -2158,6 +2376,25 @@ window.addEventListener('resize', () => {
 /* --- Contact form (client-side only, no backend) --- */
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
+function renderContactStatus(){
+  if(!formStatus) return;
+  const en = currentLanguage === 'en';
+  const title = document.createElement('strong');
+  if(formStatus.dataset.state === 'invalid'){
+    title.textContent = en ? 'Please check the following information' : 'يرجى مراجعة البيانات التالية';
+    const missing = JSON.parse(formStatus.dataset.missing || '[]');
+    const localized = missing.map(field => en ? (ENGLISH[field] || field) : field);
+    formStatus.replaceChildren(title,document.createTextNode(localized.join(' · ')));
+  } else if(formStatus.dataset.state === 'ready'){
+    title.textContent = en ? 'Your email is ready, but has not been sent' : 'تم تجهيز الرسالة، ولم تُرسل بعد';
+    const note = document.createTextNode(en ? 'Open your email app and send it yourself. ' : 'اضغط الرابط لفتح تطبيق البريد وإرسالها بنفسك. ');
+    const link = document.createElement('a');
+    link.href = formStatus.dataset.mailto || 'mailto:support@waleedforex.com';
+    link.textContent = en ? 'Open email app' : 'فتح تطبيق البريد';
+    formStatus.replaceChildren(title,note,link);
+  }
+}
+window.__refreshContactStatus = renderContactStatus;
 if(contactForm){
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -2176,29 +2413,25 @@ if(contactForm){
       if(!emailOk) missing.push('بريد إلكتروني صحيح');
       if(!phoneOk) missing.push('رقم هاتف صحيح');
       if(!msgOk) missing.push('نص الرسالة');
-      const title = document.createElement('strong');
-      title.textContent = 'يرجى مراجعة البيانات التالية';
-      formStatus.replaceChildren(title, document.createTextNode(missing.join(' · ')));
+      formStatus.dataset.state = 'invalid';
+      formStatus.dataset.missing = JSON.stringify(missing);
+      renderContactStatus();
       formStatus.classList.add('err','show');
       return;
     }
     const name = data.fullName.trim();
-    const subject = encodeURIComponent(`استفسار من ${name}`);
+    const subject = encodeURIComponent(currentLanguage === 'en' ? `Inquiry from ${name}` : `استفسار من ${name}`);
     const body = encodeURIComponent([
-      `الاسم: ${name}`,
-      `البريد الإلكتروني: ${data.email.trim()}`,
-      `رقم الهاتف: ${data.phone.trim()}`,
+      `${currentLanguage === 'en' ? 'Name' : 'الاسم'}: ${name}`,
+      `${currentLanguage === 'en' ? 'Email' : 'البريد الإلكتروني'}: ${data.email.trim()}`,
+      `${currentLanguage === 'en' ? 'Phone' : 'رقم الهاتف'}: ${data.phone.trim()}`,
       '',
       data.message.trim()
     ].join('\n'));
     const mailto = `mailto:support@waleedforex.com?subject=${subject}&body=${body}`;
-    const title = document.createElement('strong');
-    title.textContent = 'تم تجهيز الرسالة، ولم تُرسل بعد';
-    const note = document.createTextNode('اضغط الرابط لفتح تطبيق البريد وإرسالها بنفسك. ');
-    const link = document.createElement('a');
-    link.href = mailto;
-    link.textContent = 'فتح تطبيق البريد';
-    formStatus.replaceChildren(title, note, link);
+    formStatus.dataset.state = 'ready';
+    formStatus.dataset.mailto = mailto;
+    renderContactStatus();
     formStatus.classList.add('info','show');
   });
 }
@@ -2217,13 +2450,6 @@ const VIEWS = {
   exness:        document.getElementById('view-exness'),
   vantage:       document.getElementById('view-vantage')
 };
-const TITLES = {
-  home:        'وليد فوركس — بوّابتك الموثوقة إلى الأسواق العالمية',
-  justmarkets: 'JustMarkets — وليد فوركس',
-  exness:      'Exness — وليد فوركس',
-  vantage:     'Vantage — وليد فوركس'
-};
-
 function closeMobileMenu(){
   if(burger) burger.classList.remove('open');
   if(mobileMenu) mobileMenu.classList.remove('open');
@@ -2243,7 +2469,7 @@ function route(){
 
   // ملاءمة الجسم + وسم الصفحة
   document.body.classList.toggle('page-broker', isBroker);
-  document.title = TITLES[key] || TITLES.home;
+  document.title = TITLES[currentLanguage][key] || TITLES[currentLanguage].home;
 
   // تمييز الرابط النشط في التنقل
   document.querySelectorAll('.nav__links a[href^="#/"]').forEach(a => {
