@@ -33,8 +33,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Prepare site entry point
-        run: cp 'وليد_فوركس_بوابتك_للأسواق_العالمية.html' index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
