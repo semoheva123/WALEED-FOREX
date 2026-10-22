@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VALID VX — بوّابتك الموثوقة إلى الأسواق العالمية</title>
-<meta name="description" content="تعرّف على VALID VX: وسيط تقديمي يربطك بمنصات التداول العالمية JustMarkets وExness وVantage وVersus Trade، مع دعم عربي وإرشاد تعليمي وتوضيح لمخاطر التداول.">
+<meta name="description" content="VALID VX: معلومات تعليمية، نظرة على الأسواق ومفكرة اقتصادية، ومقارنة شفافة لشروط JustMarkets وExness وVantage وVersus Trade. التداول عالي المخاطر.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="googlebot" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#04070F">
@@ -18,11 +18,11 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:site_name" content="VALID VX">
 <meta property="og:title" content="VALID VX — بوّابتك إلى الأسواق العالمية">
-<meta property="og:description" content="دعم عربي وإرشاد تعليمي للتعرّف على منصات التداول العالمية. التداول ينطوي على مخاطر عالية وقد يؤدي إلى خسارة رأس المال.">
+<meta property="og:description" content="معلومات تعليمية، نظرة على الأسواق ومفكرة اقتصادية، ومقارنة شفافة للوسطاء. التداول عالي المخاطر وقد يؤدي إلى خسارة رأس المال.">
 <meta property="og:url" content="https://www.validvx.com/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VALID VX — بوّابتك إلى الأسواق العالمية">
-<meta name="twitter:description" content="دعم عربي ومعلومات للتعرّف على منصات التداول العالمية. التداول ينطوي على مخاطر عالية وقد يؤدي إلى خسارة رأس المال.">
+<meta name="twitter:description" content="معلومات تعليمية، نظرة على الأسواق ومفكرة اقتصادية، ومقارنة شفافة للوسطاء. التداول عالي المخاطر وقد يؤدي إلى خسارة رأس المال.">
 <meta name="twitter:url" content="https://www.validvx.com/">
 <script type="application/ld+json">
 {
@@ -294,6 +294,7 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + var(--trust-h) + 10px)}
 }
 .nav__links a:hover,.nav__links a.active{color:var(--text-100);background:rgba(255,255,255,.06)}
 .nav__actions{display:flex;align-items:center;gap:.6rem}
+@media (min-width:1081px) and (max-width:1380px){.nav__inner{gap:.45rem;padding-inline:1rem}.brand{font-size:1rem}.nav__links a{padding:.42rem .42rem;font-size:.78rem}.nav__actions{gap:.35rem}.nav__actions .btn{padding:.75rem 1rem;font-size:.84rem}}
 .burger{display:none;width:46px;height:46px;border-radius:12px;border:1px solid var(--line-strong);background:rgba(255,255,255,.04);cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
 .burger span{display:block;width:20px;height:2px;background:var(--text-100);border-radius:2px;transition:transform .35s var(--ease),opacity .3s}
 .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -482,6 +483,31 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + var(--trust-h) + 10px)}
   border:1px solid rgba(245,196,81,.3);background:rgba(245,196,81,.07);
 }
 .section-note{color:var(--text-500);font-size:.9rem;text-align:center;margin-top:var(--sp-4)}
+
+/* Market, learning, and comparison panels */
+.insight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.insight-card{height:100%;padding:var(--sp-3);border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:var(--shadow-deep)}
+.insight-card h3{font-size:1.05rem;margin-bottom:.45rem}
+.insight-card p{color:var(--text-300);font-size:.93rem}
+.market-symbol{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold-300);font-family:'Cairo';font-weight:800}
+.market-symbol::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cyan-400);box-shadow:0 0 12px rgba(0,194,255,.65)}
+.source-link{display:inline-flex;align-items:center;margin-top:.8rem;color:var(--cyan-400);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.data-notice{display:flex;gap:.8rem;align-items:flex-start;margin-top:var(--sp-3);padding:1rem 1.15rem;border:1px solid rgba(247,215,116,.34);border-radius:var(--radius);background:rgba(247,215,116,.07);color:var(--text-100);font-size:.92rem}
+.data-notice strong{color:var(--gold-300)}
+.calendar-steps,.learn-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-2)}
+.calendar-step,.learn-card{padding:var(--sp-3);border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-card)}
+.calendar-step b,.learn-card h3{display:block;color:var(--text-100);font-family:'Cairo';margin-bottom:.35rem}
+.calendar-step p,.learn-card p{color:var(--text-300);font-size:.91rem}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.025)}
+.broker-compare{width:100%;min-width:700px;border-collapse:collapse;text-align:start}
+.broker-compare th,.broker-compare td{padding:.9rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+.broker-compare th{color:var(--gold-300);font-family:'Cairo';font-size:.9rem;background:rgba(255,255,255,.04)}
+.broker-compare td{color:var(--text-300);font-size:.9rem}
+.broker-compare tr:last-child td{border-bottom:0}
+.broker-compare a{color:var(--cyan-400);text-decoration:underline;text-underline-offset:3px}
+.disclosure-box{margin-top:var(--sp-3);padding:var(--sp-3);border:1px solid rgba(255,130,100,.35);border-radius:var(--radius);background:rgba(255,100,75,.055);color:var(--text-300);font-size:.92rem}
+.disclosure-box strong{color:#ffb19b}
+@media(max-width:760px){.insight-grid,.calendar-steps,.learn-list{grid-template-columns:1fr}.broker-compare{min-width:640px}}
 
 /* ============================================================
    JOIN PANEL — كتلة "انضم إلينا" أسفل كل بطاقة منصة
@@ -851,6 +877,11 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + var(--trust-h) + 10px)}
   .nav__links{display:none}
   .nav__actions .nav__links{display:none}
 }
+@media (min-width:861px) and (max-width:1500px){
+  .nav__links{display:none}
+  .burger{display:flex}
+  .nav__actions .lang-toggle,.nav__actions .btn--primary{display:none}
+}
 @media (max-width:860px){
   :root{--sp-6:3.4rem;--sp-7:4.6rem}
   .burger{display:flex}
@@ -1043,6 +1074,9 @@ body.page-broker .hero{display:none}
       <a href="#/home" class="active">الرئيسية</a>
       <a href="#about">من نحن</a>
       <a href="#platforms">المنصات</a>
+      <a href="#markets">الأسواق</a>
+      <a href="#learn">مركز المعرفة</a>
+      <a href="#compare">مقارنة الوسطاء</a>
       <a href="#join">انضم إلينا</a>
       <a href="#services">خدماتنا</a>
       <a href="#strategy">استراتيجيتنا</a>
@@ -1062,6 +1096,10 @@ body.page-broker .hero{display:none}
   <a href="#/home">الرئيسية</a>
   <a href="#about">من نحن</a>
   <a href="#platforms">المنصات</a>
+  <a href="#markets">الأسواق والأسعار</a>
+  <a href="#calendar">المفكرة الاقتصادية</a>
+  <a href="#learn">مركز المعرفة</a>
+  <a href="#compare">مقارنة الوسطاء</a>
   <a href="#/justmarkets">تفاصيل JustMarkets</a>
   <a href="#/exness">تفاصيل Exness</a>
   <a href="#/vantage">تفاصيل Vantage</a>
@@ -1404,7 +1442,7 @@ body.page-broker .hero{display:none}
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
             انضم إلينا
           </div>
-          <p class="join-panel__desc">استخدم رابط التسجيل عبر WALID VX، وتحقق من توفر الخدمة في بلدك قبل إنشاء الحساب.</p>
+          <p class="join-panel__desc">استخدم رابط التسجيل عبر VALID VX، وتحقق من توفر الخدمة في بلدك قبل إنشاء الحساب.</p>
           <a class="btn btn--gold" data-referral="versustrade" target="_blank" rel="noopener noreferrer"
             href="https://one.versustrade.link/links/go/75418?pid=163372" aria-label="انضم عبر VALID VX إلى Versus Trade">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -1416,6 +1454,113 @@ body.page-broker .hero{display:none}
     </div>
   </div>
   <p class="section-note reveal">اختيار المنصة يتم بعد محادثة قصيرة لفهم أهدافك — لا نرشّح لك منصة إلا بما يناسب أسلوب تداولك.</p>
+</div></section>
+
+<div class="divider"></div>
+
+<!-- ============================ MARKETS ============================ -->
+<section class="section section--sep" id="markets"><div class="container">
+  <div class="section-head center reveal">
+    <span class="eyebrow">نظرة عامة على الأسواق</span>
+    <h2>تابع الأصول <span class="grad-text">من مصدرها</span></h2>
+    <p>لوحة أسعار ومخططات تفاعلية من TradingView لمتابعة أزواج العملات والذهب والنفط والمؤشرات والعملات الرقمية.</p>
+  </div>
+  <div class="card reveal" style="padding:clamp(.5rem,2vw,1.25rem)">
+    <div class="tradingview-widget-container" style="width:100%;min-height:440px">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener noreferrer" target="_blank"><span>عرض الأسواق والبيانات عبر TradingView</span></a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+      {
+        "width":"100%",
+        "height":"420",
+        "symbolsGroups":[
+          {"name":"الفوركس","symbols":[{"name":"FX:EURUSD","displayName":"EUR/USD"},{"name":"FX:GBPUSD","displayName":"GBP/USD"},{"name":"FX:USDJPY","displayName":"USD/JPY"}]},
+          {"name":"السلع","symbols":[{"name":"OANDA:XAUUSD","displayName":"Gold / USD"},{"name":"TVC:USOIL","displayName":"WTI Crude Oil"}]},
+          {"name":"المؤشرات","symbols":[{"name":"FOREXCOM:SPXUSD","displayName":"S&P 500"},{"name":"NASDAQ:NDX","displayName":"Nasdaq 100"}]},
+          {"name":"العملات الرقمية","symbols":[{"name":"BITSTAMP:BTCUSD","displayName":"Bitcoin / USD"},{"name":"BITSTAMP:ETHUSD","displayName":"Ethereum / USD"}]}
+        ],
+        "showSymbolLogo":true,
+        "colorTheme":"dark",
+        "isTransparent":true,
+        "locale":"ar_AE"
+      }
+      </script>
+    </div>
+  </div>
+  <p class="data-notice"><span aria-hidden="true">ⓘ</span><span><strong>للاطلاع فقط:</strong> قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار.</span></p>
+</div></section>
+
+<!-- ============================ ECONOMIC CALENDAR ============================ -->
+<section class="section section--sep" id="calendar"><div class="container">
+  <div class="section-head reveal">
+    <span class="eyebrow">المفكرة الاقتصادية</span>
+    <h2>افهم الأحداث <span class="grad-text">قبل صدورها</span></h2>
+    <p>تابع مواعيد البيانات الاقتصادية وقرارات البنوك المركزية من مصادرها، وانتبه إلى اختلاف التوقيت والمنطقة.</p>
+  </div>
+  <div class="calendar-steps">
+    <article class="calendar-step reveal d-1"><b>١ · حدّد المنطقة والتوقيت</b><p>اختر المنطقة الزمنية المناسبة لك؛ قد يُعرض موعد الحدث بتوقيت مختلف عن توقيتك المحلي.</p></article>
+    <article class="calendar-step reveal d-2"><b>٢ · راجع المصدر والتحديث</b><p>تحقق من وقت النشر والقراءة السابقة والتوقعات، ثم قارن النتيجة بالمصدر الأصلي عند توفرها.</p></article>
+    <article class="calendar-step reveal d-3"><b>٣ · تذكّر أثر التقلب</b><p>الأخبار قد توسّع الفروقات وتزيد الانزلاق السعري؛ لا يعني التوقع اتجاهًا مؤكدًا للسوق.</p></article>
+  </div>
+  <div class="card reveal" style="margin-top:var(--sp-3);padding:clamp(.5rem,2vw,1.25rem)">
+    <div class="tradingview-widget-container" style="width:100%;min-height:560px">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/economic-calendar/" rel="noopener noreferrer" target="_blank"><span>المفكرة الاقتصادية عبر TradingView</span></a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+      {"colorTheme":"dark","isTransparent":true,"locale":"ar","countryFilter":"us,eu,gb","importanceFilter":"-1,0,1","width":"100%","height":"520"}
+      </script>
+    </div>
+  </div>
+  <div class="insight-grid" style="margin-top:var(--sp-3)">
+    <article class="insight-card reveal d-1"><h3>تقويم TradingView</h3><p>تقويم اقتصادي قابل للتصفية حسب الدولة والأهمية والوقت.</p><a class="source-link" href="https://www.tradingview.com/economic-calendar/" target="_blank" rel="noopener noreferrer">فتح التقويم ومراجعة توقيته ↗</a></article>
+    <article class="insight-card reveal d-2"><h3>تقويم Forex Factory</h3><p>جدول أحداث اقتصادي مع إمكانية اختيار المنطقة الزمنية.</p><a class="source-link" href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer">فتح التقويم ↗</a></article>
+  </div>
+  <p class="section-note">هذه روابط إلى مصادر خارجية؛ VALID VX لا يتحكم بمواعيدها أو محتواها أو تحديثاتها.</p>
+</div></section>
+
+<!-- ============================ EDUCATION ============================ -->
+<section class="section section--sep" id="learn"><div class="container">
+  <div class="section-head center reveal">
+    <span class="eyebrow">مركز المعرفة</span>
+    <h2>تعلّم الأساسيات <span class="grad-text">بهدوء</span></h2>
+    <p>معلومات تمهيدية تساعدك على طرح الأسئلة الصحيحة وفهم المخاطر قبل فتح حساب أو إيداع أموال.</p>
+  </div>
+  <div class="learn-list">
+    <article class="learn-card reveal d-1"><h3>ما الرافعة والهامش؟</h3><p>الرافعة تضخم التعرض للسوق مقارنة برصيدك، وقد تضخم الخسائر أيضًا. افهم متطلبات الهامش والتصفية لدى الكيان المحدد.</p></article>
+    <article class="learn-card reveal d-2"><h3>ما تكلفة الصفقة؟</h3><p>راجع السبريد والعمولة والتمويل الليلي والتحويل وفروق التنفيذ؛ قد تختلف التكاليف بحسب الأداة والحساب والجهة القانونية.</p></article>
+    <article class="learn-card reveal d-3"><h3>كيف تقيّم المخاطر؟</h3><p>استخدم حسابًا تجريبيًا للتعلّم، وافهم احتمال خسارة كامل رأس المال، ولا تستخدم أموالًا تحتاجها لمعيشتك أو التزاماتك.</p></article>
+  </div>
+  <div class="insight-grid" style="margin-top:var(--sp-3)">
+    <article class="insight-card reveal d-1"><h3>تعليم المستثمرين — Investor.gov</h3><p>مواد توعوية عن الاستثمار، الاحتيال، وفهم المخاطر.</p><a class="source-link" href="https://www.investor.gov/introduction-investing" target="_blank" rel="noopener noreferrer">زيارة المصدر ↗</a></article>
+    <article class="insight-card reveal d-2"><h3>تثقيف المستثمر — CFTC</h3><p>معلومات عن أسواق المشتقات والتحقق من الوسطاء ومخاطر الرافعة.</p><a class="source-link" href="https://www.cftc.gov/LearnAndProtect" target="_blank" rel="noopener noreferrer">زيارة المصدر ↗</a></article>
+  </div>
+  <p class="data-notice"><span aria-hidden="true">ⓘ</span><span>المحتوى تعليمي عام، وليس نصيحة مالية أو قانونية أو ضريبية، ولا يراعي أهدافك أو وضعك المالي.</span></p>
+</div></section>
+
+<!-- ============================ BROKER COMPARISON ============================ -->
+<section class="section section--sep" id="compare"><div class="container">
+  <div class="section-head center reveal">
+    <span class="eyebrow">مقارنة شفافة</span>
+    <h2>قارن الشروط <span class="grad-text">قبل الاختيار</span></h2>
+    <p>لا توجد منصة واحدة تناسب الجميع. قارن الكيان القانوني والتكاليف والأدوات المتاحة في بلدك من المصادر الرسمية.</p>
+  </div>
+  <div class="table-wrap reveal" role="region" aria-label="مقارنة الوسطاء" tabindex="0">
+    <table class="broker-compare">
+      <thead><tr><th scope="col">ما الذي تتحقق منه؟</th><th scope="col">JustMarkets</th><th scope="col">Exness</th><th scope="col">Vantage</th><th scope="col">Versus Trade</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">الجهة المنظمة والكيان</th><td>يختلف حسب بلد الإقامة — تحقق من الكيان والعنوان في الاتفاقية.</td><td>يختلف حسب بلد الإقامة — تحقق من الكيان والعنوان في الاتفاقية.</td><td>يختلف حسب بلد الإقامة — تحقق من الكيان والعنوان في الاتفاقية.</td><td>يختلف حسب بلد الإقامة — تحقق من الكيان والعنوان في الاتفاقية.</td></tr>
+        <tr><th scope="row">الرسوم والسبريد</th><td>حسب الأداة والحساب وتوقيت التنفيذ؛ راجع جدول الرسوم.</td><td>حسب الأداة والحساب وتوقيت التنفيذ؛ راجع جدول الرسوم.</td><td>حسب الأداة والحساب وتوقيت التنفيذ؛ راجع جدول الرسوم.</td><td>حسب الأداة والحساب وتوقيت التنفيذ؛ راجع جدول الرسوم.</td></tr>
+        <tr><th scope="row">الرافعة والحد الأدنى</th><td>يتغيران بحسب الكيان والمنطقة ونوع الحساب.</td><td>يتغيران بحسب الكيان والمنطقة ونوع الحساب.</td><td>يتغيران بحسب الكيان والمنطقة ونوع الحساب.</td><td>يتغيران بحسب الكيان والمنطقة ونوع الحساب.</td></tr>
+        <tr><th scope="row">المنتجات والتوافر</th><td>تحقق من المنتجات المسموح بها في بلدك.</td><td>تحقق من المنتجات المسموح بها في بلدك.</td><td>تحقق من المنتجات المسموح بها في بلدك.</td><td>تحقق من المنتجات المسموح بها في بلدك.</td></tr>
+        <tr><th scope="row">المصدر الرسمي</th><td><a href="https://www.justmarkets.com/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a></td><td><a href="https://www.exness.com/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a></td><td><a href="https://www.vantagemarkets.com/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a></td><td><a href="https://versus.trade/" target="_blank" rel="noopener noreferrer">الموقع الرسمي</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="disclosure-box"><strong>إفصاح عن الإحالات:</strong> قد تتضمن بعض روابط التسجيل معرّف إحالة، وقد تحصل VALID VX على مقابل من الشريك عند التسجيل أو النشاط، بحسب الاتفاقية. تحقق من شروط كل وسيط؛ المقارنة ليست تصنيفًا أو توصية، والأسعار والشروط قابلة للتغيير.</div>
+  <div class="insight-grid" style="margin-top:var(--sp-3)">
+    <article class="insight-card reveal d-1"><h3>تحقق من الترخيص بنفسك</h3><p>استخدم سجل الجهة الرقابية المذكورة في اتفاقية العميل؛ لا تفترض أن علامة تجارية واحدة تعني أن كل كياناتها تحمل الترخيص نفسه.</p><a class="source-link" href="https://register.fca.org.uk/" target="_blank" rel="noopener noreferrer">سجل FCA ↗</a><a class="source-link" href="https://www.nfa.futures.org/basicnet/" target="_blank" rel="noopener noreferrer">قاعدة NFA BASIC ↗</a><a class="source-link" href="https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/" target="_blank" rel="noopener noreferrer">سجل CySEC ↗</a></article>
+    <article class="insight-card reveal d-2"><h3>خطوات تحقق بسيطة</h3><p>طابق الاسم القانوني ورقم الترخيص والنطاق الإلكتروني وبلد الخدمة، واقرأ تحذيرات الجهة الرقابية قبل التسجيل.</p><a class="source-link" href="https://www.investor.gov/protect-your-investments/fraud/how-avoid-fraud/verify-investment-professional" target="_blank" rel="noopener noreferrer">دليل التحقق من المختصين ↗</a></article>
+  </div>
 </div></section>
 
 <div class="divider"></div>
@@ -2104,6 +2249,10 @@ body.page-broker .hero{display:none}
       <a href="#trust">لماذا يثق المتداولون بنا</a>
       <a href="#services">خدماتنا</a>
       <a href="#strategy">استراتيجيتنا</a>
+      <a href="#markets">الأسواق والأسعار</a>
+      <a href="#calendar">المفكرة الاقتصادية</a>
+      <a href="#learn">مركز المعرفة</a>
+      <a href="#compare">مقارنة الوسطاء</a>
     </div>
     <div class="footer-col">
       <h4>المنصات التي نتعامل معها</h4>
@@ -2117,7 +2266,7 @@ body.page-broker .hero{display:none}
   </div>
   <div class="risk-note">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
-    <span><b>تحذير المخاطر:</b> التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية. يُرجى التداول بمسؤولية.</span>
+    <span><b>تحذير المخاطر:</b> تداول عقود الفروقات والمنتجات ذات الرافعة المالية عالي المخاطر وقد يؤدي إلى خسارة كامل رأس المال. المحتوى عام وتعليمي وليس نصيحة استثمارية أو دعوة للشراء أو البيع. لا تودع أموالًا لا يمكنك تحمل خسارتها. قد نحصل على مقابل من بعض روابط الإحالة؛ راجع شروط الوسيط والجهة المنظمة في بلدك.</span>
   </div>
   <p class="copyright">© 2026 VALID VX. جميع الحقوق محفوظة.</p>
 </div></footer>
@@ -2140,6 +2289,34 @@ const ENGLISH = {
   'تفاصيل Exness':'Exness details','تفاصيل Vantage':'Vantage details','التسجيل لدى Versus Trade':'Register with Versus Trade','كيف تنضم في 3 خطوات':'How to join in 3 steps',
   'لماذا يثق المتداولون بنا':'Why traders trust us',
   'شريك تقديمي · VALID VX · IB · ':'Introducing Broker · VALID VX · ',
+  'شريك تقديمي · VALID VX · IB ·':'Introducing Broker · VALID VX · IB ·',
+  'الأسواق':'Markets','مركز المعرفة':'Learning hub','مقارنة الوسطاء':'Broker comparison',
+  'الأسواق والأسعار':'Markets and prices','المفكرة الاقتصادية':'Economic calendar',
+  'نظرة عامة على الأسواق':'Market overview','تابع الأصول':'Follow assets','من مصدرها':'from their source',
+  'لوحة أسعار ومخططات تفاعلية من TradingView لمتابعة أزواج العملات والذهب والنفط والمؤشرات والعملات الرقمية.':'Interactive TradingView quotes and charts for forex pairs, gold, oil, indices, and cryptocurrencies.',
+  'عرض الأسواق والبيانات عبر TradingView':'View markets and data on TradingView',
+  'للاطلاع فقط:':'For information only:','قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار.':'Data may be delayed or differ from broker execution prices. Quotes are provided by TradingView and its data providers; this is not a recommendation or guaranteed execution price. Verify prices with your broker.',
+  'افهم الأحداث':'Understand events','قبل صدورها':'before they happen','تابع مواعيد البيانات الاقتصادية وقرارات البنوك المركزية من مصادرها، وانتبه إلى اختلاف التوقيت والمنطقة.':'Follow economic releases and central-bank decisions, and check the timezone and region.',
+  '١ · حدّد المنطقة والتوقيت':'1 · Set region and timezone','اختر المنطقة الزمنية المناسبة لك؛ قد يُعرض موعد الحدث بتوقيت مختلف عن توقيتك المحلي.':'Choose your timezone; event times may differ from your local time.',
+  '٢ · راجع المصدر والتحديث':'2 · Check source and update','تحقق من وقت النشر والقراءة السابقة والتوقعات، ثم قارن النتيجة بالمصدر الأصلي عند توفرها.':'Check publication time, previous readings, and estimates; verify results with the original source when available.',
+  '٣ · تذكّر أثر التقلب':'3 · Remember volatility','الأخبار قد توسّع الفروقات وتزيد الانزلاق السعري؛ لا يعني التوقع اتجاهًا مؤكدًا للسوق.':'News can widen spreads and increase slippage; forecasts do not determine market direction.',
+  'تقويم TradingView':'TradingView calendar','تقويم اقتصادي قابل للتصفية حسب الدولة والأهمية والوقت.':'Economic calendar filterable by country, importance, and time.',
+  'فتح التقويم ومراجعة توقيته ↗':'Open calendar and check timezone ↗','فتح التقويم ↗':'Open calendar ↗',
+  'المفكرة الاقتصادية عبر TradingView':'Economic calendar via TradingView','هذه روابط إلى مصادر خارجية؛ VALID VX لا يتحكم بمواعيدها أو محتواها أو تحديثاتها.':'These are external sources. VALID VX does not control their schedules, content, or updates.',
+  'تعلّم الأساسيات':'Learn the basics','بهدوء':'at your own pace','معلومات تمهيدية تساعدك على طرح الأسئلة الصحيحة وفهم المخاطر قبل فتح حساب أو إيداع أموال.':'Introductory information to help you ask informed questions and understand risks before opening an account or depositing funds.',
+  'ما الرافعة والهامش؟':'What are leverage and margin?','الرافعة تضخم التعرض للسوق مقارنة برصيدك، وقد تضخم الخسائر أيضًا. افهم متطلبات الهامش والتصفية لدى الكيان المحدد.':'Leverage increases market exposure relative to your balance and can magnify losses. Understand margin and liquidation rules for the relevant entity.',
+  'ما تكلفة الصفقة؟':'What does a trade cost?','راجع السبريد والعمولة والتمويل الليلي والتحويل وفروق التنفيذ؛ قد تختلف التكاليف بحسب الأداة والحساب والجهة القانونية.':'Review spreads, commissions, overnight financing, conversion, and execution differences. Costs vary by instrument, account, and legal entity.',
+  'كيف تقيّم المخاطر؟':'How can you assess risk?','استخدم حسابًا تجريبيًا للتعلّم، وافهم احتمال خسارة كامل رأس المال، ولا تستخدم أموالًا تحتاجها لمعيشتك أو التزاماتك.':'Consider a demo account while learning. You may lose all invested capital; do not use money needed for living costs or obligations.',
+  'تعليم المستثمرين — Investor.gov':'Investor education — Investor.gov','مواد توعوية عن الاستثمار، الاحتيال، وفهم المخاطر.':'Educational resources on investing, fraud, and risk.',
+  'تثقيف المستثمر — CFTC':'Investor education — CFTC','معلومات عن أسواق المشتقات والتحقق من الوسطاء ومخاطر الرافعة.':'Information about derivatives, checking intermediaries, and leverage risks.',
+  'زيارة المصدر ↗':'Visit source ↗','المحتوى تعليمي عام، وليس نصيحة مالية أو قانونية أو ضريبية، ولا يراعي أهدافك أو وضعك المالي.':'This is general education, not financial, legal, or tax advice, and does not account for your goals or financial circumstances.',
+  'قارن الشروط':'Compare terms','قبل الاختيار':'before choosing','لا توجد منصة واحدة تناسب الجميع. قارن الكيان القانوني والتكاليف والأدوات المتاحة في بلدك من المصادر الرسمية.':'No single platform suits everyone. Compare the legal entity, costs, and products available in your country using official sources.',
+  'ما الذي تتحقق منه؟':'What to check','الجهة المنظمة والكيان':'Regulator and legal entity','يختلف حسب بلد الإقامة — تحقق من الكيان والعنوان في الاتفاقية.':'Varies by country — verify the entity in the client agreement.',
+  'الرسوم والسبريد':'Fees and spreads','حسب الأداة والحساب وتوقيت التنفيذ؛ راجع جدول الرسوم.':'Depend on instrument, account, and execution time; review the fee schedule.',
+  'الرافعة والحد الأدنى':'Leverage and minimum deposit','يتغيران بحسب الكيان والمنطقة ونوع الحساب.':'Vary by entity, region, and account type.',
+  'المنتجات والتوافر':'Products and availability','تحقق من المنتجات المسموح بها في بلدك.':'Check which products are permitted in your country.',
+  'المصدر الرسمي':'Official source','الموقع الرسمي':'Official website',
+  'إفصاح عن الإحالات:':'Referral disclosure:','قد تتضمن بعض روابط التسجيل معرّف إحالة، وقد تحصل VALID VX على مقابل من الشريك عند التسجيل أو النشاط، بحسب الاتفاقية. تحقق من شروط كل وسيط؛ المقارنة ليست تصنيفًا أو توصية، والأسعار والشروط قابلة للتغيير.':'Some registration links include referral identifiers. VALID VX may receive compensation from partners for registrations or activity, depending on the agreement. Check each broker’s terms; this comparison is not a ranking or recommendation, and terms may change.',
   'شريك تقديمي معتمد':'Introducing Broker','وسيط تقديمي معتمد (IB) — Introducing Broker':'Introducing Broker (IB)',
   '— بوّابتك الموثوقة إلى الأسواق العالمية':'— Your trusted gateway to global markets',
   'وسيط تقديمي متخصّص يربطك بأقوى منصات التداول العالمية، بخدمة عملاء استثنائية، واستراتيجية تداول صارمة تقوم على صفقات قليلة لكنها فعّالة ومحسوبة.':'An introducing broker connecting you with leading global trading platforms, with responsive support and a disciplined approach focused on fewer, carefully considered trades.',
@@ -2164,7 +2341,7 @@ const ENGLISH = {
   'انضم عبر VALID VX إلى JustMarkets':'Register through VALID VX at JustMarkets','انضم عبر VALID VX إلى Exness':'Register through VALID VX at Exness','انضم عبر VALID VX إلى Vantage':'Register through VALID VX at Vantage','انضم عبر VALID VX إلى Versus Trade':'Register through VALID VX at Versus Trade',
   'منصة تداول عالمية':'Global trading platform','منصة تداول قد تختلف منتجاتها وشروطها وتوافرها حسب بلد الإقامة والجهة القانونية.':'Trading products, terms, and availability vary by country of residence and legal entity.',
   'تحقق من التوافر المحلي':'Check local availability','راجع الرسوم والشروط':'Review fees and terms','التداول ينطوي على مخاطر':'Trading involves risk',
-  'استخدم رابط التسجيل عبر WALID VX، وتحقق من توفر الخدمة في بلدك قبل إنشاء الحساب.':'Use the WALID VX registration link and check whether service is available in your country before signing up.',
+  'استخدم رابط التسجيل عبر VALID VX، وتحقق من توفر الخدمة في بلدك قبل إنشاء الحساب.':'Use the VALID VX referral link and check whether service is available in your country before signing up.',
   'التوفر والشروط يعتمدان على بلد الإقامة':'Availability and terms depend on your country of residence',
   'سنت':'Cent',
   'الحد الأدنى للإيداع 10$؛ السبريد يبدأ من 0.4 نقطة؛ العمولة 0$؛ الرافعة القصوى 1:2000.':'Minimum deposit $10; spreads from 0.4 pips; commission $0; maximum leverage 1:2000.',
@@ -2262,12 +2439,31 @@ const ENGLISH = {
   'وسيط تقديمي معتمد (IB) يربطك بأقوى منصات التداول العالمية، بإرشاد مهني وشفافية كاملة وخدمة عملاء استثنائية.':'VALID VX provides broker introductions and onboarding information. Trading involves risk; review each broker’s legal terms.',
   'تابعنا':'Follow us','روابط سريعة':'Quick links','تحذير المخاطر:':'Risk warning:',
   'التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية. يُرجى التداول بمسؤولية.':'Trading financial markets involves significant risk and may result in the loss of capital. Information is educational and is not investment advice. Trade responsibly.',
-  '© 2026 VALID VX. جميع الحقوق محفوظة.':'© 2026 WALID VX. All rights reserved.',
+  '© 2026 VALID VX. جميع الحقوق محفوظة.':'© 2026 VALID VX. All rights reserved.',
+  'تحذير المخاطر: التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية. يُرجى التداول بمسؤولية.':'Risk warning: Trading CFDs and leveraged products is high risk and may result in the loss of all capital. This is general educational content, not investment advice or a solicitation to buy or sell. Never deposit money you cannot afford to lose. Some referral links may compensate VALID VX; review the broker and local regulatory terms.',
   'وسيط تقديمي · IB':'INTRODUCING BROKER · IB','شريك تقديمي':'INTRODUCING BROKER',
   'فيسبوك':'Facebook','تيك توك':'TikTok','إنستغرام':'Instagram','تيليجرام':'Telegram','القائمة':'Menu',
   'أدخل اسمك الكامل':'Enter your full name','أخبرنا عن اهتمامك: المنصة المفضلة، رأس المال التقريبي، أو أي سؤال.':'Tell us what you would like to know about broker platforms.',
   'تم تجهيز الرسالة، ولم تُرسل بعد':'Your email is ready, but has not been sent','اضغط الرابط لفتح تطبيق البريد وإرسالها بنفسك. ':'Open your email app and send it yourself. ',
   'فتح تطبيق البريد':'Open email app','يرجى مراجعة البيانات التالية':'Please check the following information','الاسم الكامل · بريد إلكتروني صحيح · رقم هاتف صحيح · نص الرسالة':'Full name · valid email · valid phone · message',
+  'الأسواق والأسعار':'Markets and prices','المفكرة الاقتصادية':'Economic calendar','مركز المعرفة':'Learning hub','مقارنة الوسطاء':'Broker comparison','الأسواق':'Markets',
+  'نظرة عامة على الأسواق':'Market overview','تابع الأصول':'Follow assets','من مصدرها':'from their source','لوحة أسعار ومخططات تفاعلية من TradingView لمتابعة أزواج العملات والذهب والنفط والمؤشرات والعملات الرقمية.':'Interactive TradingView quotes and charts for forex pairs, gold, oil, indices, and cryptocurrencies.','عرض الأسواق والبيانات عبر TradingView':'View markets and data on TradingView',
+  'للاطلاع فقط:':'For information only:','قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار.':'Data may be delayed or differ from broker execution prices. Quotes are provided by TradingView and its data providers; this is not a recommendation or guaranteed execution price. Verify prices with your broker.',
+  'افهم الأحداث':'Understand events','قبل صدورها':'before they happen','تابع مواعيد البيانات الاقتصادية وقرارات البنوك المركزية من مصادرها، وانتبه إلى اختلاف التوقيت والمنطقة.':'Follow economic releases and central-bank decisions, and check the timezone and region.',
+  '١ · حدّد المنطقة والتوقيت':'1 · Set region and timezone','اختر المنطقة الزمنية المناسبة لك؛ قد يُعرض موعد الحدث بتوقيت مختلف عن توقيتك المحلي.':'Choose your timezone; event times may differ from your local time.',
+  '٢ · راجع المصدر والتحديث':'2 · Check source and update','تحقق من وقت النشر والقراءة السابقة والتوقعات، ثم قارن النتيجة بالمصدر الأصلي عند توفرها.':'Check publication time, previous readings, and estimates; verify results with the original source when available.',
+  '٣ · تذكّر أثر التقلب':'3 · Remember volatility','الأخبار قد توسّع الفروقات وتزيد الانزلاق السعري؛ لا يعني التوقع اتجاهًا مؤكدًا للسوق.':'News can widen spreads and increase slippage; forecasts do not determine market direction.',
+  'تقويم TradingView':'TradingView calendar','تقويم اقتصادي قابل للتصفية حسب الدولة والأهمية والوقت.':'Economic calendar filterable by country, importance, and time.','فتح التقويم ومراجعة توقيته ↗':'Open calendar and check timezone ↗','فتح التقويم ↗':'Open calendar ↗','المفكرة الاقتصادية عبر TradingView':'Economic calendar via TradingView','هذه روابط إلى مصادر خارجية؛ VALID VX لا يتحكم بمواعيدها أو محتواها أو تحديثاتها.':'These are external sources. VALID VX does not control their schedules, content, or updates.',
+  'تعلّم الأساسيات':'Learn the basics','بهدوء':'at your own pace','معلومات تمهيدية تساعدك على طرح الأسئلة الصحيحة وفهم المخاطر قبل فتح حساب أو إيداع أموال.':'Introductory information to help you ask informed questions and understand risks before opening an account or depositing funds.',
+  'ما الرافعة والهامش؟':'What are leverage and margin?','الرافعة تضخم التعرض للسوق مقارنة برصيدك، وقد تضخم الخسائر أيضًا. افهم متطلبات الهامش والتصفية لدى الكيان المحدد.':'Leverage increases market exposure relative to your balance and can magnify losses. Understand margin and liquidation rules for the relevant entity.',
+  'ما تكلفة الصفقة؟':'What does a trade cost?','راجع السبريد والعمولة والتمويل الليلي والتحويل وفروق التنفيذ؛ قد تختلف التكاليف بحسب الأداة والحساب والجهة القانونية.':'Review spreads, commissions, overnight financing, conversion, and execution differences. Costs vary by instrument, account, and legal entity.',
+  'كيف تقيّم المخاطر؟':'How can you assess risk?','استخدم حسابًا تجريبيًا للتعلّم، وافهم احتمال خسارة كامل رأس المال، ولا تستخدم أموالًا تحتاجها لمعيشتك أو التزاماتك.':'Consider a demo account while learning. You may lose all invested capital; do not use money needed for living costs or obligations.',
+  'تعليم المستثمرين — Investor.gov':'Investor education — Investor.gov','مواد توعوية عن الاستثمار، الاحتيال، وفهم المخاطر.':'Educational resources on investing, fraud, and risk.','تثقيف المستثمر — CFTC':'Investor education — CFTC','معلومات عن أسواق المشتقات والتحقق من الوسطاء ومخاطر الرافعة.':'Information about derivatives, checking intermediaries, and leverage risks.','زيارة المصدر ↗':'Visit source ↗','المحتوى تعليمي عام، وليس نصيحة مالية أو قانونية أو ضريبية، ولا يراعي أهدافك أو وضعك المالي.':'This is general education, not financial, legal, or tax advice, and does not account for your goals or financial circumstances.',
+  'قارن الشروط':'Compare terms','قبل الاختيار':'before choosing','لا توجد منصة واحدة تناسب الجميع. قارن الكيان القانوني والتكاليف والأدوات المتاحة في بلدك من المصادر الرسمية.':'No single platform suits everyone. Compare the legal entity, costs, and products available in your country using official sources.',
+  'ما الذي تتحقق منه؟':'What to check','الجهة المنظمة والكيان':'Regulator and legal entity','يختلف حسب بلد الإقامة — تحقق من الكيان والعنوان في الاتفاقية.':'Varies by country — verify the entity in the client agreement.','الرسوم والسبريد':'Fees and spreads','حسب الأداة والحساب وتوقيت التنفيذ؛ راجع جدول الرسوم.':'Depend on instrument, account, and execution time; review the fee schedule.','الرافعة والحد الأدنى':'Leverage and minimum deposit','يتغيران بحسب الكيان والمنطقة ونوع الحساب.':'Vary by entity, region, and account type.','المنتجات والتوافر':'Products and availability','تحقق من المنتجات المسموح بها في بلدك.':'Check which products are permitted in your country.','المصدر الرسمي':'Official source','الموقع الرسمي':'Official website',
+  'إفصاح عن الإحالات:':'Referral disclosure:','قد تتضمن بعض روابط التسجيل معرّف إحالة، وقد تحصل VALID VX على مقابل من الشريك عند التسجيل أو النشاط، بحسب الاتفاقية. تحقق من شروط كل وسيط؛ المقارنة ليست تصنيفًا أو توصية، والأسعار والشروط قابلة للتغيير.':'Some registration links include referral identifiers. VALID VX may receive compensation from partners for registrations or activity, depending on the agreement. Check each broker’s terms; this comparison is not a ranking or recommendation, and terms may change.',
+  'تحقق من الترخيص بنفسك':'Verify licensing yourself','استخدم سجل الجهة الرقابية المذكورة في اتفاقية العميل؛ لا تفترض أن علامة تجارية واحدة تعني أن كل كياناتها تحمل الترخيص نفسه.':'Use the register of the regulator named in the client agreement. A brand may operate through multiple legal entities with different authorizations.','سجل FCA ↗':'FCA register ↗','قاعدة NFA BASIC ↗':'NFA BASIC database ↗','سجل CySEC ↗':'CySEC register ↗','خطوات تحقق بسيطة':'Simple verification steps','طابق الاسم القانوني ورقم الترخيص والنطاق الإلكتروني وبلد الخدمة، واقرأ تحذيرات الجهة الرقابية قبل التسجيل.':'Match the legal name, license number, website domain, and country served; read regulator warnings before registering.','دليل التحقق من المختصين ↗':'Guide to verifying professionals ↗',
+  'تحذير المخاطر: التداول في الأسواق المالية يحمل مخاطر عالية وقد يؤدي إلى خسارة رأس المال. المحتوى لأغراض تعليمية ولا يُعدّ نصيحة استثمارية. يُرجى التداول بمسؤولية.':'Risk warning: Trading CFDs and leveraged products is high risk and may result in the loss of all capital. This is general educational content, not investment advice or a solicitation to buy or sell. Never deposit money you cannot afford to lose. Some referral links may compensate VALID VX; review the broker and local regulatory terms.',
   'صغير':'Small'
 };
 
@@ -2322,13 +2518,13 @@ function setLanguage(language){
   const titleKey = ['justmarkets','exness','vantage'].includes(routeKey) ? routeKey : 'home';
   document.title = TITLES[currentLanguage][titleKey];
   document.querySelector('meta[name="description"]').content = isEnglish
-    ? 'VALID VX provides information about global trading platforms JustMarkets, Exness, Vantage, and Versus Trade, with onboarding guidance and clear risk disclosures.'
-    : 'تعرّف على VALID VX: وسيط تقديمي يربطك بمنصات التداول العالمية JustMarkets وExness وVantage وVersus Trade، مع دعم عربي وإرشاد تعليمي وتوضيح لمخاطر التداول.';
+    ? 'VALID VX offers educational resources, market information, an economic calendar, and transparent comparisons of broker terms. Trading is high risk.'
+    : 'VALID VX: معلومات تعليمية، نظرة على الأسواق ومفكرة اقتصادية، ومقارنة شفافة لشروط الوسطاء. التداول عالي المخاطر.';
   document.querySelector('meta[property="og:site_name"]').content = 'VALID VX';
   document.querySelector('meta[property="og:title"]').content = isEnglish?'VALID VX — Your gateway to global markets':'VALID VX — بوّابتك إلى الأسواق العالمية';
   document.querySelector('meta[property="og:description"]').content = isEnglish
-    ? 'Information about global trading platforms and onboarding. Trading involves significant risk and may result in the loss of capital.'
-    : 'دعم عربي ومعلومات للتعرّف على منصات التداول العالمية. التداول ينطوي على مخاطر عالية وقد يؤدي إلى خسارة رأس المال.';
+    ? 'Educational resources, market information, an economic calendar, and transparent broker comparisons. Trading is high risk.'
+    : 'معلومات تعليمية، نظرة على الأسواق ومفكرة اقتصادية، ومقارنة شفافة للوسطاء. التداول عالي المخاطر وقد يؤدي إلى خسارة رأس المال.';
   document.querySelector('meta[name="twitter:title"]').content = document.querySelector('meta[property="og:title"]').content;
   document.querySelector('meta[name="twitter:description"]').content = document.querySelector('meta[property="og:description"]').content;
   const pageUrl = new URL('https://www.validvx.com/');
