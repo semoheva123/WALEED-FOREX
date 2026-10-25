@@ -71,4 +71,60 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/" />
   </url>
+  <url>
+    <loc>https://www.validvx.com/ar/brokers/justmarkets/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/justmarkets/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/justmarkets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/justmarkets/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/brokers/justmarkets/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/justmarkets/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/justmarkets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/justmarkets/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/brokers/exness/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/exness/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/exness/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/exness/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/brokers/exness/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/exness/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/exness/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/exness/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/brokers/vantage/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/vantage/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/vantage/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/vantage/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/brokers/vantage/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/vantage/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/vantage/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/vantage/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/brokers/versus-trade/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/versus-trade/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/versus-trade/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/versus-trade/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/brokers/versus-trade/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/versus-trade/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/versus-trade/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/versus-trade/" />
+  </url>
 </urlset>
