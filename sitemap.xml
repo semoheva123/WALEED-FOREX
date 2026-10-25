@@ -3,18 +3,72 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.validvx.com/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/" />
   </url>
   <url>
     <loc>https://www.validvx.com/?lang=en</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/learning/forex-basics/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/learning/forex-basics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/learning/forex-basics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/learning/forex-basics/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/learning/forex-basics/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/learning/forex-basics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/learning/forex-basics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/learning/forex-basics/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/learning/leverage-and-risk/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/learning/leverage-and-risk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/learning/leverage-and-risk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/learning/leverage-and-risk/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/learning/leverage-and-risk/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/learning/leverage-and-risk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/learning/leverage-and-risk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/learning/leverage-and-risk/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/ar/brokers/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/" />
+  </url>
+  <url>
+    <loc>https://www.validvx.com/en/brokers/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.validvx.com/ar/brokers/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.validvx.com/en/brokers/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.validvx.com/ar/brokers/" />
   </url>
 </urlset>
