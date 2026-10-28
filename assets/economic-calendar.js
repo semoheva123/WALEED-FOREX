@@ -1,4 +1,4 @@
-/* Snapshot-based economic calendar. Data is not real-time. */
+/* Calendar shares one data state with image export; upstream freshness is not guaranteed. */
 (()=>{
 const dictionary={
  'RBA Gov Bullock Speaks':'تصريحات محافظ البنك الاحتياطي الأسترالي بولوك','Trimmed Mean CPI m/m':'مؤشر التضخم الأساسي المشذب الشهري','Official Cash Rate':'سعر الفائدة النقدية الرسمي','RBNZ Rate Statement':'بيان الفائدة للبنك المركزي النيوزيلندي','RBNZ Press Conference':'المؤتمر الصحفي للبنك المركزي النيوزيلندي','Annual Budget Release':'صدور الموازنة السنوية','Autumn Forecast Statement':'بيان التوقعات الاقتصادية للخريف','BOC Monetary Policy Report':'تقرير السياسة النقدية لبنك كندا','BOC Rate Statement':'بيان الفائدة لبنك كندا','Overnight Rate':'سعر الفائدة لليلة واحدة','BOC Press Conference':'المؤتمر الصحفي لبنك كندا','Advance GDP Price Index q/q':'التقدير الأولي لمؤشر أسعار الناتج المحلي الفصلي','Main Refinancing Rate':'سعر إعادة التمويل الرئيسي','ECB Press Conference':'المؤتمر الصحفي للمركزي الأوروبي','Tokyo Core CPI y/y':'مؤشر التضخم الأساسي في طوكيو السنوي','BOJ Policy Rate':'سعر الفائدة لبنك اليابان','BOJ Outlook Report':'تقرير التوقعات لبنك اليابان','BOJ Press Conference':'المؤتمر الصحفي لبنك اليابان','German Prelim CPI m/m':'التقدير الأولي للتضخم الألماني الشهري','German Prelim GDP q/q':'التقدير الأولي للناتج المحلي الألماني الفصلي','GDP m/m':'الناتج المحلي الإجمالي الشهري','Employment Cost Index q/q':'مؤشر تكلفة التوظيف الفصلي',
@@ -19,9 +19,29 @@ function abbreviation(title){
 function assets(e){const title=e.title.toLowerCase();if(/crude oil inventories|oil inventory/.test(title))return ['WTI CFD','Brent CFD'];if(e.country==='USD'&&/cpi|inflation|pce|fomc|federal funds|non-farm|unemployment/.test(title))return ['USD','XAU/USD','EUR/USD'];if(e.country==='EUR'&&/ecb|cpi|inflation|rate/.test(title))return ['EUR/USD','EUR/GBP'];return [];}
 function render(){if(!data)return;const now=new Date(), c=country.value, level=impact.value, range=period.value;
  let entries=data.events.filter(e=>{const d=new Date(e.date);if(Number.isNaN(d.valueOf()))return false;if(c!=='all'&&e.country!==c)return false;if(level==='high'&&e.impact!=='High')return false;if(level==='medium'&&!['High','Medium'].includes(e.impact))return false;if(range==='today'&&day(d)!==day(now))return false;return true}).sort((a,b)=>new Date(a.date)-new Date(b.date));
- root.innerHTML=entries.length?entries.map(e=>{let a=dictionary[e.title], symbols=assets(e), im=({High:'مرتفع | High',Medium:'متوسط | Medium',Low:'منخفض | Low',Holiday:'عطلة | Holiday'})[e.impact]||e.impact;const fields=[['الفعلي | Actual',e.actual],['المتوقع | Forecast',e.forecast],['السابق | Previous',e.previous]].map(([n,v])=>`<div><small>${n}</small><strong dir="ltr">${esc(v||'—')}</strong></div>`).join('');return `<article class="vx-event"><div class="vx-event-meta"><time>${esc(fmt.format(new Date(e.date)))} <small>TRT</small></time><span class="vx-importance vx-i-${esc(e.impact)}">${esc(im)}</span><span dir="ltr">${esc(e.country)}</span></div><div class="vx-event-title"><strong>${a?esc(a):'اختصار تلقائي | Auto initials: '+esc(abbreviation(e.title))}</strong><span dir="ltr">${esc(e.title)}</span></div><div class="vx-event-values">${fields}</div><div class="vx-event-assets">${symbols.length?'أصول قد تتأثر | Potentially affected: '+symbols.map(x=>`<span dir="ltr">${esc(x)}</span>`).join(' '):'لم تُحدد أصول مرتبطة | No asset mapping available'}</div></article>`}).join(''):'<p class="vx-empty">لا توجد أحداث مطابقة في البيانات المتاحة. | No matching events in the available snapshot.</p>';
- const updated=new Date(data.updated_at), mins=Math.floor((Date.now()-updated)/60000);status.textContent=`آخر تحديث للبيانات | Last update: ${fmt.format(updated)} TRT${mins>90?' · ⚠ بيانات قديمة / Stale data':''} · ${entries.length} حدث / events`;
+ window.vxCalendarExport={updatedAt:data.updated_at, fetchedAt:data.fetched_at||null,period:range,events:entries.map(e=>({...e,title_ar:dictionary[e.title]||''}))};
+ root.innerHTML=entries.length?entries.map(e=>{let a=dictionary[e.title], symbols=assets(e), im=({High:'مرتفع | High',Medium:'متوسط | Medium',Low:'منخفض | Low',Holiday:'عطلة | Holiday'})[e.impact]||e.impact;const fields=[['الفعلي<br><span lang="en">Actual</span>',e.actual],['المتوقع<br><span lang="en">Forecast</span>',e.forecast],['السابق<br><span lang="en">Previous</span>',e.previous]].map(([n,v])=>`<div><small>${n}</small><strong dir="ltr">${esc(v||'—')}</strong></div>`).join('');return `<article class="vx-event"><div class="vx-event-meta"><time>${esc(fmt.format(new Date(e.date)))} <small>TRT</small></time><span class="vx-importance vx-i-${esc(e.impact)}">${esc(im)}</span><span dir="ltr">${esc(e.country)}</span></div><div class="vx-event-title"><strong>${a?esc(a):'اختصار تلقائي | Auto initials: '+esc(abbreviation(e.title))}</strong><span dir="ltr">${esc(e.title)}</span></div><div class="vx-event-values">${fields}</div><div class="vx-event-assets">${symbols.length?'أصول قد تتأثر | Potentially affected: '+symbols.map(x=>`<span dir="ltr">${esc(x)}</span>`).join(' '):'الأصول المرتبطة: — | Assets: —'}</div></article>`}).join(''):'<p class="vx-empty">لا توجد أحداث مطابقة في البيانات المتاحة. | No matching events in the available snapshot.</p>';
+ const updated=new Date(data.updated_at), valid=Boolean(data.updated_at)&&Number.isFinite(updated.valueOf()), mins=valid?Math.floor((Date.now()-updated)/60000):Infinity;status.textContent=`${valid?'آخر تعديل معلن للمصدر | Source last modified: '+fmt.format(updated)+' TRT':'وقت تعديل المصدر غير متاح | Source update time unavailable'}${mins>90?' · ⚠ تحقق من المصدر / Check source':''} · ${entries.length} حدث / events`;
 }
 [country,impact,period].forEach(x=>x.addEventListener('change',render));
-fetch('/data/economic-calendar.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Data unavailable');return r.json()}).then(value=>{if(!Array.isArray(value.events)||!value.updated_at)throw Error('Invalid data');data=value;render()}).catch(()=>{status.textContent='تعذر تحميل البيانات | Calendar data unavailable';root.innerHTML='<p class="vx-empty">البيانات غير متاحة حاليًا. يرجى مراجعة المصدر مباشرة. | Data unavailable; please check the source.</p>'});
+let inFlight=null;
+async function refreshCalendar(){
+ if(inFlight)return inFlight;
+ inFlight=(async()=>{
+  const response=await fetch('/api/calendar',{cache:'no-store'});
+  if(!response.ok)throw Error(response.status===429?'rate_limited':'unavailable');
+  const value=await response.json();
+  if(!Array.isArray(value.events)||!value.events.length||!value.fetched_at)throw Error('invalid');
+  data=value;render();return window.vxCalendarExport;
+ })();
+ try{return await inFlight}finally{inFlight=null}
+}
+window.vxRefreshCalendar=refreshCalendar;
+(async()=>{
+ try{await refreshCalendar()}
+ catch(_){
+  try{const r=await fetch('/data/economic-calendar.json',{cache:'no-store'});if(!r.ok)throw Error('snapshot');const value=await r.json();if(!Array.isArray(value.events)||!value.updated_at)throw Error('invalid');data=value;render();status.textContent+=' · ⚠ عرض نسخة محفوظة؛ تعذر الاتصال بالمصدر | Saved snapshot';}
+  catch(_){status.textContent='تعذر تحميل البيانات | Calendar data unavailable';root.innerHTML='<p class="vx-empty">البيانات غير متاحة حاليًا. يرجى مراجعة المصدر مباشرة. | Data unavailable; please check the source.</p>'}
+ }
+})();
 })();
