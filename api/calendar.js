@@ -14,6 +14,9 @@ module.exports = async function handler(req, res) {
     if (!events.length) return res.status(502).json({ error: 'invalid_source' });
     const modified = response.headers.get('last-modified');
     const time = modified && Number.isFinite(Date.parse(modified)) ? new Date(modified).toISOString() : null;
+    // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
+    // The original fetched_at remains unchanged when served from cache.
+    res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
     return res.status(200).json({ updated_at: time, fetched_at: new Date().toISOString(), source: 'Fair Economy / Forex Factory', events });
   } catch (_) { return res.status(502).json({ error: 'source_unavailable' }); }
 };
