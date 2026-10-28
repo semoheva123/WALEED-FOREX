@@ -1116,13 +1116,26 @@ body.page-broker .hero{display:none}
   .broker-block{padding:var(--sp-3)}
   .back-link{margin-top:var(--sp-2)}
 }
+
+/* VALID VX market terminal */
+.vx-terminal{position:relative;overflow:hidden;border:1px solid rgba(222,192,124,.24);border-radius:20px;background:linear-gradient(145deg,#101925,#080e18);box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.vx-terminal:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#d8b976,transparent)}
+.vx-terminal-head{padding:1.25rem 1.5rem;display:flex;justify-content:space-between;gap:1rem;align-items:center;border-bottom:1px solid rgba(255,255,255,.08);flex-wrap:wrap}
+.vx-terminal-title{display:flex;align-items:center;gap:.9rem}.vx-mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid #d2b27388;border-radius:12px;color:#e0c489;font-weight:800;direction:ltr}.vx-terminal-title strong{display:block;font-size:1rem}.vx-terminal-title small{display:block;color:#a4b1bd;font-size:.74rem;letter-spacing:.08em;direction:ltr;text-align:start}.vx-source{border:1px solid #d2b27355;border-radius:100px;padding:.35rem .8rem;color:#e7cd95;font-size:.75rem;white-space:nowrap}.vx-widget-area{padding:clamp(.6rem,2vw,1.3rem)}.vx-terminal-foot{display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap;padding:.85rem 1.4rem;background:rgba(255,255,255,.025);color:#a8b7c3;font-size:.78rem;border-top:1px solid #ffffff10}.vx-filters{display:flex;gap:.8rem;flex-wrap:wrap;align-items:end;padding:1rem 1.4rem;border-bottom:1px solid #ffffff10}.vx-field{display:grid;gap:.25rem;min-width:170px;flex:1}.vx-field label{font-size:.75rem;color:#a9b8c1}.vx-field select{width:100%;padding:.7rem .8rem;border:1px solid #ffffff24;border-radius:9px;color:#e5e9ee;background:#172330;font:inherit;font-size:.85rem}.vx-field select:focus-visible{outline:2px solid #e3c079;outline-offset:2px}.vx-terminal .tradingview-widget-copyright{font-size:.75rem}.vx-fallback{font-size:.8rem;margin:.5rem .2rem;color:#9aaebc}.vx-fallback a{color:#e2c584;text-decoration:underline}.vx-note{margin-top:1rem}.vx-lang-actions{display:flex;gap:.4rem;align-items:center}.vx-lang-actions button{border:1px solid #d2b27355;background:#13202a;color:#d8c49c;border-radius:8px;padding:.5rem .75rem;cursor:pointer;font:inherit;font-size:.75rem}.vx-lang-actions button[aria-pressed="true"]{background:#d3b777;color:#0b1119;font-weight:700}.vx-caldetail{padding:.8rem 1rem;color:#dec890;font-size:.85rem;border-bottom:1px solid #ffffff15;margin:.5rem 0}.vx-analysis{padding:1.25rem 1.4rem;border-top:1px solid #ffffff12;background:#101d27}.vx-analysis h3{font-size:1rem;margin:0 0 .5rem}.vx-analysis p{font-size:.82rem;color:#b4c1ca;margin:.5rem 0}.vx-impact-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin:.8rem 0}.vx-impact-tags span{border:1px solid #d2b27355;background:#d1b36b0b;padding:.32rem .7rem;border-radius:6px;font-size:.8rem;color:#e8d5ad;direction:ltr}.vx-analysis .vx-caveat{font-size:.75rem;color:#9cabb5}.vx-calendar-steps{margin-top:1.5rem}@media(max-width:560px){.vx-terminal-head{padding:1rem}.vx-terminal-foot{padding:.8rem 1rem}.vx-field{min-width:135px}.vx-terminal-title strong{font-size:.9rem}}
+
+
+.vx-event-list{display:grid;gap:.7rem}.vx-event{background:#111e2a;border:1px solid #ffffff14;border-radius:12px;padding:1rem;display:grid;gap:.7rem}.vx-event-meta{display:flex;gap:.7rem;flex-wrap:wrap;align-items:center;color:#b7c4cf;font-size:.78rem}.vx-event-meta time{color:#e4c781;font-weight:bold}.vx-importance{padding:.15rem .5rem;border-radius:5px;background:#34414b}.vx-i-High{background:#7c343a;color:#ffdbd5}.vx-i-Medium{background:#725526;color:#fce3aa}.vx-event-title strong,.vx-event-title span{display:block}.vx-event-title span{font-size:.78rem;color:#9aabb7;text-align:start}.vx-event-values{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}.vx-event-values div{background:#ffffff08;padding:.55rem;border-radius:6px}.vx-event-values small,.vx-event-values strong{display:block;font-size:.72rem}.vx-event-values small{color:#a9b8c1}.vx-event-values strong{font-size:.85rem;color:#e9d4a3}.vx-event-assets{font-size:.76rem;color:#b6c2ca}.vx-event-assets span{display:inline-block;color:#e3c489;border:1px solid #d5b36c55;border-radius:5px;padding:.1rem .4rem}.vx-empty{padding:1.2rem;color:#bac5cf}
+
+.skip-link{position:fixed;top:8px;left:8px;z-index:10000;transform:translateY(-200%);background:#f2d28b;color:#07121c;padding:.65rem 1rem;border-radius:8px;font-weight:bold}.skip-link:focus{transform:translateY(0)}
 </style>
+<link rel="stylesheet" href="/assets/premium.css?v=20261028-11">
 </head>
 <body>
+<a class="skip-link" href="#view-home">تجاوز إلى المحتوى | Skip to content</a>
 <div class="aurora-lines" aria-hidden="true"></div>
 
 <!-- ============================ TRUST BAR ============================ -->
-<div class="trust-bar" role="note" aria-label="شريط الثقة">
+<div class="trust-bar" role="region" aria-label="شريط الثقة">
   <div class="trust-bar__inner">
     <span class="trust-bar__flag" aria-hidden="true">🤝</span>
     <span><b>وكالة تقديمية مرخّصة</b></span>
@@ -1168,6 +1181,7 @@ body.page-broker .hero{display:none}
   <a href="#platforms">المنصات</a>
   <a href="#markets">الأسواق والأسعار</a>
   <a href="#calendar">المفكرة الاقتصادية</a>
+  <a href="#market-news">أخبار الأسواق</a>
   <a href="#learn">مركز المعرفة</a>
   <a href="#compare">مقارنة الوسطاء</a>
   <a data-broker-page="justmarkets" href="/ar/brokers/justmarkets/">تفاصيل JustMarkets</a>
@@ -1194,7 +1208,9 @@ body.page-broker .hero{display:none}
 
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="home">
-  <canvas id="globe-canvas" aria-hidden="true"></canvas>
+  <video class="vx-hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" poster="/assets/trading-poster.jpg"><source src="/assets/trading-smooth.mp4" type="video/mp4"></video>
+  <div class="vx-hero-motion" aria-hidden="true"><div class="vx-hero-glow vx-hero-glow--one"></div><div class="vx-hero-glow vx-hero-glow--two"></div><svg class="vx-hero-filaments" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="vxMotionGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d4b06b" stop-opacity="0"/><stop offset=".47" stop-color="#f4dca6" stop-opacity=".85"/><stop offset="1" stop-color="#c5a26c" stop-opacity="0"/></linearGradient></defs><path d="M-60 950 C 260 810, 250 380, 650 -120"/><path d="M-150 800 C 220 700, 350 230, 810 -160"/><path d="M65 980 C 400 620, 340 200, 980 -130"/></svg></div>
+  
   <div class="hero__inner">
     <!-- ختم الشريك التقديمي المعتمد -->
     <svg class="hero__seal" viewBox="0 0 120 120" role="img" aria-label="شريك تقديمي معتمد">
@@ -1244,6 +1260,7 @@ body.page-broker .hero{display:none}
   </div>
 </section>
 
+<section class="vx-entry" aria-label="الوصول السريع"><div class="vx-entry-inner"><div class="vx-entry-bar"><div class="vx-entry-label"><small>VALID VX / MARKET DESK</small><strong>ابدأ من هنا</strong></div><a href="#markets"><span class="vx-entry-icon">↗</span><span class="vx-entry-text"><b>لوحة الأسواق</b><small>أسعار وأصول عالمية</small></span><span class="vx-entry-arrow">↗</span></a><a href="#calendar"><span class="vx-entry-icon">◷</span><span class="vx-entry-text"><b>المفكرة الاقتصادية</b><small>أحداث وبيانات السوق</small></span><span class="vx-entry-arrow">↗</span></a><a href="#compare"><span class="vx-entry-icon">≋</span><span class="vx-entry-text"><b>مقارنة الوسطاء</b><small>تعرّف على أهم الشروط</small></span><span class="vx-entry-arrow">↗</span></a></div></div></section>
 <!-- ============================ ABOUT ============================ -->
 <section class="section" id="about"><div class="container">
   <div class="section-head reveal">
@@ -1537,29 +1554,14 @@ body.page-broker .hero{display:none}
     <h2>تابع الأصول <span class="grad-text">من مصدرها</span></h2>
     <p>لوحة أسعار ومخططات تفاعلية من TradingView لمتابعة أزواج العملات والذهب والنفط والمؤشرات والعملات الرقمية.</p>
   </div>
-  <div class="card reveal" style="padding:clamp(.5rem,2vw,1.25rem)">
-    <div class="tradingview-widget-container" style="width:100%;min-height:620px">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener noreferrer" target="_blank"><span>عرض الأسواق والبيانات عبر TradingView</span></a></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-      {
-        "width":"100%",
-        "height":"600",
-        "symbolsGroups":[
-          {"name":"الفوركس","symbols":[{"name":"FX:EURUSD","displayName":"EUR/USD"},{"name":"FX:GBPUSD","displayName":"GBP/USD"},{"name":"FX:USDJPY","displayName":"USD/JPY"}]},
-          {"name":"السلع","symbols":[{"name":"OANDA:XAUUSD","displayName":"Gold / USD"},{"name":"TVC:USOIL","displayName":"WTI Crude Oil"}]},
-          {"name":"المؤشرات","symbols":[{"name":"FOREXCOM:SPXUSD","displayName":"S&P 500"},{"name":"NASDAQ:NDX","displayName":"Nasdaq 100"}]},
-          {"name":"العملات الرقمية","symbols":[{"name":"BITSTAMP:BTCUSD","displayName":"Bitcoin / USD"},{"name":"BITSTAMP:ETHUSD","displayName":"Ethereum / USD"}]}
-        ],
-        "showSymbolLogo":true,
-        "colorTheme":"dark",
-        "isTransparent":true,
-        "locale":"ar_AE"
-      }
-      </script>
-    </div>
+  <div class="vx-market-desk">
+    <div class="vx-market-masthead"><div class="vx-market-brand"><div class="vx-market-emblem" aria-hidden="true">VX</div><div><span class="vx-market-brandname" dir="ltr">VALID<span>VX</span><small>.COM</small></span><span class="vx-market-branddesc" dir="ltr">GLOBAL MARKETS DESK</span></div></div><div class="vx-market-masthead-right"><span class="vx-market-source">TRADINGVIEW <i aria-hidden="true">↗</i></span><span class="vx-market-caption">بيانات السوق من مزودي TradingView</span></div></div>
+    <div class="vx-market-intro"><div><span class="vx-market-overline" dir="ltr">MARKET OVERVIEW / 01</span><h3>الأسواق العالمية <span>في مكان واحد</span></h3><p>تابع أبرز الأدوات المالية وقارن حركتها من مصدر البيانات.</p></div><div class="vx-market-pills" aria-label="فئات الأصول"><span>FX</span><span>METALS</span><span>INDICES</span><span>CRYPTO</span></div></div>
+    <div class="vx-market-body"><div class="vx-market-panel"><div class="vx-market-panel-head"><div><span class="vx-market-indicator" aria-hidden="true"></span><strong>قائمة الأسعار</strong><small dir="ltr">MARKET QUOTES</small></div><span>TradingView</span></div><div class="vx-market-widget-wrap"><div id="vx-market-widget" style="min-height:600px"></div></div></div>
+    <aside class="vx-market-aside"><span class="vx-market-overline" dir="ltr">THE WATCHLIST</span><h4>نظرة على الأصول</h4><p>مجموعة مختارة لمتابعة الأسواق الرئيسية.</p><div class="vx-market-asset"><span class="vx-asset-number">01</span><div><strong>العملات</strong><small>FOREX</small></div><span aria-hidden="true">↗</span></div><div class="vx-market-asset"><span class="vx-asset-number">02</span><div><strong>المعادن والنفط</strong><small>COMMODITIES</small></div><span aria-hidden="true">↗</span></div><div class="vx-market-asset"><span class="vx-asset-number">03</span><div><strong>المؤشرات</strong><small>INDICES</small></div><span aria-hidden="true">↗</span></div><div class="vx-market-asset"><span class="vx-asset-number">04</span><div><strong>الأصول الرقمية</strong><small>DIGITAL ASSETS</small></div><span aria-hidden="true">↗</span></div><div class="vx-market-aside-note">تختلف الأسعار بحسب مزود البيانات وقد تتأخر.</div><a class="vx-market-external" href="https://www.tradingview.com/markets/" target="_blank" rel="noopener noreferrer">استكشف الأسواق <span aria-hidden="true">↗</span></a></aside></div>
+    <div class="vx-market-footer"><span dir="ltr">VALIDVX.COM &nbsp; / &nbsp; MARKET INTELLIGENCE</span><a href="https://www.tradingview.com/markets/" target="_blank" rel="noopener noreferrer">إذا لم تظهر البيانات، افتح TradingView ↗</a></div>
   </div>
-  <p class="data-notice"><span aria-hidden="true">ⓘ</span><span><strong>للاطلاع فقط:</strong> قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار.</span></p>
+  <p class="data-notice"><span aria-hidden="true">ⓘ</span><span><strong>للاطلاع فقط:</strong> قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار. النفط وبعض المؤشرات عقود فروقات (CFD) وقد تختلف عن أسعار المؤشر أو السوق المرجعي.</span></p>
 </div></section>
 
 <!-- ============================ ECONOMIC CALENDAR ============================ -->
@@ -1569,19 +1571,19 @@ body.page-broker .hero{display:none}
     <h2>افهم الأحداث <span class="grad-text">قبل صدورها</span></h2>
     <p>تابع مواعيد البيانات الاقتصادية وقرارات البنوك المركزية من مصادرها، وانتبه إلى اختلاف التوقيت والمنطقة.</p>
   </div>
-  <div class="calendar-steps">
+  <div class="vx-calendar-desk">
+    <header class="vx-market-masthead"><div class="vx-market-brand"><div class="vx-market-emblem" aria-hidden="true">VX</div><div><span class="vx-market-brandname" dir="ltr">VALID<span>VX</span><small>.COM</small></span><span class="vx-market-branddesc" dir="ltr">ECONOMIC INTELLIGENCE</span></div></div><div class="vx-market-masthead-right"><span class="vx-market-source">FAIR ECONOMY / FOREX FACTORY</span><span class="vx-market-caption">بيانات دورية · قد تتأخر أو تتغير</span></div></header>
+    <div class="vx-cal-intro"><div><span class="vx-market-overline" dir="ltr">ECONOMIC CALENDAR / 02</span><h3>المفكرة الاقتصادية <span>العالمية</span></h3><p>الأحداث التي تحرك الأسواق، بالعربية والإنجليزية.</p></div><div class="vx-cal-time"><span>التوقيت المعروض | Time zone</span><strong>İSTANBUL · TRT</strong></div></div>
+    <div class="vx-cal-layout"><div class="vx-cal-main"><div class="vx-cal-controls"><div class="vx-cal-controls-title"><strong>تصفية الأحداث</strong><small dir="ltr">FILTER EVENTS</small></div><div class="vx-filters"><div class="vx-field"><label for="vx-period">الفترة | Period</label><select id="vx-period"><option value="today">اليوم | Today</option><option value="week">الأسبوع من المصدر | Source week</option></select></div><div class="vx-field"><label for="vx-country">العملة | Currency</label><select id="vx-country"><option value="all">الكل | All</option><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="JPY">JPY</option><option value="CAD">CAD</option><option value="AUD">AUD</option><option value="CHF">CHF</option><option value="NZD">NZD</option><option value="CNY">CNY</option></select></div><div class="vx-field"><label for="vx-impact">التأثير | Importance</label><select id="vx-impact"><option value="all">الكل | All</option><option value="medium" selected>متوسط ومرتفع | Medium &amp; high</option><option value="high">مرتفع | High</option></select></div></div></div>
+    <div class="vx-cal-list-head"><div><span class="vx-market-indicator" aria-hidden="true"></span><strong>الأحداث الاقتصادية</strong><small dir="ltr">ECONOMIC EVENTS</small></div></div><div class="vx-cal-content"><p id="vx-calendar-status" class="vx-calendar-status" role="status">جارٍ تحميل المفكرة | Loading calendar…</p><div class="vx-event-list" id="vx-events"></div></div></div>
+    <aside class="vx-cal-aside"><span class="vx-market-overline" dir="ltr">CALENDAR GUIDE</span><h4>اقرأ الحدث بوضوح</h4><p>ثلاث قراءات تساعدك على فهم البيانات عند صدورها.</p><div class="vx-cal-guide"><span>01</span><div><strong>الفعلي | Actual</strong><small>القراءة الصادرة، إن توفرت.</small></div></div><div class="vx-cal-guide"><span>02</span><div><strong>المتوقع | Forecast</strong><small>توقع المصدر قبل النشر.</small></div></div><div class="vx-cal-guide"><span>03</span><div><strong>السابق | Previous</strong><small>القراءة السابقة المتاحة.</small></div></div><div class="vx-cal-legend"><b>مستوى أهمية الحدث</b><span><i class="vx-dot vx-dot-high"></i>مرتفع | High</span><span><i class="vx-dot vx-dot-medium"></i>متوسط | Medium</span><span><i class="vx-dot vx-dot-low"></i>منخفض | Low</span></div><div class="vx-cal-note">مستوى الأهمية عام ولا يحدد اتجاه السوق أو حجم التأثير على أصل معين.</div><a class="vx-market-external" href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer">مراجعة المصدر <span aria-hidden="true">↗</span></a></aside></div>
+    <div class="vx-market-footer"><span dir="ltr">VALIDVX.COM &nbsp; / &nbsp; ECONOMIC INTELLIGENCE</span><span>المواعيد والقراءات قابلة للتغيير</span></div>
+    <div class="vx-cal-disclosure">الأصول المحتمل تأثرها أمثلة عامة لبعض الأحداث، وليست قياسًا للتأثير أو توقعًا للاتجاه. الترجمة محلية للأحداث المعروفة؛ تُعرض الاختصارات الآلية عند عدم توفرها. | Asset mappings are illustrative, not directional forecasts. Translations are available for selected events.</div>
+  </div>
+  <div class="calendar-steps vx-calendar-steps">
     <article class="calendar-step reveal d-1"><b>١ · حدّد المنطقة والتوقيت</b><p>اختر المنطقة الزمنية المناسبة لك؛ قد يُعرض موعد الحدث بتوقيت مختلف عن توقيتك المحلي.</p></article>
     <article class="calendar-step reveal d-2"><b>٢ · راجع المصدر والتحديث</b><p>تحقق من وقت النشر والقراءة السابقة والتوقعات، ثم قارن النتيجة بالمصدر الأصلي عند توفرها.</p></article>
     <article class="calendar-step reveal d-3"><b>٣ · تذكّر أثر التقلب</b><p>الأخبار قد توسّع الفروقات وتزيد الانزلاق السعري؛ لا يعني التوقع اتجاهًا مؤكدًا للسوق.</p></article>
-  </div>
-  <div class="card reveal" style="margin-top:var(--sp-3);padding:clamp(.5rem,2vw,1.25rem)">
-    <div class="tradingview-widget-container" style="width:100%;min-height:560px">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/economic-calendar/" rel="noopener noreferrer" target="_blank"><span>المفكرة الاقتصادية عبر TradingView</span></a></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-      {"colorTheme":"dark","isTransparent":true,"locale":"ar","countryFilter":"us,eu,gb","importanceFilter":"-1,0,1","width":"100%","height":"520"}
-      </script>
-    </div>
   </div>
   <div class="insight-grid" style="margin-top:var(--sp-3)">
     <article class="insight-card reveal d-1"><h3>تقويم TradingView</h3><p>تقويم اقتصادي قابل للتصفية حسب الدولة والأهمية والوقت.</p><a class="source-link" href="https://www.tradingview.com/economic-calendar/" target="_blank" rel="noopener noreferrer">فتح التقويم ومراجعة توقيته ↗</a></article>
@@ -1589,6 +1591,18 @@ body.page-broker .hero{display:none}
   </div>
   <p class="section-note">هذه روابط إلى مصادر خارجية؛ VALID VX لا يتحكم بمواعيدها أو محتواها أو تحديثاتها.</p>
 </div></section>
+
+<!-- ============================ MARKET NEWS ============================ -->
+<section class="section section--sep" id="market-news"><div class="container">
+  <div class="section-head reveal"><span class="eyebrow">VALID VX · MARKET INTELLIGENCE</span>
+    <h2>آخر أخبار <span class="grad-text">الأسواق العالمية</span></h2>
+    <p>عناوين اقتصادية بالعربية والإنجليزية مع المصدر ووقت النشر. | Economic headlines in Arabic and English, with source and publication time.</p>
+  </div>
+  <div class="vx-news-shell"><div class="vx-news-header"><div><strong>المشهد الاقتصادي | Market briefing</strong><p id="vx-news-status" role="status">جارٍ تحميل الأخبار | Loading headlines…</p></div><a href="https://news.google.com/search?q=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF" target="_blank" rel="noopener noreferrer">المصدر | Source ↗</a></div>
+    <div id="vx-news-list" class="vx-news-grid" aria-live="polite"></div>
+    <p class="vx-news-disclaimer">العناوين من Google News، وقد لا تكون شاملة أو لحظية. الترجمة آلية وقد تخطئ؛ راجع الخبر الأصلي. الأخبار ليست توصية استثمارية. | Headlines may be delayed; translations are automated and may contain errors. Not investment advice.</p>
+  </div>
+</div></section><div class="divider"></div>
 
 <!-- ============================ EDUCATION ============================ -->
 <section class="section section--sep" id="learn"><div class="container">
@@ -1776,7 +1790,7 @@ body.page-broker .hero{display:none}
       <h4>صفقات قليلة مُنتقاة مقابل صفقات كثيرة عشوائية</h4>
       <div class="bars">
         <!-- مجموعة 1: تداول عشوائي مكثّف -->
-        <div class="bar-col" aria-label="تداول عشوائي مكثّف">
+        <div class="bar-col" role="group" aria-label="تداول عشوائي مكثّف">
           <div class="bar bar--random" style="--h:70"></div>
           <div class="bar bar--random" style="--h:45"></div>
           <div class="bar bar--random" style="--h:58"></div>
@@ -1785,7 +1799,7 @@ body.page-broker .hero{display:none}
           <div class="bar bar--random" style="--h:40"></div>
         </div>
         <!-- مجموعة 2: صفقتان فعّالتان -->
-        <div class="bar-col" aria-label="صفقات منتقاة فعّالة">
+        <div class="bar-col" role="group" aria-label="صفقات منتقاة فعّالة">
           <div class="bar bar--eff" style="--h:92"></div>
           <div class="bar bar--eff" style="--h:84"></div>
         </div>
@@ -2353,6 +2367,7 @@ body.page-broker .hero{display:none}
       <a href="#strategy">استراتيجيتنا</a>
       <a href="#markets">الأسواق والأسعار</a>
       <a href="#calendar">المفكرة الاقتصادية</a>
+  <a href="#market-news">أخبار الأسواق</a>
       <a href="#learn">مركز المعرفة</a>
       <a href="/ar/">المركز التعليمي العربي</a>
       <a href="/en/">English learning centre</a>
@@ -2578,6 +2593,22 @@ const TITLES = {
   ar: {home:'VALID VX | تعليم الفوركس والأسواق ومقارنة الوسطاء',justmarkets:'JustMarkets — VALID VX',exness:'Exness — VALID VX',vantage:'Vantage — VALID VX'},
   en: {home:'VALID VX | Forex Education & Broker Comparisons',justmarkets:'JustMarkets — VALID VX',exness:'Exness — VALID VX',vantage:'Vantage — VALID VX'}
 };
+Object.assign(ENGLISH, {
+  'أخبار الأسواق':'Market news',
+  'آخر أخبار':'Latest',
+  'الأسواق العالمية':'global market news',
+  'تابع العناوين الاقتصادية من TradingView ومصادرها، وراجع الخبر الأصلي قبل اتخاذ أي قرار.':'Follow economic headlines from TradingView and its sources, and review the original story before making decisions.',
+  'قد تختلف لغة الأخبار وتغطيتها وفقًا للمصدر، وقد لا تتوفر ترجمة لكل خبر. الأخبار خارجية وليست توصية استثمارية.':'News language and coverage depend on the source; translations may not be available for every story. External news is not investment advice.',
+  'عرض الأخبار في TradingView ↗':'View news on TradingView ↗',
+  'قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار. النفط وبعض المؤشرات عقود فروقات (CFD) وقد تختلف عن أسعار المؤشر أو السوق المرجعي.':'Data may be delayed or differ from broker execution prices. Quotes are provided by TradingView and its providers and are not a recommendation or guaranteed price. Oil instruments are CFDs and may differ from spot prices.'
+});
+Object.assign(ENGLISH, {
+'لوحة الأسعار العالمية':'Global market quotes','المفكرة الاقتصادية العالمية':'Global economic calendar','المنطقة الاقتصادية':'Economic region','جميع المناطق المتاحة':'All available regions','الولايات المتحدة':'United States','منطقة اليورو':'Euro area','المملكة المتحدة':'United Kingdom','اليابان':'Japan','كندا':'Canada','أستراليا':'Australia','أهمية الحدث':'Event importance','جميع المستويات':'All levels','متوسط ومرتفع':'Medium and high','مرتفع فقط':'High only','إذا لم تظهر اللوحة،':'If the widget does not load,','افتح الأسواق على TradingView ↗':'open markets on TradingView ↗','إذا لم تظهر المفكرة،':'If the calendar does not load,','افتح المفكرة في TradingView ↗':'open the TradingView calendar ↗','العملات · المعادن · النفط · المؤشرات · الأصول الرقمية':'Forex · metals · oil · indices · digital assets','الأسعار إرشادية وقد تتأخر':'Indicative prices may be delayed','راجع المنطقة الزمنية داخل المفكرة والمصدر':'Check the calendar timezone and source','المواعيد والتوقعات قابلة للتغيير':'Times and forecasts may change'
+});
+Object.assign(ENGLISH, {'الوصول السريع':'Quick access','ابدأ من هنا':'Start here','لوحة الأسواق':'Market overview','أسعار وأصول عالمية':'Global prices and assets','أحداث وبيانات السوق':'Events and market data','تعرّف على أهم الشروط':'Explore the key terms'});
+Object.assign(ENGLISH, {'قد تتأخر البيانات أو تختلف عن أسعار التنفيذ لدى الوسيط. مصدر الأسعار TradingView ومزودوه؛ لا تمثل هذه اللوحة توصية أو سعرًا مضمونًا، وتحقق من أسعار الوسيط قبل أي قرار. النفط وبعض المؤشرات عقود فروقات (CFD) وقد تختلف عن أسعار المؤشر أو السوق المرجعي.':'Data may be delayed or differ from broker execution prices. Quotes are provided by TradingView and its providers and are not a recommendation or guaranteed price. Oil and some indices are CFDs and may differ from the underlying market.'});
+Object.assign(ENGLISH, {'بيانات السوق من مزودي TradingView':'Market data from TradingView providers','الأسواق العالمية':'Global markets','في مكان واحد':'in one place','تابع أبرز الأدوات المالية وقارن حركتها من مصدر البيانات.':'Follow major instruments and compare their movements from the data provider.','فئات الأصول':'Asset categories','قائمة الأسعار':'Market quotes','نظرة على الأصول':'Explore assets','مجموعة مختارة لمتابعة الأسواق الرئيسية.':'A curated selection for following major markets.','العملات':'Forex','المعادن والنفط':'Metals & oil','المؤشرات':'Indices','الأصول الرقمية':'Digital assets','تختلف الأسعار بحسب مزود البيانات وقد تتأخر.':'Prices vary by provider and may be delayed.','استكشف الأسواق':'Explore markets','إذا لم تظهر البيانات، افتح TradingView ↗':'If data does not load, open TradingView ↗'});
+Object.assign(ENGLISH, {'بيانات دورية · قد تتأخر أو تتغير':'Periodic data · may be delayed or revised','المفكرة الاقتصادية':'Economic calendar','العالمية':'Global','الأحداث التي تحرك الأسواق، بالعربية والإنجليزية.':'Market-moving events in Arabic and English.','تصفية الأحداث':'Filter events','الأحداث الاقتصادية':'Economic events','اقرأ الحدث بوضوح':'Understand each release','ثلاث قراءات تساعدك على فهم البيانات عند صدورها.':'Three values to help you understand each release.','القراءة الصادرة، إن توفرت.':'Reported value, when available.','توقع المصدر قبل النشر.':'The forecast before release.','القراءة السابقة المتاحة.':'The available previous value.','مستوى أهمية الحدث':'Event importance','مستوى الأهمية عام ولا يحدد اتجاه السوق أو حجم التأثير على أصل معين.':'Importance is general and does not predict direction or measure impact on any particular asset.','مراجعة المصدر':'Check source','المواعيد والقراءات قابلة للتغيير':'Dates and readings may change'});
 const originalTextNodes = new WeakMap();
 const originalAttributes = new WeakMap();
 let currentLanguage = (()=>{
@@ -2585,11 +2616,34 @@ let currentLanguage = (()=>{
   try{return localStorage.getItem('valid-vx-language')==='en'?'en':'ar'}catch{return 'ar'}
 })();
 
+function vxEmbed(hostId, file, config, href, attribution){
+  const host=document.getElementById(hostId); if(!host)return;
+  host.replaceChildren(); const container=document.createElement('div'); container.className='tradingview-widget-container';
+  const body=document.createElement('div'); body.className='tradingview-widget-container__widget';
+  const copyright=document.createElement('div'); copyright.className='tradingview-widget-copyright';
+  const link=document.createElement('a'); link.href=href; link.target='_blank'; link.rel='noopener noreferrer'; link.textContent=attribution; copyright.appendChild(link);
+  const script=document.createElement('script'); script.src='https://s3.tradingview.com/external-embedding/'+file; script.async=true; script.textContent=JSON.stringify(config);
+  container.append(body,copyright,script); host.appendChild(container);
+}
+function renderVxMarkets(language){
+  const en=language==='en';
+  vxEmbed('vx-market-widget','embed-widget-market-quotes.js', {width:'100%',height:'600',symbolsGroups:[
+    {name:en?'Forex':'الفوركس',symbols:[{name:'FX:EURUSD',displayName:'EUR / USD'},{name:'FX:GBPUSD',displayName:'GBP / USD'},{name:'FX:USDJPY',displayName:'USD / JPY'},{name:'FX:USDCHF',displayName:'USD / CHF'}]},
+    {name:en?'Commodities':'السلع',symbols:[{name:'OANDA:XAUUSD',displayName:'Gold / USD'},{name:'OANDA:XAGUSD',displayName:'Silver / USD'},{name:'TVC:USOIL',displayName:'WTI Oil / CFD'},{name:'OANDA:BCOUSD',displayName:'Brent / CFD'}]},
+    {name:en?'Indices':'المؤشرات',symbols:[{name:'FOREXCOM:SPXUSD',displayName:'S&P 500'},{name:'FOREXCOM:US30',displayName:'Dow Jones 30 / CFD'},{name:'FOREXCOM:NSXUSD',displayName:'US Tech 100 / CFD'}]},
+    {name:en?'Crypto':'العملات الرقمية',symbols:[{name:'BITSTAMP:BTCUSD',displayName:'Bitcoin / USD'},{name:'BITSTAMP:ETHUSD',displayName:'Ethereum / USD'}]}],showSymbolLogo:true,colorTheme:'dark',isTransparent:true,locale:en?'en':'ar_AE'},'https://www.tradingview.com/markets/','Market data by TradingView');
+}
+let vxMarketsVisible=false;
+const vxMarketsSection=document.getElementById('markets');
+if('IntersectionObserver' in window && vxMarketsSection){
+ const observer=new IntersectionObserver(entries=>{if(entries[0].isIntersecting){vxMarketsVisible=true;renderVxMarkets(currentLanguage);observer.disconnect();}},{rootMargin:'400px'});observer.observe(vxMarketsSection);
+}else{vxMarketsVisible=true;}
 function setLanguage(language){
   currentLanguage = language === 'en' ? 'en' : 'ar';
   const isEnglish = currentLanguage === 'en';
   document.documentElement.lang = currentLanguage;
   document.documentElement.dir = isEnglish ? 'ltr' : 'rtl';
+  if (vxMarketsVisible) renderVxMarkets(currentLanguage);
 
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while(walker.nextNode()){
@@ -3005,183 +3059,10 @@ route();
 window.__WF = { RM, observeReveals, initTilt, route };
 </script>
 
-<!-- ============================ THREE.JS HERO GLOBE ============================ -->
-<script type="importmap">
-{ "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
-</script>
-<script type="module">
-import * as THREE from 'three';
-
-/* ============================================================
-   Animated wireframe globe with glowing nodes + connections.
-   Lightweight: low-poly sphere, capped node count, single RAF loop,
-   paused when hero is off-screen or reduced-motion is preferred.
-   ============================================================ */
-(function initHeroGlobe(){
-  const canvas = document.getElementById('globe-canvas');
-  if(!canvas) return;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  if(window.innerWidth < 420) return; // skip on very small screens for performance
-
-  const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x060B18, 0.09);
-
-  const camera = new THREE.PerspectiveCamera(48, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(0, 0, 5.4);
-
-  const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true, powerPreference:'high-performance'});
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-  const globe = new THREE.Group();
-  scene.add(globe);
-
-  const RADIUS = 1.85;
-
-  /* --- 1) Wireframe sphere --- */
-  const sphereGeo = new THREE.SphereGeometry(RADIUS, 34, 22);
-  const wireMat = new THREE.MeshBasicMaterial({color:0x1E5BFF, wireframe:true, transparent:true, opacity:0.22});
-  globe.add(new THREE.Mesh(sphereGeo, wireMat));
-
-  /* Inner glow sphere */
-  const innerMat = new THREE.MeshBasicMaterial({color:0x00C2FF, transparent:true, opacity:0.05});
-  globe.add(new THREE.Mesh(new THREE.SphereGeometry(RADIUS*0.985, 24, 16), innerMat));
-
-  /* Soft aura around the globe — إحساس بالعمق والتوهّج */
-  const auraMat = new THREE.MeshBasicMaterial({color:0x1E5BFF, transparent:true, opacity:0.045, side:THREE.BackSide});
-  globe.add(new THREE.Mesh(new THREE.SphereGeometry(RADIUS*1.28, 24, 16), auraMat));
-  const auraGoldMat = new THREE.MeshBasicMaterial({color:0xF7D774, transparent:true, opacity:0.03, side:THREE.BackSide});
-  globe.add(new THREE.Mesh(new THREE.SphereGeometry(RADIUS*1.42, 24, 16), auraGoldMat));
-
-  /* --- 2) Latitude/Longitude accent rings --- */
-  const ringMat = new THREE.MeshBasicMaterial({color:0x00C2FF, transparent:true, opacity:0.18, side:THREE.DoubleSide});
-  const ring = new THREE.Mesh(new THREE.RingGeometry(RADIUS*1.02, RADIUS*1.03, 96), ringMat);
-  ring.rotation.x = Math.PI/2;
-  globe.add(ring);
-
-  /* --- 3) Glowing nodes on the sphere surface (markets) --- */
-  const nodeCount = 46;
-  const nodePositions = [];
-  const nodesGroup = new THREE.Group();
-  const dotGeo = new THREE.SphereGeometry(0.03, 8, 8);
-  const goldMat = new THREE.MeshBasicMaterial({color:0xF7D774});
-  goldMat.toneMapped = false;
-  const cyanMat = new THREE.MeshBasicMaterial({color:0x00C2FF});
-  for(let i=0;i<nodeCount;i++){
-    // Fibonacci sphere distribution for even spread
-    const y = 1 - (i/(nodeCount-1))*2;
-    const r = Math.sqrt(Math.max(0,1-y*y));
-    const theta = i * Math.PI * (3 - Math.sqrt(5));
-    const p = new THREE.Vector3(Math.cos(theta)*r, y, Math.sin(theta)*r).multiplyScalar(RADIUS*1.005);
-    nodePositions.push(p);
-    const dot = new THREE.Mesh(dotGeo, i % 4 === 0 ? goldMat : cyanMat);
-    dot.position.copy(p);
-    dot.userData.phase = Math.random()*Math.PI*2;
-    nodesGroup.add(dot);
-  }
-  globe.add(nodesGroup);
-
-  /* --- 4) Connection arcs between nearby nodes --- */
-  const lineMat = new THREE.LineBasicMaterial({color:0x3D74FF, transparent:true, opacity:0.28});
-  const segs = [];
-  for(let i=0;i<nodePositions.length;i++){
-    for(let j=i+1;j<nodePositions.length;j++){
-      if(nodePositions[i].distanceTo(nodePositions[j]) < RADIUS*0.65){
-        segs.push(nodePositions[i].x,nodePositions[i].y,nodePositions[i].z,
-                  nodePositions[j].x,nodePositions[j].y,nodePositions[j].z);
-      }
-    }
-  }
-  const lineGeo = new THREE.BufferGeometry();
-  lineGeo.setAttribute('position', new THREE.Float32BufferAttribute(segs, 3));
-  globe.add(new THREE.LineSegments(lineGeo, lineMat));
-
-  /* --- 5) Ambient particle field --- */
-  const starCount = 240;
-  const starGeo = new THREE.BufferGeometry();
-  const starArr = new Float32Array(starCount*3);
-  for(let i=0;i<starCount;i++){
-    const v = new THREE.Vector3().randomDirection().multiplyScalar(3.2 + Math.random()*4.5);
-    starArr.set([v.x,v.y,v.z], i*3);
-  }
-  starGeo.setAttribute('position', new THREE.BufferAttribute(starArr,3));
-  const stars = new THREE.Points(starGeo, new THREE.PointsMaterial({color:0x8FB4FF, size:0.028, transparent:true, opacity:0.65}));
-  scene.add(stars);
-
-  /* --- 5b) Golden ambient particles — نقاط ذهبية للعمق --- */
-  const goldCount = 90;
-  const goldGeo = new THREE.BufferGeometry();
-  const goldArr = new Float32Array(goldCount*3);
-  for(let i=0;i<goldCount;i++){
-    const v = new THREE.Vector3().randomDirection().multiplyScalar(3.6 + Math.random()*4.2);
-    goldArr.set([v.x,v.y,v.z], i*3);
-  }
-  goldGeo.setAttribute('position', new THREE.BufferAttribute(goldArr,3));
-  const goldDust = new THREE.Points(goldGeo, new THREE.PointsMaterial({
-    color:0xF7D774, size:0.05, transparent:true, opacity:0.75,
-    blending:THREE.AdditiveBlending, depthWrite:false
-  }));
-  scene.add(goldDust);
-
-  /* --- Sizing --- */
-  function resize(){
-    const w = canvas.clientWidth || window.innerWidth;
-    const h = canvas.clientHeight || window.innerHeight;
-    renderer.setSize(w, h, false);
-    camera.aspect = w/h;
-    camera.updateProjectionMatrix();
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  /* --- Mouse / device parallax --- */
-  const target = {x:0, y:0};
-  const current = {x:0, y:0};
-  window.addEventListener('pointermove', (e) => {
-    target.x = (e.clientX / window.innerWidth - 0.5) * 2;
-    target.y = (e.clientY / window.innerHeight - 0.5) * 2;
-  }, {passive:true});
-
-  /* --- Pause when hero off-screen --- */
-  let active = true;
-  const hero = document.getElementById('home');
-  if(hero){
-    const heroObs = new IntersectionObserver(([e]) => { active = e.isIntersecting; }, {threshold:0.02});
-    heroObs.observe(hero);
-  }
-  document.addEventListener('visibilitychange', () => { if(document.hidden) active = false; });
-
-  /* --- Animation loop --- */
-  const clock = new THREE.Clock();
-  function animate(){
-    requestAnimationFrame(animate);
-    if(!active) return;
-    const t = clock.getElapsedTime();
-
-    globe.rotation.y += 0.0019;
-    globe.rotation.x = Math.sin(t*0.15) * 0.06;
-
-    // parallax easing
-    current.x += (target.x - current.x) * 0.045;
-    current.y += (target.y - current.y) * 0.045;
-    globe.rotation.y += current.x * 0.006;
-    globe.rotation.x += current.y * 0.09;
-    camera.position.x = current.x * 0.55;
-    camera.position.y = -current.y * 0.4;
-    camera.lookAt(0,0,0);
-
-    // pulsing nodes
-    nodesGroup.children.forEach((dot, i) => {
-      const s = 1 + Math.sin(t*2.2 + dot.userData.phase) * 0.5;
-      dot.scale.setScalar(Math.max(0.5, s));
-    });
-
-    stars.rotation.y -= 0.0006;
-    goldDust.rotation.y += 0.0009;
-    goldDust.rotation.x = Math.sin(t*0.1) * 0.05;
-    renderer.render(scene, camera);
-  }
-  animate();
-})();
+<script src="/assets/economic-calendar.js" defer></script>
+<script src="/assets/market-news.js" defer></script>
+<script>
+(()=>{const video=document.querySelector('.vx-hero-video');if(!video)return;video.defaultPlaybackRate=0.6;video.playbackRate=0.6;const motion=matchMedia('(prefers-reduced-motion: reduce)');let visible=true;const update=()=>{if(motion.matches||document.hidden||!visible)video.pause();else video.play().catch(()=>{});};motion.addEventListener?.('change',update);document.addEventListener('visibilitychange',update);if('IntersectionObserver' in window){new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;update()},{threshold:0.05}).observe(video);}update();})();
 </script>
 </body>
 </html>

@@ -1,0 +1,2 @@
+# Background video source
+The decorative hero footage is adapted (scaled, compressed, audio removed) from “Stock Market Graph” by Gilmer Diaz Estela on Pexels: https://www.pexels.com/video/stock-market-graph-14003933/ . Pexels describes the video as free stock footage; review https://www.pexels.com/license/ and relevant rights and restrictions before commercial publication. The footage shows historical, illustrative market visuals, not current VALID VX prices.
