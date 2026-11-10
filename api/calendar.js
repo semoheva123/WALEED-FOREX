@@ -2,8 +2,10 @@
  * Investing.com has no public API and blocks datacenter IPs (403) — including
  * headless-browser attempts from serverless IPs (verified 2026-11-10). A
  * residential proxy (PROXY_SERVER / PROXY_USERNAME / PROXY_PASSWORD env vars)
- * lets the headless attempt pass Cloudflare IP checks; without it, the Fair
- * Economy fallback serves the calendar.
+ * lets the headless attempt pass Cloudflare IP checks. A scraping API key
+ * (SCRAPING_API_KEY, provider in SCRAPING_API: zenrows|scraperapi) is an
+ * alternative that fetches the page through the provider's own proxies.
+ * Without either, the Fair Economy fallback serves the calendar.
  * Response shape is unchanged: { updated_at, fetched_at, source, events }.
  */
 const INVESTING_URL = 'https://sa.investing.com/economic-calendar';
@@ -99,6 +101,27 @@ async function fetchInvesting() {
 }
 
 
+
+// Scraping-API attempt: fetches the page through the provider's proxy/anti-bot
+// stack and returns raw HTML. Env-gated (SCRAPING_API_KEY); failures are
+// negatively cached per instance so a bad key does not slow every request.
+let lastScrapingFail = 0;
+async function fetchInvestingViaScrapingApi() {
+  const key = process.env.SCRAPING_API_KEY;
+  if (!key) return null;
+  const provider = String(process.env.SCRAPING_API || 'zenrows').toLowerCase();
+  const target = encodeURIComponent(INVESTING_URL);
+  const url = provider === 'scraperapi'
+    ? `https://api.scraperapi.com/?api_key=${encodeURIComponent(key)}&url=${target}&render=true`
+    : `https://api.zenrows.com/v1/?apikey=${encodeURIComponent(key)}&url=${target}&js_render=true&antibot=true&premium_proxy=true`;
+  const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
+  if (!response.ok) return null;
+  const html = await response.text();
+  if (!html || html.length < 1000) return null;
+  const events = parseInvesting(html);
+  return events.length ? events : null;
+}
+
 // Headless-browser attempt through an optional residential proxy.
 // Cloudflare blocks datacenter IPs even with a real Chromium (verified
 // 2026-11-10); a residential proxy restores trust. Only runs when
@@ -165,6 +188,10 @@ module.exports = async function handler(req, res) {
   // Primary source: Investing.com Saudi Arabic calendar.
   try {
     let events = await fetchInvesting();
+    if (!events && process.env.SCRAPING_API_KEY && Date.now() - lastScrapingFail > 5 * 60 * 1000) {
+      events = await fetchInvestingViaScrapingApi().catch(() => null);
+      if (!events) lastScrapingFail = Date.now();
+    }
     if (!events && process.env.PROXY_SERVER && Date.now() - lastHeadlessFail > 5 * 60 * 1000) {
       events = await fetchInvestingHeadless();
       if (!events) lastHeadlessFail = Date.now();
