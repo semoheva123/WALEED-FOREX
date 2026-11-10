@@ -9,6 +9,9 @@
  * Response shape is unchanged: { updated_at, fetched_at, source, events }.
  */
 const INVESTING_URL = 'https://sa.investing.com/economic-calendar';
+// Official widget endpoint (Arabic, GMT+3, full week in one page) — the
+// scraping API fetches this so the calendar covers the whole week.
+const WIDGET_WEEK_URL = 'https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&features=datepicker,timezone&calType=week&timeZone=18&lang=3';
 const FAIRECONOMY_URL = 'https://nfs.faireconomy.media/ff_calendar_thisweek.json';
 const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
@@ -162,11 +165,11 @@ async function fetchInvesting() {
 // stack and returns raw HTML. Env-gated (SCRAPING_API_KEY); failures are
 // negatively cached per instance so a bad key does not slow every request.
 let lastScrapingFail = 0;
-async function fetchInvestingViaScrapingApi() {
+async function fetchInvestingViaScrapingApi(targetUrl) {
   const key = process.env.SCRAPING_API_KEY;
   if (!key) return null;
   const provider = String(process.env.SCRAPING_API || 'zenrows').toLowerCase();
-  const target = encodeURIComponent(INVESTING_URL);
+  const target = encodeURIComponent(targetUrl || INVESTING_URL);
   const url = provider === 'scraperapi'
     ? `https://api.scraperapi.com/?api_key=${encodeURIComponent(key)}&url=${target}&render=true`
     : `https://api.zenrows.com/v1/?apikey=${encodeURIComponent(key)}&url=${target}&js_render=true&antibot=true&premium_proxy=true`;
@@ -245,7 +248,8 @@ module.exports = async function handler(req, res) {
   try {
     let events = await fetchInvesting();
     if (!events && process.env.SCRAPING_API_KEY && Date.now() - lastScrapingFail > 5 * 60 * 1000) {
-      events = await fetchInvestingViaScrapingApi().catch(() => null);
+      events = await fetchInvestingViaScrapingApi(WIDGET_WEEK_URL).catch(() => null);
+      if (!events) events = await fetchInvestingViaScrapingApi(INVESTING_URL).catch(() => null);
       if (!events) lastScrapingFail = Date.now();
     }
     if (!events && process.env.PROXY_SERVER && Date.now() - lastHeadlessFail > 5 * 60 * 1000) {
