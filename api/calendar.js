@@ -122,6 +122,10 @@ async function fetchInvestingViaScrapingApi() {
   lastScrapingDebug.ms = Date.now() - started;
   if (!response.ok) return null;
   const html = await response.text();
+  lastScrapingDebug.htmlLen = html ? html.length : 0;
+  lastScrapingDebug.hasRows = Boolean(html && html.includes('js-event-item'));
+  lastScrapingDebug.challenge = Boolean(html && /just a moment|attention required|cf-challenge|checking your browser/i.test(html));
+  lastScrapingDebug.snippet = html ? html.replace(/\s+/g, ' ').slice(0, 300) : '';
   if (!html || html.length < 1000) return null;
   const events = parseInvesting(html);
   return events.length ? events : null;
