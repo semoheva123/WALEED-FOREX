@@ -190,6 +190,8 @@ async function fetchInvestingViaScrapingApi(targetUrl) {
     legacyCount: legacy.length,
     tableSnippet: ti >= 0 ? html.slice(ti, ti + 500).replace(/\s+/g, ' ') : '',
     tbodySnippet: tb >= 0 ? html.slice(tb, tb + 2500).replace(/\s+/g, ' ') : '',
+    timeSnippet: (() => { const i = html ? html.indexOf('وقت') : -1; return i >= 0 ? html.slice(i, i + 3500).replace(/\s+/g, ' ') : ''; })(),
+    tailSnippet: html ? html.slice(-2500).replace(/\s+/g, ' ') : '',
   });
   const events = v2.length ? v2 : legacy;
   return events.length ? events : null;
