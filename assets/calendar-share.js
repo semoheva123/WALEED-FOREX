@@ -20,11 +20,11 @@
   const e=events[i],top=y+18+i*step,dt=new Date(e.date),date=Number.isFinite(dt.valueOf())?fm.format(dt)+' TRT':'—',impact={High:'مرتفع',Medium:'متوسط',Low:'منخفض',Holiday:'عطلة'}[e.impact]||e.impact;
   if(compact){
    txt(c,date+'  ·  '+(flagFor(e.country)?flagFor(e.country)+' ':'')+e.country,965,top+23,20,'#e5cd91','700','right','ltr');rounded(c,100,top+1,90,30,6);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,145,top+22,16,'#ffe5d7','700','center');
-   const title=e.title_ar||'الترجمة غير متاحة';lines(c,title,965,top+49,840,23,'#f2f5f2','700',1);
+   const title=e.title_ar||e.title;lines(c,title,965,top+49,840,23,'#f2f5f2','700',1);
    c.direction='ltr';c.textAlign='right';c.fillStyle='#aec1c5';c.font='17px Tahoma, Arial, sans-serif';if(e.title!==title)c.fillText(e.title,965,top+76,430);
    c.direction='rtl';c.textAlign='left';c.fillStyle='#cad6d5';c.font='16px Tahoma, Arial, sans-serif';c.fillText('الفعلي: '+(e.actual||'—')+' | المتوقع: '+(e.forecast||'—')+' | السابق: '+(e.previous||'—'),105,top+76,415);
   }else{
-   const t=top+22;txt(c,date+'  ·  '+(flagFor(e.country)?flagFor(e.country)+' ':'')+e.country,965,t+29,23,'#e5cd91','700','right','ltr');rounded(c,100,t,155,45,8);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,178,t+30,20,'#ffe5d7','700','center');let title=e.title_ar||'الترجمة غير متاحة';lines(c,title,965,t+82,835,29,'#f2f5f2','700',2);if(e.title!==title)txt(c,e.title,965,t+163,20,'#aec1c5','400','right','ltr');txt(c,'الفعلي: '+(e.actual||'—')+'   |   المتوقع: '+(e.forecast||'—')+'   |   السابق: '+(e.previous||'—'),965,t+201,19,'#cad6d5');
+   const t=top+22;txt(c,date+'  ·  '+(flagFor(e.country)?flagFor(e.country)+' ':'')+e.country,965,t+29,23,'#e5cd91','700','right','ltr');rounded(c,100,t,155,45,8);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,178,t+30,20,'#ffe5d7','700','center');let title=e.title_ar||e.title;lines(c,title,965,t+82,835,29,'#f2f5f2','700',2);if(e.title!==title)txt(c,e.title,965,t+163,20,'#aec1c5','400','right','ltr');txt(c,'الفعلي: '+(e.actual||'—')+'   |   المتوقع: '+(e.forecast||'—')+'   |   السابق: '+(e.previous||'—'),965,t+201,19,'#cad6d5');
   }
   if(i<events.length-1){c.fillStyle='#ffffff1d';c.fillRect(105,y+18+(i+1)*step,870,1)}
  }
