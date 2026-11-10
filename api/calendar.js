@@ -1,6 +1,7 @@
 /* Economic calendar: try Investing.com (Saudi Arabic) first, fall back to Fair Economy.
- * Investing.com has no public API and may block datacenter IPs (403); the Fair Economy
- * fallback keeps the calendar working when the primary source is unreachable.
+ * Investing.com has no public API and blocks datacenter IPs (403) — including
+ * headless-browser attempts from serverless IPs (verified 2026-11-10) — so the
+ * Fair Economy fallback is what normally serves the calendar.
  * Response shape is unchanged: { updated_at, fetched_at, source, events }.
  */
 const INVESTING_URL = 'https://sa.investing.com/economic-calendar';
@@ -95,38 +96,6 @@ async function fetchInvesting() {
   return events.length ? events : null;
 }
 
-// Headless-browser attempt: Investing.com sits behind Cloudflare bot protection
-// that usually blocks plain datacenter fetches (403). A real Chromium may pass,
-// but it is slow and not guaranteed — so failures are negatively cached per
-// instance and the Fair Economy fallback always remains available.
-let lastHeadlessFail = 0;
-async function fetchInvestingHeadless() {
-  let browser;
-  try {
-    const { chromium: playwright } = require('playwright-core');
-    const chromium = require('@sparticuz/chromium');
-    const executablePath = process.env.CHROMIUM_EXECUTABLE_PATH || await chromium.executablePath();
-    browser = await playwright.launch({ args: chromium.args, executablePath });
-    const page = await browser.newPage({
-      locale: 'ar-SA',
-      userAgent: BROWSER_UA,
-      viewport: { width: 1280, height: 900 },
-      extraHTTPHeaders: { 'Accept-Language': 'ar-SA,ar;q=0.9,en;q=0.8' },
-    });
-    await page.goto(INVESTING_URL, { waitUntil: 'domcontentloaded', timeout: 12000 });
-    // Wait briefly for the calendar table; a Cloudflare challenge page has no rows.
-    await page.waitForSelector('.js-event-item', { timeout: 8000 }).catch(() => {});
-    const html = await page.content();
-    if (!html || html.length < 1000) return null;
-    const events = parseInvesting(html);
-    return events.length ? events : null;
-  } catch (_) {
-    return null;
-  } finally {
-    if (browser) await browser.close().catch(() => {});
-  }
-}
-
 async function fetchFairEconomy(res) {
   const response = await fetch(FAIRECONOMY_URL, {
     headers: { 'User-Agent': 'Mozilla/5.0 VALID-VX-calendar/1.0', Accept: 'application/json' },
@@ -156,11 +125,7 @@ module.exports = async function handler(req, res) {
 
   // Primary source: Investing.com Saudi Arabic calendar.
   try {
-    let events = await fetchInvesting();
-    if (!events && Date.now() - lastHeadlessFail > 5 * 60 * 1000) {
-      events = await fetchInvestingHeadless();
-      if (!events) lastHeadlessFail = Date.now();
-    }
+    const events = await fetchInvesting();
     if (events) {
       // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
       res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
