@@ -41,27 +41,46 @@ def parse_day_header(text):
     return None
 
 
+CCY_MAP = {'US': 'USD', 'JP': 'JPY', 'GB': 'GBP', 'UK': 'GBP', 'EU': 'EUR', 'CA': 'CAD',
+           'AU': 'AUD', 'CH': 'CHF', 'NZ': 'NZD', 'CN': 'CNY', 'TR': 'TRY', 'KW': 'KWD',
+           'SA': 'SAR', 'AE': 'AED', 'QA': 'QAR', 'BH': 'BHD', 'OM': 'OMR', 'EG': 'EGP',
+           'JO': 'JOD', 'LB': 'LBP', 'IL': 'ILS', 'IN': 'INR', 'KR': 'KRW', 'SG': 'SGD',
+           'HK': 'HKD', 'BR': 'BRL', 'MX': 'MXN', 'ZA': 'ZAR', 'SE': 'SEK', 'NO': 'NOK',
+           'DK': 'DKK', 'PL': 'PLN', 'CZ': 'CZK', 'HU': 'HUF', 'RU': 'RUB', 'ID': 'IDR',
+           'TH': 'THB', 'MY': 'MYR', 'PH': 'PHP', 'TW': 'TWD'}
+
+
 def parse_investing(html_text):
+    """Parse the current sa.investing.com datatable-v2 markup."""
     events = []
     current = None
-    for row in re.split(r'(?=<tr[^>]*>)', html_text, flags=re.I):
-        is_day = re.search(r'class=["\'][^"\']*\btheDay\b', row, re.I) or re.search(r'colspan', row, re.I)
-        if is_day and not re.search(r'js-event-item', row, re.I):
+    tb = re.search(r'<tbody[^>]*datatable-v2_body', html_text, re.I)
+    scope = html_text
+    if tb:
+        end = html_text.find('</tbody>', tb.start())
+        scope = html_text[tb.start():end + 8 if end >= 0 else len(html_text)]
+    for row in re.split(r'(?=<tr[^>]*>)', scope, flags=re.I):
+        if not re.search(r'datatable-v2_row', row, re.I):
+            continue
+        if re.search(r'colspan\s*=\s*["\']?\d+', row, re.I):
             parsed = parse_day_header(strip_tags(row))
             if parsed:
                 current = parsed
             continue
-        if not re.search(r'js-event-item', row, re.I) or not current:
+        if not current:
             continue
         cells = re.findall(r'<td[^>]*>([\s\S]*?)</td>', row, flags=re.I)
-        if len(cells) < 7:
+        if len(cells) < 8:
             continue
-        time = strip_tags(cells[0])
-        m = re.search(r'[A-Z]{3}', strip_tags(cells[1]))
-        currency = m.group(0) if m else ''
-        bulls = len(re.findall(r'bullishIcon', cells[2], flags=re.I))
-        impact = 'High' if bulls >= 3 else ('Medium' if bulls == 2 else 'Low')
-        title = strip_tags(cells[3])
+        time = strip_tags(cells[1])
+        m = re.search(r'data-test="flag-([A-Za-z]+)"', row)
+        flag = m.group(1).upper() if m else ''
+        country = CCY_MAP.get(flag, flag)
+        filled = len(re.findall(r'icon-star-filled opacity-60', cells[4]))
+        impact = 'High' if filled >= 3 else ('Medium' if filled == 2 else 'Low')
+        event_part = cells[3].split('visible flex')[0]
+        a = re.search(r'<a[^>]*>([\s\S]*?)</a>', event_part, re.I)
+        title = strip_tags(a.group(1) if a else event_part)
         if not title:
             continue
         y, mo, d = current
@@ -71,9 +90,9 @@ def parse_investing(html_text):
         else:
             date = f'{y:04d}-{mo:02d}-{d:02d}T00:00:00+03:00'
         events.append({
-            'title': title[:500], 'country': currency, 'date': date, 'impact': impact,
-            'forecast': strip_tags(cells[5])[:500], 'previous': strip_tags(cells[6])[:500],
-            'actual': strip_tags(cells[4])[:500],
+            'title': title[:500], 'country': country, 'date': date, 'impact': impact,
+            'forecast': strip_tags(cells[6])[:500], 'previous': strip_tags(cells[7])[:500],
+            'actual': strip_tags(cells[5])[:500],
         })
         if len(events) >= 2000:
             break

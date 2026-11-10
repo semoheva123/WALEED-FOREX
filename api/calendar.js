@@ -45,9 +45,65 @@ function parseDayHeader(text) {
   return null;
 }
 
+// Country code (as shown on sa.investing.com) -> currency code used by the site filters.
+const CCY_MAP = { US: 'USD', JP: 'JPY', GB: 'GBP', UK: 'GBP', EU: 'EUR', CA: 'CAD', AU: 'AUD', CH: 'CHF', NZ: 'NZD', CN: 'CNY', TR: 'TRY', KW: 'KWD', SA: 'SAR', AE: 'AED', QA: 'QAR', BH: 'BHD', OM: 'OMR', EG: 'EGP', JO: 'JOD', LB: 'LBP', IL: 'ILS', IN: 'INR', KR: 'KRW', SG: 'SGD', HK: 'HKD', BR: 'BRL', MX: 'MXN', ZA: 'ZAR', SE: 'SEK', NO: 'NOK', DK: 'DKK', PL: 'PLN', CZ: 'CZK', HU: 'HUF', RU: 'RUB', ID: 'IDR', TH: 'THB', MY: 'MYR', PH: 'PHP', TW: 'TWD' };
+
 function parseInvesting(html) {
+  const events = parseInvestingV2(html);
+  return events.length ? events : parseInvestingLegacy(html);
+}
+
+// Current sa.investing.com markup (datatable-v2): date rows use colspan,
+// event rows carry an id, importance is shown as filled stars, and the
+// currency cell shows the country code (flag-XX).
+function parseInvestingV2(html) {
   const events = [];
-  let current = null; // { y, mo, d } of the current day header
+  let current = null;
+  const pad = (n) => String(n).padStart(2, '0');
+  const tbStart = String(html).search(/<tbody[^>]*datatable-v2_body/i);
+  const scope = tbStart >= 0 ? String(html).slice(tbStart, String(html).indexOf('</tbody>', tbStart) + 8) : String(html);
+  const rows = scope.split(/(?=<tr[^>]*>)/i);
+  for (const row of rows) {
+    if (!/datatable-v2_row/i.test(row)) continue;
+    if (/colspan\s*=\s*["']?\d+/i.test(row)) {
+      const parsed = parseDayHeader(stripTags(row));
+      if (parsed) current = parsed;
+      continue;
+    }
+    if (!current) continue;
+    const cells = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((x) => x[1]);
+    if (cells.length < 8) continue;
+    const time = stripTags(cells[1]);
+    const flag = ((row.match(/data-test="flag-([A-Za-z]+)"/) || [])[1] || '').toUpperCase();
+    const country = CCY_MAP[flag] || flag;
+    const filled = (cells[4].match(/icon-star-filled opacity-60/g) || []).length;
+    const impact = filled >= 3 ? 'High' : filled === 2 ? 'Medium' : 'Low';
+    const eventPart = cells[3].split(/visible flex/)[0];
+    const anchor = eventPart.match(/<a[^>]*>([\s\S]*?)<\/a>/i);
+    const title = stripTags(anchor ? anchor[1] : eventPart);
+    if (!title) continue;
+    const tm = time.match(/(\d{1,2}):(\d{2})/);
+    const date = tm
+      ? `${current.y}-${pad(current.mo)}-${pad(current.d)}T${pad(tm[1])}:${tm[2]}:00+03:00`
+      : `${current.y}-${pad(current.mo)}-${pad(current.d)}T00:00:00+03:00`;
+    events.push({
+      title: title.slice(0, 500),
+      country,
+      date,
+      impact,
+      forecast: stripTags(cells[6]).slice(0, 500),
+      previous: stripTags(cells[7]).slice(0, 500),
+      actual: stripTags(cells[5]).slice(0, 500),
+    });
+    if (events.length >= 2000) break;
+  }
+  return events;
+}
+
+// Legacy markup (js-event-item) kept as a fallback for older cached pages.
+function parseInvestingLegacy(html) {
+  const events = [];
+  let current = null;
   const pad = (n) => String(n).padStart(2, '0');
   const rows = String(html).split(/(?=<tr[^>]*>)/i);
   for (const row of rows) {
