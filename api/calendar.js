@@ -165,6 +165,7 @@ async function fetchInvesting() {
 // stack and returns raw HTML. Env-gated (SCRAPING_API_KEY); failures are
 // negatively cached per instance so a bad key does not slow every request.
 let lastScrapingFail = 0;
+let lastAttempts = [];
 async function fetchInvestingViaScrapingApi(targetUrl) {
   const key = process.env.SCRAPING_API_KEY;
   if (!key) return null;
@@ -174,10 +175,19 @@ async function fetchInvestingViaScrapingApi(targetUrl) {
     ? `https://api.scraperapi.com/?api_key=${encodeURIComponent(key)}&url=${target}&render=true`
     : `https://api.zenrows.com/v1/?apikey=${encodeURIComponent(key)}&url=${target}&js_render=true&antibot=true&premium_proxy=true`;
   const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
-  if (!response.ok) return null;
-  const html = await response.text();
-  if (!html || html.length < 1000) return null;
-  const events = parseInvesting(html);
+  const html = response.ok ? await response.text() : '';
+  const v2 = html ? parseInvestingV2(html) : [];
+  const legacy = html ? parseInvestingLegacy(html) : [];
+  lastAttempts.push({
+    target: targetUrl && targetUrl.includes('sslecal2') ? 'widget-week' : 'main-page',
+    status: response.status,
+    htmlLen: html ? html.length : 0,
+    hasJsEventItem: Boolean(html && html.includes('js-event-item')),
+    hasDatatableV2: Boolean(html && html.includes('datatable-v2_row')),
+    v2Count: v2.length,
+    legacyCount: legacy.length,
+  });
+  const events = v2.length ? v2 : legacy;
   return events.length ? events : null;
 }
 
@@ -240,6 +250,7 @@ async function fetchFairEconomy(res) {
 }
 
 module.exports = async function handler(req, res) {
+  lastAttempts = [];
   res.setHeader('Cache-Control', 'no-store');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); return res.status(405).json({ error: 'method_not_allowed' }); }
@@ -259,7 +270,9 @@ module.exports = async function handler(req, res) {
     if (events) {
       // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
       res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
-      return res.status(200).json({ updated_at: new Date().toISOString(), fetched_at: new Date().toISOString(), source: 'Investing.com (السعودية)', events });
+      const body = { updated_at: new Date().toISOString(), fetched_at: new Date().toISOString(), source: 'Investing.com (السعودية)', events };
+      if (req.query && req.query.debug === '1') body.debug = { attempts: lastAttempts, cooldownMs: Math.max(0, 5 * 60 * 1000 - (Date.now() - lastScrapingFail)) };
+      return res.status(200).json(body);
     }
   } catch (_) { /* fall through to the fallback source */ }
 
@@ -267,6 +280,7 @@ module.exports = async function handler(req, res) {
   try {
     const result = await fetchFairEconomy(res);
     if (result.status === 200) res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
+    if (req.query && req.query.debug === '1') result.body.debug = { attempts: lastAttempts, cooldownMs: Math.max(0, 5 * 60 * 1000 - (Date.now() - lastScrapingFail)) };
     return res.status(result.status).json(result.body);
   } catch (_) { return res.status(502).json({ error: 'source_unavailable' }); }
 };
