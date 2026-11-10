@@ -103,26 +103,30 @@ function parseInvestingV2(html) {
   return events;
 }
 
-// Legacy markup (js-event-item) kept as a fallback for older cached pages.
+// Widget markup (sslecal2): date rows use class "theDay", event rows carry
+// id="eventRowId_...", importance is grayFullBullishIcon (filled) vs
+// grayEmptyBullishIcon (empty). Older js-event-item markup is also handled.
 function parseInvestingLegacy(html) {
   const events = [];
   let current = null;
   const pad = (n) => String(n).padStart(2, '0');
   const rows = String(html).split(/(?=<tr[^>]*>)/i);
   for (const row of rows) {
+    const isEvent = /eventRowId_/i.test(row) || /js-event-item/i.test(row);
     const isDayRow = /class=["'][^"']*\btheDay\b/i.test(row) || /colspan/i.test(row);
-    if (isDayRow && !/js-event-item/i.test(row)) {
+    if (isDayRow && !isEvent) {
       const parsed = parseDayHeader(stripTags(row));
       if (parsed) current = parsed;
       continue;
     }
-    if (!/js-event-item/i.test(row) || !current) continue;
+    if (!isEvent || !current) continue;
     const cells = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((x) => x[1]);
     if (cells.length < 7) continue;
     const time = stripTags(cells[0]);
     const currency = (stripTags(cells[1]).match(/[A-Z]{3}/) || [''])[0];
-    const bulls = (cells[2].match(/bullishIcon/gi) || []).length;
-    const impact = bulls >= 3 ? 'High' : bulls === 2 ? 'Medium' : 'Low';
+    let filled = (cells[2].match(/grayFullBullishIcon/g) || []).length;
+    if (!filled) filled = (cells[2].match(/bullishIcon/gi) || []).length;
+    const impact = filled >= 3 ? 'High' : filled === 2 ? 'Medium' : 'Low';
     const title = stripTags(cells[3]);
     if (!title) continue;
     const tm = time.match(/(\d{1,2}):(\d{2})/);

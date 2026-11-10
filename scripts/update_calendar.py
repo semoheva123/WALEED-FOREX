@@ -96,6 +96,51 @@ def parse_investing(html_text):
         })
         if len(events) >= 2000:
             break
+    if events:
+        return events
+    return parse_investing_widget(html_text)
+
+
+def parse_investing_widget(html_text):
+    """Parse the sslecal2 widget markup (theDay / eventRowId_ / grayFullBullishIcon)."""
+    events = []
+    current = None
+    for row in re.split(r'(?=<tr[^>]*>)', html_text, flags=re.I):
+        is_event = re.search(r'eventRowId_|js-event-item', row, re.I)
+        is_day = re.search(r'class=["\'][^"\']*\btheDay\b', row, re.I) or re.search(r'colspan', row, re.I)
+        if is_day and not is_event:
+            parsed = parse_day_header(strip_tags(row))
+            if parsed:
+                current = parsed
+            continue
+        if not is_event or not current:
+            continue
+        cells = re.findall(r'<td[^>]*>([\s\S]*?)</td>', row, flags=re.I)
+        if len(cells) < 7:
+            continue
+        time = strip_tags(cells[0])
+        m = re.search(r'[A-Z]{3}', strip_tags(cells[1]))
+        currency = m.group(0) if m else ''
+        filled = len(re.findall(r'grayFullBullishIcon', cells[2]))
+        if not filled:
+            filled = len(re.findall(r'bullishIcon', cells[2], flags=re.I))
+        impact = 'High' if filled >= 3 else ('Medium' if filled == 2 else 'Low')
+        title = strip_tags(cells[3])
+        if not title:
+            continue
+        y, mo, d = current
+        tm = re.search(r'(\d{1,2}):(\d{2})', time)
+        if tm:
+            date = f'{y:04d}-{mo:02d}-{d:02d}T{int(tm.group(1)):02d}:{tm.group(2)}:00+03:00'
+        else:
+            date = f'{y:04d}-{mo:02d}-{d:02d}T00:00:00+03:00'
+        events.append({
+            'title': title[:500], 'country': currency, 'date': date, 'impact': impact,
+            'forecast': strip_tags(cells[5])[:500], 'previous': strip_tags(cells[6])[:500],
+            'actual': strip_tags(cells[4])[:500],
+        })
+        if len(events) >= 2000:
+            break
     return events
 
 
