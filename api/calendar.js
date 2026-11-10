@@ -125,6 +125,12 @@ async function fetchInvestingViaScrapingApi() {
   lastScrapingDebug.htmlLen = html ? html.length : 0;
   lastScrapingDebug.hasRows = Boolean(html && html.includes('js-event-item'));
   lastScrapingDebug.challenge = Boolean(html && /just a moment|attention required|cf-challenge|checking your browser/i.test(html));
+  lastScrapingDebug.tableCount = html ? (html.match(/<table/gi) || []).length : 0;
+  lastScrapingDebug.trCount = html ? (html.match(/<tr[\s>]/gi) || []).length : 0;
+  lastScrapingDebug.hasNextData = Boolean(html && html.includes('__NEXT_DATA__'));
+  lastScrapingDebug.hasCalData = Boolean(html && html.includes('economicCalendarData'));
+  const ti = html ? html.search(/<table/i) : -1;
+  lastScrapingDebug.tableSnippet = ti >= 0 ? html.slice(ti, ti + 600).replace(/\s+/g, ' ') : '';
   lastScrapingDebug.snippet = html ? html.replace(/\s+/g, ' ').slice(0, 300) : '';
   if (!html || html.length < 1000) return null;
   const events = parseInvesting(html);
