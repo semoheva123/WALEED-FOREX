@@ -131,6 +131,8 @@ async function fetchInvestingViaScrapingApi() {
   lastScrapingDebug.hasCalData = Boolean(html && html.includes('economicCalendarData'));
   const ti = html ? html.search(/<table/i) : -1;
   lastScrapingDebug.tableSnippet = ti >= 0 ? html.slice(ti, ti + 600).replace(/\s+/g, ' ') : '';
+  const tb = html ? html.search(/<tbody/i) : -1;
+  lastScrapingDebug.tbodySnippet = tb >= 0 ? html.slice(tb, tb + 3000).replace(/\s+/g, ' ') : '';
   lastScrapingDebug.snippet = html ? html.replace(/\s+/g, ' ').slice(0, 300) : '';
   if (!html || html.length < 1000) return null;
   const events = parseInvesting(html);
