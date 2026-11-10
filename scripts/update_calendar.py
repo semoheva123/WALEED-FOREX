@@ -41,7 +41,7 @@ def parse_day_header(text):
     return None
 
 
-CCY_MAP = {'US': 'USD', 'JP': 'JPY', 'GB': 'GBP', 'UK': 'GBP', 'EU': 'EUR', 'CA': 'CAD',
+CCY_MAP = {'US': 'USD', 'JP': 'JPY', 'GB': 'GBP', 'UK': 'GBP', 'EU': 'EUR', 'FR': 'EUR', 'DE': 'EUR', 'IT': 'EUR', 'ES': 'EUR', 'NL': 'EUR', 'BE': 'EUR', 'AT': 'EUR', 'IE': 'EUR', 'PT': 'EUR', 'FI': 'EUR', 'GR': 'EUR', 'SK': 'EUR', 'SI': 'EUR', 'EE': 'EUR', 'LV': 'EUR', 'LT': 'EUR', 'CY': 'EUR', 'MT': 'EUR', 'HR': 'EUR', 'LU': 'EUR', 'CA': 'CAD',
            'AU': 'AUD', 'CH': 'CHF', 'NZ': 'NZD', 'CN': 'CNY', 'TR': 'TRY', 'KW': 'KWD',
            'SA': 'SAR', 'AE': 'AED', 'QA': 'QAR', 'BH': 'BHD', 'OM': 'OMR', 'EG': 'EGP',
            'JO': 'JOD', 'LB': 'LBP', 'IL': 'ILS', 'IN': 'INR', 'KR': 'KRW', 'SG': 'SGD',
