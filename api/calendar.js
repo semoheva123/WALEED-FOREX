@@ -262,7 +262,7 @@ module.exports = async function handler(req, res) {
     }
     if (events) {
       // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
-      res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
+      res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=300');
       return res.status(200).json({ updated_at: new Date().toISOString(), fetched_at: new Date().toISOString(), source: 'Investing.com (السعودية)', events });
     }
   } catch (_) { /* fall through to the fallback source */ }
@@ -270,7 +270,7 @@ module.exports = async function handler(req, res) {
   // Fallback source: Fair Economy / Forex Factory.
   try {
     const result = await fetchFairEconomy(res);
-    if (result.status === 200) res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
+    if (result.status === 200) res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=300');
     return res.status(result.status).json(result.body);
   } catch (_) { return res.status(502).json({ error: 'source_unavailable' }); }
 };
