@@ -106,15 +106,20 @@ async function fetchInvesting() {
 // stack and returns raw HTML. Env-gated (SCRAPING_API_KEY); failures are
 // negatively cached per instance so a bad key does not slow every request.
 let lastScrapingFail = 0;
+let lastScrapingDebug = { attempted: false, status: null, ms: null };
 async function fetchInvestingViaScrapingApi() {
   const key = process.env.SCRAPING_API_KEY;
   if (!key) return null;
+  const started = Date.now();
+  lastScrapingDebug = { attempted: true, status: null, ms: null };
   const provider = String(process.env.SCRAPING_API || 'zenrows').toLowerCase();
   const target = encodeURIComponent(INVESTING_URL);
   const url = provider === 'scraperapi'
     ? `https://api.scraperapi.com/?api_key=${encodeURIComponent(key)}&url=${target}&render=true`
     : `https://api.zenrows.com/v1/?apikey=${encodeURIComponent(key)}&url=${target}&js_render=true&antibot=true&premium_proxy=true`;
   const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
+  lastScrapingDebug.status = response.status;
+  lastScrapingDebug.ms = Date.now() - started;
   if (!response.ok) return null;
   const html = await response.text();
   if (!html || html.length < 1000) return null;
@@ -180,6 +185,16 @@ async function fetchFairEconomy(res) {
   return { status: 200, body: { updated_at: time, fetched_at: new Date().toISOString(), source: 'Fair Economy / Forex Factory', events } };
 }
 
+function debugInfo() {
+  return {
+    hasScrapingKey: Boolean(process.env.SCRAPING_API_KEY),
+    scrapingProvider: String(process.env.SCRAPING_API || 'zenrows'),
+    hasProxy: Boolean(process.env.PROXY_SERVER),
+    scraping: lastScrapingDebug,
+    scrapingCooldownMs: Math.max(0, 5 * 60 * 1000 - (Date.now() - lastScrapingFail)),
+  };
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
   res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -199,7 +214,9 @@ module.exports = async function handler(req, res) {
     if (events) {
       // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
       res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
-      return res.status(200).json({ updated_at: new Date().toISOString(), fetched_at: new Date().toISOString(), source: 'Investing.com (السعودية)', events });
+      const body = { updated_at: new Date().toISOString(), fetched_at: new Date().toISOString(), source: 'Investing.com (السعودية)', events };
+      if (req.query && req.query.debug === '1') body.debug = debugInfo();
+      return res.status(200).json(body);
     }
   } catch (_) { /* fall through to the fallback source */ }
 
@@ -207,6 +224,7 @@ module.exports = async function handler(req, res) {
   try {
     const result = await fetchFairEconomy(res);
     if (result.status === 200) res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
+    if (req.query && req.query.debug === '1') result.body.debug = debugInfo();
     return res.status(result.status).json(result.body);
   } catch (_) { return res.status(502).json({ error: 'source_unavailable' }); }
 };
