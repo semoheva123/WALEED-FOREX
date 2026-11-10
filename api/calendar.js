@@ -1,22 +1,141 @@
-/* Fetch an on-demand calendar snapshot from the existing source. */
-const URL = 'https://nfs.faireconomy.media/ff_calendar_thisweek.json';
+/* Economic calendar: try Investing.com (Saudi Arabic) first, fall back to Fair Economy.
+ * Investing.com has no public API and may block datacenter IPs (403); the Fair Economy
+ * fallback keeps the calendar working when the primary source is unreachable.
+ * Response shape is unchanged: { updated_at, fetched_at, source, events }.
+ */
+const INVESTING_URL = 'https://sa.investing.com/economic-calendar';
+const FAIRECONOMY_URL = 'https://nfs.faireconomy.media/ff_calendar_thisweek.json';
+const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+
+function stripTags(s) {
+  return String(s || '')
+    .replace(/<[^>]*>/g, '')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const MONTHS = {
+  'يناير': 1, 'فبراير': 2, 'مارس': 3, 'أبريل': 4, 'مايو': 5, 'يونيو': 6,
+  'يوليو': 7, 'أغسطس': 8, 'سبتمبر': 9, 'أكتوبر': 10, 'نوفمبر': 11, 'ديسمبر': 12,
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7,
+  august: 8, september: 9, october: 10, november: 11, december: 12,
+};
+
+function parseDayHeader(text) {
+  // Arabic: "الثلاثاء، 10 نوفمبر 2026" | English: "Tuesday, November 10, 2026"
+  let m = text.match(/(\d{1,2})\s+([^\s\d,]+)\s+(\d{4})/);
+  if (m && MONTHS[m[2].toLowerCase()]) {
+    return { y: m[3], mo: MONTHS[m[2].toLowerCase()], d: m[1] };
+  }
+  m = text.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+  if (m && MONTHS[m[1].toLowerCase()]) {
+    return { y: m[3], mo: MONTHS[m[1].toLowerCase()], d: m[2] };
+  }
+  return null;
+}
+
+function parseInvesting(html) {
+  const events = [];
+  let current = null; // { y, mo, d } of the current day header
+  const pad = (n) => String(n).padStart(2, '0');
+  const rows = String(html).split(/(?=<tr[^>]*>)/i);
+  for (const row of rows) {
+    const isDayRow = /class=["'][^"']*\btheDay\b/i.test(row) || /colspan/i.test(row);
+    if (isDayRow && !/js-event-item/i.test(row)) {
+      const parsed = parseDayHeader(stripTags(row));
+      if (parsed) current = parsed;
+      continue;
+    }
+    if (!/js-event-item/i.test(row) || !current) continue;
+    const cells = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((x) => x[1]);
+    if (cells.length < 7) continue;
+    const time = stripTags(cells[0]);
+    const currency = (stripTags(cells[1]).match(/[A-Z]{3}/) || [''])[0];
+    const bulls = (cells[2].match(/bullishIcon/gi) || []).length;
+    const impact = bulls >= 3 ? 'High' : bulls === 2 ? 'Medium' : 'Low';
+    const title = stripTags(cells[3]);
+    if (!title) continue;
+    const tm = time.match(/(\d{1,2}):(\d{2})/);
+    const date = tm
+      ? `${current.y}-${pad(current.mo)}-${pad(current.d)}T${pad(tm[1])}:${tm[2]}:00+03:00`
+      : `${current.y}-${pad(current.mo)}-${pad(current.d)}T00:00:00+03:00`;
+    events.push({
+      title: title.slice(0, 500),
+      country: currency,
+      date,
+      impact,
+      forecast: stripTags(cells[5]).slice(0, 500),
+      previous: stripTags(cells[6]).slice(0, 500),
+      actual: stripTags(cells[4]).slice(0, 500),
+    });
+    if (events.length >= 2000) break;
+  }
+  return events;
+}
+
+async function fetchInvesting() {
+  const response = await fetch(INVESTING_URL, {
+    headers: {
+      'User-Agent': BROWSER_UA,
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'Accept-Language': 'ar-SA,ar;q=0.9,en;q=0.8',
+    },
+    signal: AbortSignal.timeout(12000),
+  });
+  if (!response.ok) return null;
+  const html = await response.text();
+  if (!html || html.length < 1000) return null;
+  const events = parseInvesting(html);
+  return events.length ? events : null;
+}
+
+async function fetchFairEconomy(res) {
+  const response = await fetch(FAIRECONOMY_URL, {
+    headers: { 'User-Agent': 'Mozilla/5.0 VALID-VX-calendar/1.0', Accept: 'application/json' },
+    signal: AbortSignal.timeout(15000),
+  });
+  if (response.status === 429) {
+    const retry = response.headers.get('retry-after');
+    if (retry) res.setHeader('Retry-After', retry);
+    return { status: 429, body: { error: 'source_rate_limited' } };
+  }
+  if (!response.ok) return { status: 502, body: { error: 'source_unavailable' } };
+  const raw = await response.json();
+  if (!Array.isArray(raw) || !raw.length || raw.length > 10000) return { status: 502, body: { error: 'invalid_source' } };
+  const events = raw
+    .filter((e) => e && e.title && e.date && e.country && e.impact)
+    .map((e) => Object.fromEntries(['title', 'country', 'date', 'impact', 'forecast', 'previous', 'actual'].map((k) => [k, String(e[k] ?? '').slice(0, 500)])));
+  if (!events.length) return { status: 502, body: { error: 'invalid_source' } };
+  const modified = response.headers.get('last-modified');
+  const time = modified && Number.isFinite(Date.parse(modified)) ? new Date(modified).toISOString() : null;
+  return { status: 200, body: { updated_at: time, fetched_at: new Date().toISOString(), source: 'Fair Economy / Forex Factory', events } };
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); return res.status(405).json({ error: 'method_not_allowed' }); }
+
+  // Primary source: Investing.com Saudi Arabic calendar.
   try {
-    const response = await fetch(URL, { headers: { 'User-Agent': 'Mozilla/5.0 VALID-VX-calendar/1.0', Accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
-    if (response.status === 429) { const retry = response.headers.get('retry-after'); if (retry) res.setHeader('Retry-After', retry); return res.status(429).json({error:'source_rate_limited'}); }
-    if (!response.ok) return res.status(502).json({ error: 'source_unavailable' });
-    const raw = await response.json();
-    if (!Array.isArray(raw) || !raw.length || raw.length > 10000) return res.status(502).json({ error: 'invalid_source' });
-    const events = raw.filter(e => e && e.title && e.date && e.country && e.impact).map(e => Object.fromEntries(['title','country','date','impact','forecast','previous','actual'].map(k => [k, String(e[k] ?? '').slice(0, 500)])));
-    if (!events.length) return res.status(502).json({ error: 'invalid_source' });
-    const modified = response.headers.get('last-modified');
-    const time = modified && Number.isFinite(Date.parse(modified)) ? new Date(modified).toISOString() : null;
-    // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
-    // The original fetched_at remains unchanged when served from cache.
-    res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
-    return res.status(200).json({ updated_at: time, fetched_at: new Date().toISOString(), source: 'Fair Economy / Forex Factory', events });
+    const events = await fetchInvesting();
+    if (events) {
+      // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
+      res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
+      return res.status(200).json({ updated_at: new Date().toISOString(), fetched_at: new Date().toISOString(), source: 'Investing.com (السعودية)', events });
+    }
+  } catch (_) { /* fall through to the fallback source */ }
+
+  // Fallback source: Fair Economy / Forex Factory.
+  try {
+    const result = await fetchFairEconomy(res);
+    if (result.status === 200) res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
+    return res.status(result.status).json(result.body);
   } catch (_) { return res.status(502).json({ error: 'source_unavailable' }); }
 };
