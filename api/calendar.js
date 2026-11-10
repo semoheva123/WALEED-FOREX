@@ -178,6 +178,8 @@ async function fetchInvestingViaScrapingApi(targetUrl) {
   const html = response.ok ? await response.text() : '';
   const v2 = html ? parseInvestingV2(html) : [];
   const legacy = html ? parseInvestingLegacy(html) : [];
+  const ti = html ? html.search(/<table/i) : -1;
+  const tb = html ? html.search(/<tbody/i) : -1;
   lastAttempts.push({
     target: targetUrl && targetUrl.includes('sslecal2') ? 'widget-week' : 'main-page',
     status: response.status,
@@ -186,6 +188,8 @@ async function fetchInvestingViaScrapingApi(targetUrl) {
     hasDatatableV2: Boolean(html && html.includes('datatable-v2_row')),
     v2Count: v2.length,
     legacyCount: legacy.length,
+    tableSnippet: ti >= 0 ? html.slice(ti, ti + 500).replace(/\s+/g, ' ') : '',
+    tbodySnippet: tb >= 0 ? html.slice(tb, tb + 2500).replace(/\s+/g, ' ') : '',
   });
   const events = v2.length ? v2 : legacy;
   return events.length ? events : null;
