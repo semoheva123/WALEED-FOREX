@@ -86,13 +86,45 @@ async function fetchInvesting() {
       Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       'Accept-Language': 'ar-SA,ar;q=0.9,en;q=0.8',
     },
-    signal: AbortSignal.timeout(12000),
+    signal: AbortSignal.timeout(10000),
   });
   if (!response.ok) return null;
   const html = await response.text();
   if (!html || html.length < 1000) return null;
   const events = parseInvesting(html);
   return events.length ? events : null;
+}
+
+// Headless-browser attempt: Investing.com sits behind Cloudflare bot protection
+// that usually blocks plain datacenter fetches (403). A real Chromium may pass,
+// but it is slow and not guaranteed — so failures are negatively cached per
+// instance and the Fair Economy fallback always remains available.
+let lastHeadlessFail = 0;
+async function fetchInvestingHeadless() {
+  let browser;
+  try {
+    const { chromium: playwright } = require('playwright-core');
+    const chromium = require('@sparticuz/chromium');
+    const executablePath = process.env.CHROMIUM_EXECUTABLE_PATH || await chromium.executablePath();
+    browser = await playwright.launch({ args: chromium.args, executablePath });
+    const page = await browser.newPage({
+      locale: 'ar-SA',
+      userAgent: BROWSER_UA,
+      viewport: { width: 1280, height: 900 },
+      extraHTTPHeaders: { 'Accept-Language': 'ar-SA,ar;q=0.9,en;q=0.8' },
+    });
+    await page.goto(INVESTING_URL, { waitUntil: 'domcontentloaded', timeout: 12000 });
+    // Wait briefly for the calendar table; a Cloudflare challenge page has no rows.
+    await page.waitForSelector('.js-event-item', { timeout: 8000 }).catch(() => {});
+    const html = await page.content();
+    if (!html || html.length < 1000) return null;
+    const events = parseInvesting(html);
+    return events.length ? events : null;
+  } catch (_) {
+    return null;
+  } finally {
+    if (browser) await browser.close().catch(() => {});
+  }
 }
 
 async function fetchFairEconomy(res) {
@@ -124,7 +156,11 @@ module.exports = async function handler(req, res) {
 
   // Primary source: Investing.com Saudi Arabic calendar.
   try {
-    const events = await fetchInvesting();
+    let events = await fetchInvesting();
+    if (!events && Date.now() - lastHeadlessFail > 5 * 60 * 1000) {
+      events = await fetchInvestingHeadless();
+      if (!events) lastHeadlessFail = Date.now();
+    }
     if (events) {
       // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
       res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
