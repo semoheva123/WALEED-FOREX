@@ -1,7 +1,9 @@
 /* Economic calendar: try Investing.com (Saudi Arabic) first, fall back to Fair Economy.
  * Investing.com has no public API and blocks datacenter IPs (403) — including
- * headless-browser attempts from serverless IPs (verified 2026-11-10) — so the
- * Fair Economy fallback is what normally serves the calendar.
+ * headless-browser attempts from serverless IPs (verified 2026-11-10). A
+ * residential proxy (PROXY_SERVER / PROXY_USERNAME / PROXY_PASSWORD env vars)
+ * lets the headless attempt pass Cloudflare IP checks; without it, the Fair
+ * Economy fallback serves the calendar.
  * Response shape is unchanged: { updated_at, fetched_at, source, events }.
  */
 const INVESTING_URL = 'https://sa.investing.com/economic-calendar';
@@ -96,6 +98,43 @@ async function fetchInvesting() {
   return events.length ? events : null;
 }
 
+
+// Headless-browser attempt through an optional residential proxy.
+// Cloudflare blocks datacenter IPs even with a real Chromium (verified
+// 2026-11-10); a residential proxy restores trust. Only runs when
+// PROXY_SERVER is configured. Failures are negatively cached per instance.
+let lastHeadlessFail = 0;
+async function fetchInvestingHeadless() {
+  let browser;
+  try {
+    const { chromium: playwright } = require('playwright-core');
+    const chromium = require('@sparticuz/chromium');
+    const executablePath = process.env.CHROMIUM_EXECUTABLE_PATH || await chromium.executablePath();
+    const proxy = {
+      server: process.env.PROXY_SERVER,
+      username: process.env.PROXY_USERNAME || undefined,
+      password: process.env.PROXY_PASSWORD || undefined,
+    };
+    browser = await playwright.launch({ args: chromium.args, executablePath, proxy });
+    const page = await browser.newPage({
+      locale: 'ar-SA',
+      userAgent: BROWSER_UA,
+      viewport: { width: 1280, height: 900 },
+      extraHTTPHeaders: { 'Accept-Language': 'ar-SA,ar;q=0.9,en;q=0.8' },
+    });
+    await page.goto(INVESTING_URL, { waitUntil: 'domcontentloaded', timeout: 15000 });
+    await page.waitForSelector('.js-event-item', { timeout: 8000 }).catch(() => {});
+    const html = await page.content();
+    if (!html || html.length < 1000) return null;
+    const events = parseInvesting(html);
+    return events.length ? events : null;
+  } catch (_) {
+    return null;
+  } finally {
+    if (browser) await browser.close().catch(() => {});
+  }
+}
+
 async function fetchFairEconomy(res) {
   const response = await fetch(FAIRECONOMY_URL, {
     headers: { 'User-Agent': 'Mozilla/5.0 VALID-VX-calendar/1.0', Accept: 'application/json' },
@@ -125,7 +164,11 @@ module.exports = async function handler(req, res) {
 
   // Primary source: Investing.com Saudi Arabic calendar.
   try {
-    const events = await fetchInvesting();
+    let events = await fetchInvesting();
+    if (!events && process.env.PROXY_SERVER && Date.now() - lastHeadlessFail > 5 * 60 * 1000) {
+      events = await fetchInvestingHeadless();
+      if (!events) lastHeadlessFail = Date.now();
+    }
     if (events) {
       // Cache successful responses at Vercel's CDN to reduce duplicate upstream calls.
       res.setHeader('Vercel-CDN-Cache-Control', 'public, s-maxage=120');
