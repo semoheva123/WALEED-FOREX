@@ -258,7 +258,8 @@ module.exports = async function handler(req, res) {
   // Primary source: Investing.com Saudi Arabic calendar.
   try {
     let events = await fetchInvesting();
-    if (!events && process.env.SCRAPING_API_KEY && Date.now() - lastScrapingFail > 5 * 60 * 1000) {
+    const forceAttempt = Boolean(req.query && req.query.debug === '1');
+    if (!events && process.env.SCRAPING_API_KEY && (forceAttempt || Date.now() - lastScrapingFail > 5 * 60 * 1000)) {
       events = await fetchInvestingViaScrapingApi(WIDGET_WEEK_URL).catch(() => null);
       if (!events) events = await fetchInvestingViaScrapingApi(INVESTING_URL).catch(() => null);
       if (!events) lastScrapingFail = Date.now();
