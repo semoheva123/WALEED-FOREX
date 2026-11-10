@@ -4,6 +4,8 @@
  const W=1080,H=1920;
  const fm=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Istanbul',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
  function rounded(c,x,y,w,h,r){c.beginPath();c.roundRect(x,y,w,h,r)}
+ const FLAGS={USD:'🇺🇸',EUR:'🇪🇺',GBP:'🇬🇧',JPY:'🇯🇵',CHF:'🇨🇭',CAD:'🇨🇦',AUD:'🇦🇺',NZD:'🇳🇿',CNY:'🇨🇳',TRY:'🇹🇷',KWD:'🇰🇼',SAR:'🇸🇦',AED:'🇦🇪',QAR:'🇶🇦',BHD:'🇧🇭',OMR:'🇴🇲',EGP:'🇪🇬',JOD:'🇯🇴',LBP:'🇱🇧',ILS:'🇮🇱',INR:'🇮🇳',KRW:'🇰🇷',SGD:'🇸🇬',HKD:'🇭🇰',BRL:'🇧🇷',MXN:'🇲🇽',ZAR:'🇿🇦',SEK:'🇸🇪',NOK:'🇳🇴',DKK:'🇩🇰',PLN:'🇵🇱',CZK:'🇨🇿',HUF:'🇭🇺',RUB:'🇷🇺',IDR:'🇮🇩',THB:'🇹🇭',MYR:'🇲🇾',PHP:'🇵🇭',TWD:'🇹🇼'};
+ function flagFor(code){if(!code)return '';if(FLAGS[code])return FLAGS[code];if(/^[A-Z]{2}$/.test(code)){try{return String.fromCodePoint(127462+code.charCodeAt(0)-65,127462+code.charCodeAt(1)-65)}catch(_){return ''}}return ''}
  function txt(c,text,x,y,size,color,weight='400',align='right',dir='rtl'){c.direction=dir;c.textAlign=align;c.fillStyle=color;c.font=`${weight} ${size}px Tahoma, Arial, sans-serif`;c.fillText(String(text),x,y)}
  function lines(c,text,x,y,maxWidth,size,color,weight='400',max=2){c.direction='rtl';c.textAlign='right';c.font=`${weight} ${size}px Tahoma, Arial, sans-serif`;let line='',out=[];for(const word of String(text).split(/\s+/)){const test=line?line+' '+word:word;if(c.measureText(test).width>maxWidth&&line){out.push(line);line=word}else line=test}if(line)out.push(line);if(out.length>max){out=out.slice(0,max);out[max-1]+='…'}out.forEach((v,i)=>txt(c,v,x,y+i*(size*1.42),size,color,weight));return out.length*size*1.42}
  function paint(data){const canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;const c=canvas.getContext('2d');let g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,'#102b32');g.addColorStop(.4,'#0a1923');g.addColorStop(1,'#060e17');c.fillStyle=g;c.fillRect(0,0,W,H);
@@ -17,12 +19,12 @@
  for(let i=0;i<events.length;i++){
   const e=events[i],top=y+18+i*step,dt=new Date(e.date),date=Number.isFinite(dt.valueOf())?fm.format(dt)+' TRT':'—',impact={High:'مرتفع',Medium:'متوسط',Low:'منخفض',Holiday:'عطلة'}[e.impact]||e.impact;
   if(compact){
-   txt(c,date+'  ·  '+e.country,965,top+23,20,'#e5cd91','700','right','ltr');rounded(c,100,top+1,90,30,6);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,145,top+22,16,'#ffe5d7','700','center');
+   txt(c,date+'  ·  '+(flagFor(e.country)?flagFor(e.country)+' ':'')+e.country,965,top+23,20,'#e5cd91','700','right','ltr');rounded(c,100,top+1,90,30,6);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,145,top+22,16,'#ffe5d7','700','center');
    const title=e.title_ar||'الترجمة غير متاحة';lines(c,title,965,top+49,840,23,'#f2f5f2','700',1);
    c.direction='ltr';c.textAlign='right';c.fillStyle='#aec1c5';c.font='17px Tahoma, Arial, sans-serif';if(e.title!==title)c.fillText(e.title,965,top+76,430);
    c.direction='rtl';c.textAlign='left';c.fillStyle='#cad6d5';c.font='16px Tahoma, Arial, sans-serif';c.fillText('الفعلي: '+(e.actual||'—')+' | المتوقع: '+(e.forecast||'—')+' | السابق: '+(e.previous||'—'),105,top+76,415);
   }else{
-   const t=top+22;txt(c,date+'  ·  '+e.country,965,t+29,23,'#e5cd91','700','right','ltr');rounded(c,100,t,155,45,8);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,178,t+30,20,'#ffe5d7','700','center');let title=e.title_ar||'الترجمة غير متاحة';lines(c,title,965,t+82,835,29,'#f2f5f2','700',2);if(e.title!==title)txt(c,e.title,965,t+163,20,'#aec1c5','400','right','ltr');txt(c,'الفعلي: '+(e.actual||'—')+'   |   المتوقع: '+(e.forecast||'—')+'   |   السابق: '+(e.previous||'—'),965,t+201,19,'#cad6d5');
+   const t=top+22;txt(c,date+'  ·  '+(flagFor(e.country)?flagFor(e.country)+' ':'')+e.country,965,t+29,23,'#e5cd91','700','right','ltr');rounded(c,100,t,155,45,8);c.fillStyle=e.impact==='High'?'#783f42':'#695a3b';c.fill();txt(c,impact,178,t+30,20,'#ffe5d7','700','center');let title=e.title_ar||'الترجمة غير متاحة';lines(c,title,965,t+82,835,29,'#f2f5f2','700',2);if(e.title!==title)txt(c,e.title,965,t+163,20,'#aec1c5','400','right','ltr');txt(c,'الفعلي: '+(e.actual||'—')+'   |   المتوقع: '+(e.forecast||'—')+'   |   السابق: '+(e.previous||'—'),965,t+201,19,'#cad6d5');
   }
   if(i<events.length-1){c.fillStyle='#ffffff1d';c.fillRect(105,y+18+(i+1)*step,870,1)}
  }
