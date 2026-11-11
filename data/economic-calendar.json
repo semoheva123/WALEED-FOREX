@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T09:15:56.243906+00:00",
+  "updated_at": "2026-11-11T17:25:15.530284+00:00",
   "source": "Investing.com (السعودية)",
   "events": [
     {
@@ -153,7 +153,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "3.175%",
-      "actual": ""
+      "actual": "3.207%"
     },
     {
       "title": "مزاد سندات Bund الألمانية لمدة 30 سنة",
@@ -162,7 +162,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "3.800%",
-      "actual": ""
+      "actual": "3.660%"
     },
     {
       "title": "طلبات القروض العقارية الصادر عن جمعية المصرفيين للرهن العقاري (أسبوعيا)",
@@ -171,7 +171,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "-1.2%",
-      "actual": ""
+      "actual": "6.2%"
     },
     {
       "title": "مؤشر سوق القروض العقارية",
@@ -180,7 +180,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "192.6",
-      "actual": ""
+      "actual": "204.6"
     },
     {
       "title": "مؤشر المشتريات الصادر عن جمعية المصرفيين للرهن العقاري",
@@ -189,7 +189,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "131.4",
-      "actual": ""
+      "actual": "141.2"
     },
     {
       "title": "مؤشر إعادة تمويل القروض العقارية",
@@ -198,7 +198,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "517.5",
-      "actual": ""
+      "actual": "540.7"
     },
     {
       "title": "معدل القروض العقارية لمدة 30 عامًا الصادر عن جمعية المصرفيين للرهن العقاري",
@@ -207,7 +207,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "7.30%",
-      "actual": ""
+      "actual": "7.21%"
     },
     {
       "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
@@ -216,7 +216,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "45.18",
-      "actual": ""
+      "actual": "49.20"
     },
     {
       "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
@@ -225,25 +225,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "46.61",
-      "actual": ""
-    },
-    {
-      "title": "العرض النقدي M3 (سنويا) (سبتمبر)",
-      "country": "AED",
-      "date": "2026-11-11T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "12.50%",
-      "actual": ""
-    },
-    {
-      "title": "قروض القطاع الخاص (سنويا) (سبتمبر)",
-      "country": "AED",
-      "date": "2026-11-11T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "18.78%",
-      "actual": ""
+      "actual": "47.22"
     },
     {
       "title": "مبيعات التجزئة بالبطاقات الإلكترونية (شهريا) (أكتوبر)",
