@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T07:00:50.433029+00:00",
+  "updated_at": "2026-11-12T15:56:15.567946+00:00",
   "source": "Investing.com (السعودية)",
   "events": [
     {
@@ -27,7 +27,7 @@
       "impact": "High",
       "forecast": "1.9%",
       "previous": "1.4%",
-      "actual": ""
+      "actual": "1.9%"
     },
     {
       "title": "الناتج الإجمالي المحلي (شهريا) (سبتمبر)",
@@ -35,8 +35,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "High",
       "forecast": "0.0%",
-      "previous": "0.1%",
-      "actual": ""
+      "previous": "0.0%",
+      "actual": "0.2%"
     },
     {
       "title": "الناتج الإجمالي المحلي (ربع سنويا) (الربع 3)",
@@ -45,7 +45,7 @@
       "impact": "High",
       "forecast": "0.7%",
       "previous": "0.5%",
-      "actual": ""
+      "actual": "0.7%"
     },
     {
       "title": "مؤشر الإنتاج التصنيعي (شهريا) (سبتمبر)",
@@ -53,8 +53,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "-0.5%",
-      "previous": "1.2%",
-      "actual": ""
+      "previous": "0.7%",
+      "actual": "0.7%"
     },
     {
       "title": "الإنتاج الصناعي (شهريا) (سبتمبر)",
@@ -62,8 +62,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "-0.4%",
-      "previous": "0.8%",
-      "actual": ""
+      "previous": "0.7%",
+      "actual": "0.3%"
     },
     {
       "title": "معدل الإستثمار في الأعمال التجارية (ربع سنويا) (الربع 3)",
@@ -72,7 +72,7 @@
       "impact": "Medium",
       "forecast": "0.4%",
       "previous": "1.8%",
-      "actual": ""
+      "actual": "0.4%"
     },
     {
       "title": "معدل تغير الناتج الإجمالي المحلي GDP على أساس شهري 3M/3M (سبتمبر)",
@@ -80,8 +80,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "0.7%",
-      "previous": "0.7%",
-      "actual": ""
+      "previous": "0.6%",
+      "actual": "0.7%"
     },
     {
       "title": "الميزان التجاري خارج الإتحاد الأوروبي (سبتمبر)",
@@ -89,8 +89,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
-      "previous": "-5.29B",
-      "actual": ""
+      "previous": "-6.82B",
+      "actual": "-8.99B"
     },
     {
       "title": "الناتج الإجمالي المحلي السنوي (سبتمبر)",
@@ -98,8 +98,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "-19.20B",
-      "previous": "-18.01B",
-      "actual": ""
+      "previous": "-19.61B",
+      "actual": "-22.29B"
     },
     {
       "title": "الإنتاج الصناعي (سنويا) (سبتمبر)",
@@ -107,8 +107,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "2.9%",
-      "previous": "1.6%",
-      "actual": ""
+      "previous": "1.1%",
+      "actual": "3.1%"
     },
     {
       "title": "مؤشر الإنتاج التصنيعي (سنويا) (سبتمبر)",
@@ -116,8 +116,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "3.8%",
-      "previous": "3.0%",
-      "actual": ""
+      "previous": "2.5%",
+      "actual": "4.4%"
     },
     {
       "title": "معدل الإستثمار في الأعمال التجارية (سنويا) (الربع 3)",
@@ -126,7 +126,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "5.2%",
-      "actual": ""
+      "actual": "3.0%"
     },
     {
       "title": "إنتاج قطاع الإنشاءات (شهريا) (سبتمبر)",
@@ -134,8 +134,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "0.0%",
-      "previous": "-0.2%",
-      "actual": ""
+      "previous": "-0.5%",
+      "actual": "0.8%"
     },
     {
       "title": "بيانات البنية التحتية البريطانية (سنويا) (سبتمبر)",
@@ -143,8 +143,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "-2.1%",
-      "previous": "-1.8%",
-      "actual": ""
+      "previous": "-1.9%",
+      "actual": "-1.5%"
     },
     {
       "title": "الناتج الإجمالي المحلي (سنويا) (سبتمبر)",
@@ -152,8 +152,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "1.9%",
-      "previous": "2.1%",
-      "actual": ""
+      "previous": "2.0%",
+      "actual": "2.1%"
     },
     {
       "title": "مؤشر الخدمات",
@@ -162,7 +162,7 @@
       "impact": "Low",
       "forecast": "0.9%",
       "previous": "0.9%",
-      "actual": ""
+      "actual": "0.9%"
     },
     {
       "title": "بيان التضخم لـ CBRT",
@@ -183,6 +183,15 @@
       "actual": ""
     },
     {
+      "title": "مؤشر أسعار المستهلكين (سنويا) (أكتوبر)",
+      "country": "OMR",
+      "date": "2026-11-12T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "3.2%",
+      "actual": "2.9%"
+    },
+    {
       "title": "التوقعات الإقتصادية للاتحاد الأوروبي",
       "country": "EUR",
       "date": "2026-11-12T00:00:00+03:00",
@@ -198,7 +207,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "3.69%",
-      "actual": ""
+      "actual": "3.58%"
     },
     {
       "title": "مزاد سندات إيطاليا BTP لمدة 7 سنوات",
@@ -207,7 +216,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "3.90%",
-      "actual": ""
+      "actual": "4.04%"
     },
     {
       "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
@@ -216,7 +225,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "45.3",
-      "actual": ""
+      "actual": "44.0"
     },
     {
       "title": "طومسون رويترز الإيطالي IPSOS PCSI (نوفمبر)",
@@ -225,7 +234,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "42.99",
-      "actual": ""
+      "actual": "41.40"
     },
     {
       "title": "طومسون رويترز الألماني IPSOS PCSI (نوفمبر)",
@@ -234,7 +243,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "42.37",
-      "actual": ""
+      "actual": "41.95"
     },
     {
       "title": "طومسون رويترز الفرنسي IPSOS PCSI (نوفمبر)",
@@ -243,7 +252,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "37.63",
-      "actual": ""
+      "actual": "37.90"
     },
     {
       "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
@@ -252,7 +261,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "45.22",
-      "actual": ""
+      "actual": "47.55"
     },
     {
       "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
@@ -261,7 +270,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "71.35",
-      "actual": ""
+      "actual": "70.03"
     },
     {
       "title": "طومسون رويترز التركي IPSOS PCSI (نوفمبر)",
@@ -270,7 +279,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "34.9",
-      "actual": ""
+      "actual": "36.7"
     },
     {
       "title": "إجمالي احتياطيات العملات الأجنبية",
@@ -279,7 +288,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "56.09B",
-      "actual": ""
+      "actual": "57.02B"
     },
     {
       "title": "صافي احتياطيات العملات الأجنبية",
@@ -288,7 +297,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "38.01%",
-      "actual": ""
+      "actual": "41.18%"
     },
     {
       "title": "NIESR متعقب الناتج الإجمالي المحلي الشهري (أكتوبر)",
@@ -297,7 +306,7 @@
       "impact": "Medium",
       "forecast": "",
       "previous": "0.7%",
-      "actual": ""
+      "actual": "0.6%"
     },
     {
       "title": "رصيد الحساب الجاري الألماني n.s.a (سبتمبر)",
@@ -305,17 +314,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "10.3B",
-      "actual": ""
-    },
-    {
-      "title": "تصاريح البناء (شهريا) (سبتمبر)",
-      "country": "CAD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "-4.0%",
-      "previous": "8.8%",
-      "actual": ""
+      "previous": "11.2B",
+      "actual": "18.7B"
     },
     {
       "title": "معدلات الشكاوى من البطالة",
@@ -323,8 +323,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "High",
       "forecast": "194K",
-      "previous": "189K",
-      "actual": ""
+      "previous": "191K",
+      "actual": "200K"
     },
     {
       "title": "تداعيات البطالة المستمرة",
@@ -332,8 +332,8 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "1,710K",
-      "previous": "1,718K",
-      "actual": ""
+      "previous": "1,717K",
+      "actual": "1,697K"
     },
     {
       "title": "متوسط طلبات إعانة البطالة في 4 أسابيع",
@@ -341,8 +341,17 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "194.75K",
-      "actual": ""
+      "previous": "195.25K",
+      "actual": "195.25K"
+    },
+    {
+      "title": "تصاريح البناء (شهريا) (سبتمبر)",
+      "country": "CAD",
+      "date": "2026-11-12T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "-4.0%",
+      "previous": "7.6%",
+      "actual": "-4.1%"
     },
     {
       "title": "مبيعات المنازل القائمة (أكتوبر)",
@@ -350,17 +359,17 @@
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "High",
       "forecast": "3.89M",
-      "previous": "3.99M",
-      "actual": ""
+      "previous": "3.97M",
+      "actual": "3.75M"
     },
     {
       "title": "مبيعات المنازل القائمة (شهريا) (أكتوبر)",
       "country": "USD",
       "date": "2026-11-12T00:00:00+03:00",
       "impact": "Medium",
-      "forecast": "",
-      "previous": "1.5%",
-      "actual": ""
+      "forecast": "-3.5%",
+      "previous": "1.0%",
+      "actual": "-5.5%"
     },
     {
       "title": "حديث بار، نائب رئيس بنك الاحتياطي الفيدرالي للإشراف",
