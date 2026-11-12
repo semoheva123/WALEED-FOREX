@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T15:56:15.567946+00:00",
+  "updated_at": "2026-11-12T22:12:44.529488+00:00",
   "source": "Investing.com (السعودية)",
   "events": [
     {
@@ -387,7 +387,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "3.890%",
-      "actual": ""
+      "actual": "3.955%"
     },
     {
       "title": "مزاد سندات Bill لمدة 8 أسابيع",
@@ -396,7 +396,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "3.975%",
-      "actual": ""
+      "actual": "4.080%"
     },
     {
       "title": "يتحدث جولسبي من الاحتياطي الفيدرالي",
@@ -414,7 +414,7 @@
       "impact": "High",
       "forecast": "-0.600M",
       "previous": "-0.865M",
-      "actual": ""
+      "actual": "4.657M"
     },
     {
       "title": "مخزون كوشينغ من النفط الخام",
@@ -423,7 +423,7 @@
       "impact": "Medium",
       "forecast": "",
       "previous": "0.280M",
-      "actual": ""
+      "actual": "0.106M"
     },
     {
       "title": "إنتاج البنزين",
@@ -432,7 +432,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "0.463M",
-      "actual": ""
+      "actual": "-0.078M"
     },
     {
       "title": "إنتاج الوقود المقطر",
@@ -441,7 +441,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "-0.007M",
-      "actual": ""
+      "actual": "-0.063M"
     },
     {
       "title": "مخزون البنزين",
@@ -450,7 +450,7 @@
       "impact": "Low",
       "forecast": "-0.100M",
       "previous": "-0.222M",
-      "actual": ""
+      "actual": "1.799M"
     },
     {
       "title": "مؤشر معهد البترول الأميركي الأسبوعي لمخزون النفط المقطّر",
@@ -459,7 +459,7 @@
       "impact": "Low",
       "forecast": "-1.000M",
       "previous": "-3.565M",
-      "actual": ""
+      "actual": "4.071M"
     },
     {
       "title": "بيان نشاط مصافي النفط الخام من إدارة معلومات الطاقة الأمريكية (أسبوعيا)",
@@ -468,7 +468,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "0.199M",
-      "actual": ""
+      "actual": "0.322M"
     },
     {
       "title": "مخزون وقود التدفئة",
@@ -477,7 +477,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "-0.203M",
-      "actual": ""
+      "actual": "0.335M"
     },
     {
       "title": "البيان الأسبوعي لمعدلات تشغيل المصافي الصادر عن إدارة معلومات الطاقة الأمريكية (أسبوعيا)",
@@ -486,7 +486,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "1.7%",
-      "actual": ""
+      "actual": "0.7%"
     },
     {
       "title": "واردات النفط الخام",
@@ -495,7 +495,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "1.179M",
-      "actual": ""
+      "actual": "0.544M"
     },
     {
       "title": "خطاب ناجيل - رئيس البنك الاتحادي الألماني",
@@ -513,7 +513,7 @@
       "impact": "Medium",
       "forecast": "",
       "previous": "5.618%",
-      "actual": ""
+      "actual": "5.441%"
     },
     {
       "title": "خطاب دالي - عضو اللجنة الفيدرالية للسوق المفتوحة",
@@ -540,7 +540,7 @@
       "impact": "Medium",
       "forecast": "-298.6B",
       "previous": "-27.0B",
-      "actual": ""
+      "actual": "-404.0B"
     },
     {
       "title": "الميزانية العمومية للاحتياطي الفيدرالي",
@@ -549,7 +549,7 @@
       "impact": "High",
       "forecast": "",
       "previous": "6,748B",
-      "actual": ""
+      "actual": "6,759B"
     },
     {
       "title": "أرصدة الاحتياطي لدى البنوك الاحتياطية الفيدرالية",
@@ -558,7 +558,7 @@
       "impact": "Low",
       "forecast": "",
       "previous": "2.962T",
-      "actual": ""
+      "actual": "2.969T"
     },
     {
       "title": "مؤشر مديري المشتريات النيوزيلندي للأعمال (أكتوبر)",
@@ -567,7 +567,7 @@
       "impact": "Medium",
       "forecast": "",
       "previous": "56.5",
-      "actual": ""
+      "actual": "54.9"
     },
     {
       "title": "خطاب لاجارد محافظ ECB",
