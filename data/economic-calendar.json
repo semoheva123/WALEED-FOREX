@@ -1,951 +1,492 @@
 {
-  "updated_at": "2026-11-13T18:29:17.209164+00:00",
-  "source": "Fair Economy / Forex Factory",
+  "updated_at": "2026-11-13T23:49:46.926795+00:00",
+  "source": "Investing.com (السعودية)",
   "events": [
     {
-      "title": "RBA Assist Gov Hunter Speaks",
+      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
       "country": "AUD",
-      "date": "2026-11-08T17:30:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "",
-      "actual": ""
+      "previous": "45.62",
+      "actual": "44.06"
     },
     {
-      "title": "CPI y/y",
+      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
+      "country": "JPY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "38.96",
+      "actual": "37.67"
+    },
+    {
+      "title": "طومسون رويترز الصيني IPSOS PCSI (نوفمبر)",
       "country": "CNY",
-      "date": "2026-11-08T20:30:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "0.8%",
-      "previous": "0.9%",
-      "actual": ""
+      "forecast": "",
+      "previous": "69.29",
+      "actual": "70.44"
     },
     {
-      "title": "PPI y/y",
-      "country": "CNY",
-      "date": "2026-11-08T20:30:00-05:00",
-      "impact": "Low",
-      "forecast": "5.3%",
-      "previous": "5.0%",
-      "actual": ""
-    },
-    {
-      "title": "Leading Indicators",
-      "country": "JPY",
-      "date": "2026-11-09T00:00:00-05:00",
-      "impact": "Low",
-      "forecast": "116.7%",
-      "previous": "118.0%",
-      "actual": ""
-    },
-    {
-      "title": "German Trade Balance",
+      "title": "خطاب إلدرسون عضو المركزي الأوروبي",
       "country": "EUR",
-      "date": "2026-11-09T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "19.2B",
-      "previous": "19.5B",
-      "actual": ""
-    },
-    {
-      "title": "Sentix Investor Confidence",
-      "country": "EUR",
-      "date": "2026-11-09T04:30:00-05:00",
-      "impact": "Low",
-      "forecast": "2.1",
-      "previous": "2.7",
-      "actual": ""
-    },
-    {
-      "title": "G7 Meetings",
-      "country": "All",
-      "date": "2026-11-09T04:45:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "ECOFIN Meetings",
-      "country": "EUR",
-      "date": "2026-11-09T05:15:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Eurogroup Meetings",
-      "country": "EUR",
-      "date": "2026-11-09T05:15:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Bowman Speaks",
-      "country": "USD",
-      "date": "2026-11-09T08:40:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Final Wholesale Inventories m/m",
-      "country": "USD",
-      "date": "2026-11-09T10:00:00-05:00",
-      "impact": "Low",
-      "forecast": "0.6%",
-      "previous": "0.6%",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Goolsbee Speaks",
-      "country": "USD",
-      "date": "2026-11-09T10:00:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Barkin Speaks",
-      "country": "USD",
-      "date": "2026-11-09T12:15:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "BOE Gov Bailey Speaks",
-      "country": "GBP",
-      "date": "2026-11-09T12:25:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "Westpac Consumer Sentiment",
-      "country": "AUD",
-      "date": "2026-11-09T18:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-4.7%",
-      "actual": ""
-    },
-    {
-      "title": "Household Spending y/y",
-      "country": "JPY",
-      "date": "2026-11-09T18:30:00-05:00",
-      "impact": "Low",
-      "forecast": "-3.1%",
-      "previous": "-3.1%",
-      "actual": ""
-    },
-    {
-      "title": "Bank Lending y/y",
-      "country": "JPY",
-      "date": "2026-11-09T18:50:00-05:00",
-      "impact": "Low",
-      "forecast": "5.4%",
-      "previous": "5.3%",
-      "actual": ""
-    },
-    {
-      "title": "BOJ Summary of Opinions",
-      "country": "JPY",
-      "date": "2026-11-09T18:50:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Current Account",
-      "country": "JPY",
-      "date": "2026-11-09T18:50:00-05:00",
-      "impact": "Low",
-      "forecast": "2.81T",
-      "previous": "2.98T",
-      "actual": ""
-    },
-    {
-      "title": "BRC Retail Sales Monitor y/y",
-      "country": "GBP",
-      "date": "2026-11-09T19:01:00-05:00",
-      "impact": "Low",
-      "forecast": "1.2%",
-      "previous": "1.0%",
-      "actual": ""
-    },
-    {
-      "title": "NAB Business Confidence",
-      "country": "AUD",
-      "date": "2026-11-09T19:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-13",
-      "actual": ""
-    },
-    {
-      "title": "USD-Denominated Trade Balance",
-      "country": "CNY",
-      "date": "2026-11-09T21:32:00-05:00",
-      "impact": "Low",
-      "forecast": "126.5B",
-      "previous": "133.5B",
-      "actual": ""
-    },
-    {
-      "title": "Trade Balance",
-      "country": "CNY",
-      "date": "2026-11-09T21:33:00-05:00",
-      "impact": "Low",
-      "forecast": "855B",
-      "previous": "906B",
-      "actual": ""
-    },
-    {
-      "title": "30-y Bond Auction",
-      "country": "JPY",
-      "date": "2026-11-09T22:35:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "4.11|3.9",
-      "actual": ""
-    },
-    {
-      "title": "Economy Watchers Sentiment",
-      "country": "JPY",
-      "date": "2026-11-10T00:00:00-05:00",
-      "impact": "Low",
-      "forecast": "47.1",
-      "previous": "47.0",
-      "actual": ""
-    },
-    {
-      "title": "MPC Member Breeden Speaks",
-      "country": "GBP",
-      "date": "2026-11-10T03:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Waller Speaks",
-      "country": "USD",
-      "date": "2026-11-10T04:00:00-05:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "G7 Meetings",
-      "country": "All",
-      "date": "2026-11-10T04:45:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "30-y Bond Auction",
-      "country": "GBP",
-      "date": "2026-11-10T05:02:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "5.52|3.8",
-      "actual": ""
-    },
-    {
-      "title": "NFIB Small Business Index",
-      "country": "USD",
-      "date": "2026-11-10T06:00:00-05:00",
-      "impact": "Low",
-      "forecast": "98.0",
-      "previous": "97.9",
-      "actual": ""
-    },
-    {
-      "title": "MPC Member Lombardelli Speaks",
-      "country": "GBP",
-      "date": "2026-11-10T07:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "ADP Weekly Employment Change",
-      "country": "USD",
-      "date": "2026-11-10T08:14:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "16.8K",
-      "actual": ""
-    },
-    {
-      "title": "ADP Weekly Employment Change",
-      "country": "USD",
-      "date": "2026-11-10T08:15:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "19.5K",
-      "actual": ""
-    },
-    {
-      "title": "Core CPI m/m",
-      "country": "USD",
-      "date": "2026-11-10T08:30:00-05:00",
-      "impact": "High",
-      "forecast": "0.2%",
-      "previous": "0.3%",
-      "actual": ""
-    },
-    {
-      "title": "CPI m/m",
-      "country": "USD",
-      "date": "2026-11-10T08:30:00-05:00",
-      "impact": "High",
-      "forecast": "0.3%",
-      "previous": "0.6%",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Logan Speaks",
-      "country": "USD",
-      "date": "2026-11-10T10:50:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "10-y Bond Auction",
-      "country": "USD",
-      "date": "2026-11-10T13:01:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "5.30|2.8",
-      "actual": ""
-    },
-    {
-      "title": "BOC Summary of Deliberations",
-      "country": "CAD",
-      "date": "2026-11-10T13:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "MPC Member Pill Speaks",
-      "country": "GBP",
-      "date": "2026-11-10T13:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Schmid Speaks",
-      "country": "USD",
-      "date": "2026-11-10T13:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Bowman Speaks",
-      "country": "USD",
-      "date": "2026-11-10T15:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "API Weekly Statistical Bulletin",
-      "country": "USD",
-      "date": "2026-11-10T16:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Bowman Speaks",
-      "country": "USD",
-      "date": "2026-11-10T18:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Paulson Speaks",
-      "country": "USD",
-      "date": "2026-11-10T18:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "M2 Money Stock y/y",
-      "country": "JPY",
-      "date": "2026-11-10T18:50:00-05:00",
-      "impact": "Low",
-      "forecast": "2.1%",
-      "previous": "2.0%",
-      "actual": ""
-    },
-    {
-      "title": "Prelim Machine Tool Orders y/y",
-      "country": "JPY",
-      "date": "2026-11-11T01:00:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "60.4%",
-      "actual": ""
-    },
-    {
-      "title": "German Final CPI m/m",
+      "title": "مؤشر أسعار مبيعات الجملة الألمانية (سنويا) (أكتوبر)",
       "country": "EUR",
-      "date": "2026-11-11T02:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "-0.2%",
-      "previous": "-0.2%",
-      "actual": ""
+      "forecast": "",
+      "previous": "8.7%",
+      "actual": "8.8%"
     },
     {
-      "title": "French Bank Holiday",
+      "title": "مؤشر أسعار مبيعات الجملة الألمانية (شهريا) (أكتوبر)",
       "country": "EUR",
-      "date": "2026-11-11T02:01:00-05:00",
-      "impact": "Holiday",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "German Buba President Nagel Speaks",
-      "country": "EUR",
-      "date": "2026-11-11T03:15:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Italian Industrial Production m/m",
-      "country": "EUR",
-      "date": "2026-11-11T04:00:00-05:00",
-      "impact": "Low",
-      "forecast": "0.7%",
-      "previous": "-1.3%",
-      "actual": ""
-    },
-    {
-      "title": "ECB President Lagarde Speaks",
-      "country": "EUR",
-      "date": "2026-11-11T04:45:00-05:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "German 30-y Bond Auction",
-      "country": "EUR",
-      "date": "2026-11-11T05:35:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "3.80|1.4",
-      "actual": ""
-    },
-    {
-      "title": "Bank Holiday",
-      "country": "CAD",
-      "date": "2026-11-11T08:00:00-05:00",
-      "impact": "Holiday",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Bank Holiday",
-      "country": "USD",
-      "date": "2026-11-11T08:00:00-05:00",
-      "impact": "Holiday",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Visitor Arrivals m/m",
-      "country": "NZD",
-      "date": "2026-11-11T16:45:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "2.8%",
-      "actual": ""
-    },
-    {
-      "title": "PPI y/y",
-      "country": "JPY",
-      "date": "2026-11-11T18:50:00-05:00",
-      "impact": "Low",
-      "forecast": "6.5%",
-      "previous": "6.8%",
-      "actual": ""
-    },
-    {
-      "title": "MI Inflation Expectations",
-      "country": "AUD",
-      "date": "2026-11-11T19:00:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "5.3%",
-      "actual": ""
-    },
-    {
-      "title": "RICS House Price Balance",
-      "country": "GBP",
-      "date": "2026-11-11T19:01:00-05:00",
-      "impact": "Low",
-      "forecast": "-33%",
-      "previous": "-32%",
-      "actual": ""
-    },
-    {
-      "title": "GDP m/m",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "High",
-      "forecast": "0.0%",
-      "previous": "0.1%",
-      "actual": ""
-    },
-    {
-      "title": "Prelim GDP q/q",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Medium",
-      "forecast": "0.7%",
-      "previous": "0.5%",
-      "actual": ""
-    },
-    {
-      "title": "Construction Output m/m",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "0.0%",
-      "previous": "-0.2%",
-      "actual": ""
-    },
-    {
-      "title": "Goods Trade Balance",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "-19.2B",
-      "previous": "-18.0B",
-      "actual": ""
-    },
-    {
-      "title": "Index of Services 3m/3m",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "0.9%",
-      "previous": "0.9%",
-      "actual": ""
-    },
-    {
-      "title": "Industrial Production m/m",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "-0.4%",
-      "previous": "0.8%",
-      "actual": ""
-    },
-    {
-      "title": "Manufacturing Production m/m",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "-0.5%",
-      "previous": "1.2%",
-      "actual": ""
-    },
-    {
-      "title": "Prelim Business Investment q/q",
-      "country": "GBP",
-      "date": "2026-11-12T02:00:00-05:00",
-      "impact": "Low",
-      "forecast": "0.4%",
-      "previous": "1.7%",
-      "actual": ""
-    },
-    {
-      "title": "ECB Economic Bulletin",
-      "country": "EUR",
-      "date": "2026-11-12T04:00:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Building Permits m/m",
-      "country": "CAD",
-      "date": "2026-11-12T08:30:00-05:00",
-      "impact": "Low",
-      "forecast": "-4.0%",
-      "previous": "8.8%",
-      "actual": ""
-    },
-    {
-      "title": "Unemployment Claims",
-      "country": "USD",
-      "date": "2026-11-12T08:30:00-05:00",
-      "impact": "Medium",
-      "forecast": "194K",
-      "previous": "189K",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Hammack Speaks",
-      "country": "USD",
-      "date": "2026-11-12T08:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Existing Home Sales",
-      "country": "USD",
-      "date": "2026-11-12T10:00:00-05:00",
-      "impact": "Low",
-      "forecast": "3.89M",
-      "previous": "3.99M",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Barr Speaks",
-      "country": "USD",
-      "date": "2026-11-12T10:00:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "CB Leading Index m/m",
-      "country": "AUD",
-      "date": "2026-11-12T10:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-0.3%",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Goolsbee Speaks",
-      "country": "USD",
-      "date": "2026-11-12T11:15:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Crude Oil Inventories",
-      "country": "USD",
-      "date": "2026-11-12T12:00:00-05:00",
-      "impact": "Low",
-      "forecast": "-0.6M",
-      "previous": "-0.9M",
-      "actual": ""
-    },
-    {
-      "title": "German Buba President Nagel Speaks",
-      "country": "EUR",
-      "date": "2026-11-12T12:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "30-y Bond Auction",
-      "country": "USD",
-      "date": "2026-11-12T13:01:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "5.62|2.5",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Daly Speaks",
-      "country": "USD",
-      "date": "2026-11-12T13:10:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Schmid Speaks",
-      "country": "USD",
-      "date": "2026-11-12T13:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "Federal Budget Balance",
-      "country": "USD",
-      "date": "2026-11-12T14:00:00-05:00",
-      "impact": "Low",
-      "forecast": "-298.6B",
-      "previous": "-26.9B",
-      "actual": ""
-    },
-    {
-      "title": "ECB President Lagarde Speaks",
-      "country": "EUR",
-      "date": "2026-11-12T14:30:00-05:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "BusinessNZ Manufacturing Index",
-      "country": "NZD",
-      "date": "2026-11-12T16:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "56.5",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Williams Speaks",
-      "country": "USD",
-      "date": "2026-11-12T18:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "German WPI m/m",
-      "country": "EUR",
-      "date": "2026-11-13T02:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "0.4%",
       "previous": "1.9%",
+      "actual": "0.4%"
+    },
+    {
+      "title": "توقعات نهاية العام لمؤشر أسعار المستهلكين (نوفمبر)",
+      "country": "TRY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "29.63%",
+      "actual": "30.04%"
+    },
+    {
+      "title": "الحساب الجاري (دولار أميركي) (سبتمبر)",
+      "country": "TRY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "4.05B",
+      "actual": "2.72B"
+    },
+    {
+      "title": "خطاب عضو المركزي الأوروبي شنابل",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "",
+      "previous": "",
       "actual": ""
     },
     {
-      "title": "PPI m/m",
+      "title": "مؤشر أسعار المنتجين (شهريا) (أكتوبر)",
       "country": "CHF",
-      "date": "2026-11-13T02:30:00-05:00",
-      "impact": "Low",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "actual": ""
+      "actual": "0.9%"
     },
     {
-      "title": "French Final CPI m/m",
-      "country": "EUR",
-      "date": "2026-11-13T02:45:00-05:00",
+      "title": "مؤشر أسعار المنتجين (سنويا) (أكتوبر)",
+      "country": "CHF",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "0.4%",
-      "previous": "0.4%",
-      "actual": ""
+      "forecast": "",
+      "previous": "-0.2%",
+      "actual": "0.9%"
     },
     {
-      "title": "M2 Money Supply y/y",
+      "title": "مؤشر أسعار المستهلكين الفرنسي (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "previous": "-0.3%",
+      "actual": "0.4%"
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الفرنسي (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "previous": "-0.3%",
+      "actual": "0.4%"
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الفرنسي (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "3.8%",
+      "previous": "3.8%",
+      "actual": "3.7%"
+    },
+    {
+      "title": "معدل التضخم (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "3.10%",
+      "actual": "3.40%"
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الفرنسي (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "3.4%",
+      "previous": "3.1%",
+      "actual": "3.4%"
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "0.40%",
+      "actual": "0.40%"
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "3.40%",
+      "actual": "3.40%"
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الأساسي (باستثناء الغذاء والطاقة) (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "3.1%",
+      "previous": "3.1%",
+      "actual": "3.1%"
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الاسباني (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "4.9%",
+      "previous": "4.9%",
+      "actual": "4.9%"
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الإسباني (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "4.9%",
+      "previous": "5.0%",
+      "actual": "4.9%"
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الإسباني (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "0.5%",
+      "previous": "0.6%",
+      "actual": "0.5%"
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الاسباني (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "0.6%",
+      "previous": "0.3%",
+      "actual": "0.6%"
+    },
+    {
+      "title": "القروض الجديدة (أكتوبر)",
       "country": "CNY",
-      "date": "2026-11-13T04:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "80.0B",
+      "previous": "1,080.0B",
+      "actual": "-100.0B"
+    },
+    {
+      "title": "العرض النقدي M2 (سنويا) (أكتوبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "7.2%",
       "previous": "7.2%",
-      "actual": ""
+      "actual": "7.1%"
     },
     {
-      "title": "New Loans",
+      "title": "معدل نمو القروض المستحقة (سنويا) (أكتوبر)",
       "country": "CNY",
-      "date": "2026-11-13T04:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "80B",
-      "previous": "1080B",
+      "forecast": "4.8%",
+      "previous": "4.8%",
+      "actual": "4.7%"
+    },
+    {
+      "title": "إجمالي التمويل الاجتماعي الصيني (أكتوبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "1,420.0B",
+      "previous": "3,550.0B",
+      "actual": "1,150.0B"
+    },
+    {
+      "title": "التقرير الشهري لوكالة الطاقة الدولية",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "",
+      "previous": "",
       "actual": ""
     },
     {
-      "title": "Italian Trade Balance",
+      "title": "الميزان التجاري الإيطالي (سبتمبر)",
       "country": "EUR",
-      "date": "2026-11-13T04:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "2.84B",
-      "previous": "1.77B",
+      "forecast": "2.840B",
+      "previous": "1.824B",
+      "actual": "2.083B"
+    },
+    {
+      "title": "الميزان التجاري الإيطالي مع الإتحاد الأوروبي (سبتمبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "-0.28B",
+      "actual": "-0.78B"
+    },
+    {
+      "title": "الناتج الإجمالي المحلي (سنويا) (الربع 3)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "1.3%",
+      "previous": "1.2%",
+      "actual": "1.3%"
+    },
+    {
+      "title": "الميزان التجاري (سبتمبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "-4.5B",
+      "previous": "-16.6B",
+      "actual": "-10.3B"
+    },
+    {
+      "title": "الناتج الإجمالي المحلي (ربع سنويا) (الربع 3)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "previous": "0.6%",
+      "actual": "0.4%"
+    },
+    {
+      "title": "قمة قادة الاتحاد الأوروبي",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "",
+      "previous": "",
       "actual": ""
     },
     {
-      "title": "Flash Employment Change q/q",
+      "title": "العمالة بشكل عام (الربع 3)",
       "country": "EUR",
-      "date": "2026-11-13T05:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "176,535.7K",
+      "actual": "176,547.1K"
+    },
+    {
+      "title": "معدل التغير في التوظيف (ربع سنويا) (الربع 3)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "0.2%",
       "previous": "0.1%",
-      "actual": ""
+      "actual": "0.1%"
     },
     {
-      "title": "Flash GDP q/q",
+      "title": "معدل التغير في التوظيف (سنويا) (الربع 3)",
       "country": "EUR",
-      "date": "2026-11-13T05:00:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "0.4%",
-      "previous": "0.4%",
-      "actual": ""
+      "previous": "0.5%",
+      "actual": "0.5%"
     },
     {
-      "title": "Trade Balance",
-      "country": "EUR",
-      "date": "2026-11-13T05:00:00-05:00",
+      "title": "مؤشر أسعار المنتجين (سنويا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "6.6%",
+      "previous": "6.3%",
+      "actual": "6.5%"
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (شهريا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "0.4%",
+      "previous": "1.4%",
+      "actual": "0.3%"
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (باستثناء الغذاء والطاقة) (شهريا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.3%",
+      "previous": "0.8%",
+      "actual": "0.3%"
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (باستثناء الغذاء والطاقة) (سنويا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "-4.5B",
-      "previous": "-6.8B",
-      "actual": ""
+      "forecast": "5.0%",
+      "previous": "5.0%",
+      "actual": "5.0%"
     },
     {
-      "title": "Manufacturing Sales m/m",
+      "title": "مؤشر أسعار المنتجين (PPI) باستثناء الغذاء / الطاقة / النقل (شهريا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "0.5%",
+      "actual": "0.5%"
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (PPI) باستثناء الغذاء / الطاقة / النقل (سنويا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "5.0%",
+      "actual": "4.9%"
+    },
+    {
+      "title": "مبيعات الجملة (شهريا) (سبتمبر)",
       "country": "CAD",
-      "date": "2026-11-13T08:30:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.5%",
+      "previous": "-1.4%",
+      "actual": "0.7%"
+    },
+    {
+      "title": "مبيعات السلع الصناعية (شهريا) (سبتمبر)",
+      "country": "CAD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "0.1%",
-      "previous": "1.5%",
-      "actual": ""
+      "previous": "1.8%",
+      "actual": "0.0%"
     },
     {
-      "title": "Wholesale Sales m/m",
+      "title": "معدل إستغلال طاقة الإنتاج (سبتمبر)",
       "country": "CAD",
-      "date": "2026-11-13T08:30:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "0.5%",
-      "previous": "-1.6%",
-      "actual": ""
+      "forecast": "",
+      "previous": "81.9%",
+      "actual": "81.5%"
     },
     {
-      "title": "Core PPI m/m",
+      "title": "حديث كولينز، محافظة بنك الاحتياطي الفيدرالي",
       "country": "USD",
-      "date": "2026-11-13T08:30:00-05:00",
-      "impact": "High",
-      "forecast": "0.3%",
-      "previous": "0.7%",
-      "actual": ""
-    },
-    {
-      "title": "PPI m/m",
-      "country": "USD",
-      "date": "2026-11-13T08:30:00-05:00",
-      "impact": "High",
-      "forecast": "0.4%",
-      "previous": "1.3%",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Collins Speaks",
-      "country": "USD",
-      "date": "2026-11-13T09:10:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "CB Leading Index m/m",
-      "country": "GBP",
-      "date": "2026-11-13T09:30:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-0.1%",
-      "actual": ""
-    },
-    {
-      "title": "FOMC Member Logan Speaks",
+      "title": "خطاب لوجان، عضوة اللجنة الفيدرالية",
       "country": "USD",
-      "date": "2026-11-13T09:40:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "Natural Gas Storage",
+      "title": "مخزون الغاز الطبيعي",
       "country": "USD",
-      "date": "2026-11-13T10:30:00-05:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "65B",
       "previous": "77B",
-      "actual": ""
+      "actual": "61B"
     },
     {
-      "title": "FOMC Member Bowman Speaks",
+      "title": "خطاب بومان عضو اللجنة الفيدرالية",
       "country": "USD",
-      "date": "2026-11-13T10:50:00-05:00",
-      "impact": "Low",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "German Buba President Nagel Speaks",
+      "title": "خطاب ناجيل - رئيس البنك الاتحادي الألماني",
       "country": "EUR",
-      "date": "2026-11-13T11:00:00-05:00",
-      "impact": "Low",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "FOMC Member Daly Speaks",
+      "title": "خطاب دالي - عضو اللجنة الفيدرالية للسوق المفتوحة",
       "country": "USD",
-      "date": "2026-11-13T12:00:00-05:00",
-      "impact": "Low",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "FOMC Member Jefferson Speaks",
+      "title": "تقرير بيكر هيوز عن عدد منصات التنقيب عن النفط",
       "country": "USD",
-      "date": "2026-11-13T19:00:00-05:00",
-      "impact": "Low",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
-      "previous": "",
-      "actual": ""
+      "previous": "463",
+      "actual": "463"
     },
     {
-      "title": "MPC Member Greene Speaks",
-      "country": "GBP",
-      "date": "2026-11-14T06:00:00-05:00",
-      "impact": "Low",
+      "title": "مقياس بيكر هيوز الأمريكي لعدد الحفارات الإجمالي",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
-      "previous": "",
-      "actual": ""
+      "previous": "604",
+      "actual": "601"
     }
   ]
 }
