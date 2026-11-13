@@ -1,590 +1,491 @@
 {
-  "updated_at": "2026-11-12T22:12:44.529488+00:00",
+  "updated_at": "2026-11-13T02:52:37.728985+00:00",
   "source": "Investing.com (السعودية)",
   "events": [
     {
-      "title": "مؤشر MI لقياس التضخم (نوفمبر)",
+      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
       "country": "AUD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "5.3%",
-      "actual": "5.3%"
+      "previous": "45.62",
+      "actual": "44.06"
     },
     {
-      "title": "مزاد سندات اليابان JGB لمدة 5 سنوات",
+      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
       "country": "JPY",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "2.379%",
-      "actual": "2.186%"
+      "previous": "38.96",
+      "actual": "37.67"
     },
     {
-      "title": "الناتج الإجمالي المحلي (سنويا) (الربع 3)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "1.9%",
-      "previous": "1.4%",
-      "actual": "1.9%"
-    },
-    {
-      "title": "الناتج الإجمالي المحلي (شهريا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "0.0%",
-      "previous": "0.0%",
-      "actual": "0.2%"
-    },
-    {
-      "title": "الناتج الإجمالي المحلي (ربع سنويا) (الربع 3)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "0.7%",
-      "previous": "0.5%",
-      "actual": "0.7%"
-    },
-    {
-      "title": "مؤشر الإنتاج التصنيعي (شهريا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "-0.5%",
-      "previous": "0.7%",
-      "actual": "0.7%"
-    },
-    {
-      "title": "الإنتاج الصناعي (شهريا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "-0.4%",
-      "previous": "0.7%",
-      "actual": "0.3%"
-    },
-    {
-      "title": "معدل الإستثمار في الأعمال التجارية (ربع سنويا) (الربع 3)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "0.4%",
-      "previous": "1.8%",
-      "actual": "0.4%"
-    },
-    {
-      "title": "معدل تغير الناتج الإجمالي المحلي GDP على أساس شهري 3M/3M (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "0.7%",
-      "previous": "0.6%",
-      "actual": "0.7%"
-    },
-    {
-      "title": "الميزان التجاري خارج الإتحاد الأوروبي (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "-6.82B",
-      "actual": "-8.99B"
-    },
-    {
-      "title": "الناتج الإجمالي المحلي السنوي (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "-19.20B",
-      "previous": "-19.61B",
-      "actual": "-22.29B"
-    },
-    {
-      "title": "الإنتاج الصناعي (سنويا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "2.9%",
-      "previous": "1.1%",
-      "actual": "3.1%"
-    },
-    {
-      "title": "مؤشر الإنتاج التصنيعي (سنويا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "3.8%",
-      "previous": "2.5%",
-      "actual": "4.4%"
-    },
-    {
-      "title": "معدل الإستثمار في الأعمال التجارية (سنويا) (الربع 3)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
+      "title": "طومسون رويترز الصيني IPSOS PCSI (نوفمبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "5.2%",
-      "actual": "3.0%"
+      "previous": "69.29",
+      "actual": "70.44"
     },
     {
-      "title": "إنتاج قطاع الإنشاءات (شهريا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "0.0%",
-      "previous": "-0.5%",
-      "actual": "0.8%"
-    },
-    {
-      "title": "بيانات البنية التحتية البريطانية (سنويا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "-2.1%",
-      "previous": "-1.9%",
-      "actual": "-1.5%"
-    },
-    {
-      "title": "الناتج الإجمالي المحلي (سنويا) (سبتمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "1.9%",
-      "previous": "2.0%",
-      "actual": "2.1%"
-    },
-    {
-      "title": "مؤشر الخدمات",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "0.9%",
-      "previous": "0.9%",
-      "actual": "0.9%"
-    },
-    {
-      "title": "بيان التضخم لـ CBRT",
-      "country": "TRY",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
+      "title": "خطاب إلدرسون عضو المركزي الأوروبي",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "التقرير الشهري الصادر عن البنك المركزي الاوروبي",
+      "title": "مؤشر أسعار مبيعات الجملة الألمانية (سنويا) (أكتوبر)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "8.7%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار مبيعات الجملة الألمانية (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "0.4%",
+      "previous": "1.9%",
+      "actual": ""
+    },
+    {
+      "title": "توقعات نهاية العام لمؤشر أسعار المستهلكين (نوفمبر)",
+      "country": "TRY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "29.63%",
+      "actual": ""
+    },
+    {
+      "title": "الحساب الجاري (دولار أميركي) (سبتمبر)",
+      "country": "TRY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "4.05B",
+      "actual": ""
+    },
+    {
+      "title": "خطاب عضو المركزي الأوروبي شنابل",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
       "previous": "",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (شهريا) (أكتوبر)",
+      "country": "CHF",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.2%",
+      "previous": "0.3%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (سنويا) (أكتوبر)",
+      "country": "CHF",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "-0.2%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الفرنسي (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "previous": "-0.3%",
+      "actual": ""
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الفرنسي (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "previous": "-0.3%",
+      "actual": ""
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الفرنسي (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "3.8%",
+      "previous": "3.4%",
+      "actual": ""
+    },
+    {
+      "title": "معدل التضخم (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "3.10%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الفرنسي (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "3.4%",
+      "previous": "3.1%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "0.40%",
       "actual": ""
     },
     {
       "title": "مؤشر أسعار المستهلكين (سنويا) (أكتوبر)",
-      "country": "OMR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "3.2%",
-      "actual": "2.9%"
+      "previous": "3.40%",
+      "actual": ""
     },
     {
-      "title": "التوقعات الإقتصادية للاتحاد الأوروبي",
+      "title": "مؤشر أسعار المستهلكين الأساسي (باستثناء الغذاء والطاقة) (سنويا) (أكتوبر)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "3.1%",
+      "previous": "3.1%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الاسباني (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "4.9%",
+      "previous": "4.9%",
+      "actual": ""
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الإسباني (سنويا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "4.9%",
+      "previous": "5.0%",
+      "actual": ""
+    },
+    {
+      "title": "المؤشر المنسّق لأسعار المستهلكين الإسباني (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "0.5%",
+      "previous": "0.6%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المستهلكين الاسباني (شهريا) (أكتوبر)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "0.6%",
+      "previous": "0.3%",
+      "actual": ""
+    },
+    {
+      "title": "التقرير الشهري لوكالة الطاقة الدولية",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "مزاد سندات إيطاليا BTP لمدة 3 سنوات",
+      "title": "الميزان التجاري الإيطالي (سبتمبر)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "",
-      "previous": "3.69%",
-      "actual": "3.58%"
+      "forecast": "2.840B",
+      "previous": "1.773B",
+      "actual": ""
     },
     {
-      "title": "مزاد سندات إيطاليا BTP لمدة 7 سنوات",
+      "title": "الميزان التجاري الإيطالي مع الإتحاد الأوروبي (سبتمبر)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "3.90%",
-      "actual": "4.04%"
+      "previous": "-0.33B",
+      "actual": ""
     },
     {
-      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
+      "title": "القروض الجديدة (أكتوبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "80.0B",
+      "previous": "1,080.0B",
+      "actual": ""
+    },
+    {
+      "title": "العرض النقدي M2 (سنويا) (أكتوبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "",
-      "previous": "45.3",
-      "actual": "44.0"
+      "forecast": "7.2%",
+      "previous": "7.2%",
+      "actual": ""
     },
     {
-      "title": "طومسون رويترز الإيطالي IPSOS PCSI (نوفمبر)",
+      "title": "معدل نمو القروض المستحقة (سنويا) (أكتوبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "4.8%",
+      "previous": "4.8%",
+      "actual": ""
+    },
+    {
+      "title": "إجمالي التمويل الاجتماعي الصيني (أكتوبر)",
+      "country": "CNY",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "1,420.0B",
+      "previous": "3,550.0B",
+      "actual": ""
+    },
+    {
+      "title": "الناتج الإجمالي المحلي (سنويا) (الربع 3)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "42.99",
-      "actual": "41.40"
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "1.3%",
+      "previous": "0.5%",
+      "actual": ""
     },
     {
-      "title": "طومسون رويترز الألماني IPSOS PCSI (نوفمبر)",
+      "title": "الميزان التجاري (سبتمبر)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "42.37",
-      "actual": "41.95"
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "-4.5B",
+      "previous": "-16.1B",
+      "actual": ""
     },
     {
-      "title": "طومسون رويترز الفرنسي IPSOS PCSI (نوفمبر)",
+      "title": "الناتج الإجمالي المحلي (ربع سنويا) (الربع 3)",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "37.63",
-      "actual": "37.90"
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "previous": "0.6%",
+      "actual": ""
     },
     {
-      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
+      "title": "قمة قادة الاتحاد الأوروبي",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "45.22",
-      "actual": "47.55"
-    },
-    {
-      "title": "طومسون رويترز IPSOS PCSI (نوفمبر)",
-      "country": "SAR",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "71.35",
-      "actual": "70.03"
-    },
-    {
-      "title": "طومسون رويترز التركي IPSOS PCSI (نوفمبر)",
-      "country": "TRY",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "34.9",
-      "actual": "36.7"
-    },
-    {
-      "title": "إجمالي احتياطيات العملات الأجنبية",
-      "country": "TRY",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "56.09B",
-      "actual": "57.02B"
-    },
-    {
-      "title": "صافي احتياطيات العملات الأجنبية",
-      "country": "TRY",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "38.01%",
-      "actual": "41.18%"
-    },
-    {
-      "title": "NIESR متعقب الناتج الإجمالي المحلي الشهري (أكتوبر)",
-      "country": "GBP",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
+      "previous": "",
+      "actual": ""
+    },
+    {
+      "title": "العمالة بشكل عام (الربع 3)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "176,448.2K",
+      "actual": ""
+    },
+    {
+      "title": "معدل التغير في التوظيف (ربع سنويا) (الربع 3)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "0.2%",
+      "previous": "0.1%",
+      "actual": ""
+    },
+    {
+      "title": "معدل التغير في التوظيف (سنويا) (الربع 3)",
+      "country": "EUR",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "0.5%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (سنويا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "6.6%",
+      "previous": "6.3%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (شهريا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "High",
+      "forecast": "0.4%",
+      "previous": "1.3%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (باستثناء الغذاء والطاقة) (شهريا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
+      "forecast": "0.3%",
       "previous": "0.7%",
-      "actual": "0.6%"
+      "actual": ""
     },
     {
-      "title": "رصيد الحساب الجاري الألماني n.s.a (سبتمبر)",
-      "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "title": "مؤشر أسعار المنتجين (باستثناء الغذاء والطاقة) (سنويا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "5.0%",
+      "previous": "5.0%",
+      "actual": ""
+    },
+    {
+      "title": "مؤشر أسعار المنتجين (PPI) باستثناء الغذاء / الطاقة / النقل (شهريا) (أكتوبر)",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "11.2B",
-      "actual": "18.7B"
+      "previous": "0.5%",
+      "actual": ""
     },
     {
-      "title": "معدلات الشكاوى من البطالة",
+      "title": "مؤشر أسعار المنتجين (PPI) باستثناء الغذاء / الطاقة / النقل (سنويا) (أكتوبر)",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "194K",
-      "previous": "191K",
-      "actual": "200K"
-    },
-    {
-      "title": "تداعيات البطالة المستمرة",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "1,710K",
-      "previous": "1,717K",
-      "actual": "1,697K"
-    },
-    {
-      "title": "متوسط طلبات إعانة البطالة في 4 أسابيع",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "195.25K",
-      "actual": "195.25K"
+      "previous": "5.0%",
+      "actual": ""
     },
     {
-      "title": "تصاريح البناء (شهريا) (سبتمبر)",
+      "title": "مبيعات الجملة (شهريا) (سبتمبر)",
       "country": "CAD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
-      "forecast": "-4.0%",
-      "previous": "7.6%",
-      "actual": "-4.1%"
-    },
-    {
-      "title": "مبيعات المنازل القائمة (أكتوبر)",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "3.89M",
-      "previous": "3.97M",
-      "actual": "3.75M"
-    },
-    {
-      "title": "مبيعات المنازل القائمة (شهريا) (أكتوبر)",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "-3.5%",
-      "previous": "1.0%",
-      "actual": "-5.5%"
-    },
-    {
-      "title": "حديث بار، نائب رئيس بنك الاحتياطي الفيدرالي للإشراف",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "",
+      "forecast": "0.5%",
+      "previous": "-1.6%",
       "actual": ""
     },
     {
-      "title": "مزاد سندات Bill لمدة 4 أسابيع",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "title": "مبيعات السلع الصناعية (شهريا) (سبتمبر)",
+      "country": "CAD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
-      "forecast": "",
-      "previous": "3.890%",
-      "actual": "3.955%"
+      "forecast": "0.1%",
+      "previous": "1.5%",
+      "actual": ""
     },
     {
-      "title": "مزاد سندات Bill لمدة 8 أسابيع",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "title": "معدل إستغلال طاقة الإنتاج (سبتمبر)",
+      "country": "CAD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "3.975%",
-      "actual": "4.080%"
+      "previous": "81.9%",
+      "actual": ""
     },
     {
-      "title": "يتحدث جولسبي من الاحتياطي الفيدرالي",
+      "title": "حديث كولينز، محافظة بنك الاحتياطي الفيدرالي",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Low",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "مخزون النفط الأمريكي الخام",
+      "title": "خطاب لوجان، عضوة اللجنة الفيدرالية",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "-0.600M",
-      "previous": "-0.865M",
-      "actual": "4.657M"
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "",
+      "actual": ""
     },
     {
-      "title": "مخزون كوشينغ من النفط الخام",
+      "title": "مخزون الغاز الطبيعي",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Low",
+      "forecast": "65B",
+      "previous": "77B",
+      "actual": ""
+    },
+    {
+      "title": "خطاب بومان عضو اللجنة الفيدرالية",
+      "country": "USD",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
-      "previous": "0.280M",
-      "actual": "0.106M"
-    },
-    {
-      "title": "إنتاج البنزين",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "0.463M",
-      "actual": "-0.078M"
-    },
-    {
-      "title": "إنتاج الوقود المقطر",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-0.007M",
-      "actual": "-0.063M"
-    },
-    {
-      "title": "مخزون البنزين",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "-0.100M",
-      "previous": "-0.222M",
-      "actual": "1.799M"
-    },
-    {
-      "title": "مؤشر معهد البترول الأميركي الأسبوعي لمخزون النفط المقطّر",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "-1.000M",
-      "previous": "-3.565M",
-      "actual": "4.071M"
-    },
-    {
-      "title": "بيان نشاط مصافي النفط الخام من إدارة معلومات الطاقة الأمريكية (أسبوعيا)",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "0.199M",
-      "actual": "0.322M"
-    },
-    {
-      "title": "مخزون وقود التدفئة",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-0.203M",
-      "actual": "0.335M"
-    },
-    {
-      "title": "البيان الأسبوعي لمعدلات تشغيل المصافي الصادر عن إدارة معلومات الطاقة الأمريكية (أسبوعيا)",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "1.7%",
-      "actual": "0.7%"
-    },
-    {
-      "title": "واردات النفط الخام",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "1.179M",
-      "actual": "0.544M"
+      "previous": "",
+      "actual": ""
     },
     {
       "title": "خطاب ناجيل - رئيس البنك الاتحادي الألماني",
       "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
-    },
-    {
-      "title": "مزاد السندات الأمريكية لمدة 30 سنة",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "5.618%",
-      "actual": "5.441%"
     },
     {
       "title": "خطاب دالي - عضو اللجنة الفيدرالية للسوق المفتوحة",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
       "previous": "",
       "actual": ""
     },
     {
-      "title": "حديث عضو الاحتياطي الفيدرالي، شميد",
+      "title": "تقرير بيكر هيوز عن عدد منصات التنقيب عن النفط",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
+      "date": "2026-11-13T00:00:00+03:00",
+      "impact": "Medium",
       "forecast": "",
-      "previous": "",
+      "previous": "463",
       "actual": ""
     },
     {
-      "title": "الموازنة العامة للخزينة الفديرالية (أكتوبر)",
+      "title": "مقياس بيكر هيوز الأمريكي لعدد الحفارات الإجمالي",
       "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "-298.6B",
-      "previous": "-27.0B",
-      "actual": "-404.0B"
-    },
-    {
-      "title": "الميزانية العمومية للاحتياطي الفيدرالي",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "High",
-      "forecast": "",
-      "previous": "6,748B",
-      "actual": "6,759B"
-    },
-    {
-      "title": "أرصدة الاحتياطي لدى البنوك الاحتياطية الفيدرالية",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "2.962T",
-      "actual": "2.969T"
-    },
-    {
-      "title": "مؤشر مديري المشتريات النيوزيلندي للأعمال (أكتوبر)",
-      "country": "NZD",
-      "date": "2026-11-12T00:00:00+03:00",
+      "date": "2026-11-13T00:00:00+03:00",
       "impact": "Medium",
       "forecast": "",
-      "previous": "56.5",
-      "actual": "54.9"
-    },
-    {
-      "title": "خطاب لاجارد محافظ ECB",
-      "country": "EUR",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "",
-      "actual": ""
-    },
-    {
-      "title": "خطاب ويليامز - عضو اللجنة الفيدرالية للسوق المفتوحة FOMC",
-      "country": "USD",
-      "date": "2026-11-12T00:00:00+03:00",
-      "impact": "Medium",
-      "forecast": "",
-      "previous": "",
+      "previous": "604",
       "actual": ""
     }
   ]
