@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T09:30:01.875949+00:00",
+  "updated_at": "2026-11-16T19:48:47.709463+00:00",
   "source": "Fair Economy / Forex Factory",
   "events": [
     {
@@ -185,7 +185,7 @@
     {
       "title": "Cleveland Fed Inflation Expectations",
       "country": "USD",
-      "date": "2026-11-16T09:48:00-05:00",
+      "date": "2026-11-16T09:45:00-05:00",
       "impact": "Low",
       "forecast": "",
       "previous": "3.3%",
@@ -890,7 +890,7 @@
       "date": "2026-11-19T10:30:00-05:00",
       "impact": "Low",
       "forecast": "",
-      "previous": "",
+      "previous": "61B",
       "actual": ""
     },
     {
