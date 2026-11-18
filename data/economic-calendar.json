@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T11:29:51.987943+00:00",
+  "updated_at": "2026-11-18T19:33:40.026561+00:00",
   "source": "Fair Economy / Forex Factory",
   "events": [
     {
@@ -804,15 +804,6 @@
       "actual": ""
     },
     {
-      "title": "Foreign Direct Investment ytd/y",
-      "country": "CNY",
-      "date": "2026-11-19T02:02:00-05:00",
-      "impact": "Low",
-      "forecast": "",
-      "previous": "-4.3%",
-      "actual": ""
-    },
-    {
       "title": "Current Account",
       "country": "EUR",
       "date": "2026-11-19T04:00:00-05:00",
@@ -1044,6 +1035,15 @@
       "impact": "Low",
       "forecast": "18.0B",
       "previous": "24.5B",
+      "actual": ""
+    },
+    {
+      "title": "Foreign Direct Investment ytd/y",
+      "country": "CNY",
+      "date": "2026-11-20T02:02:00-05:00",
+      "impact": "Low",
+      "forecast": "",
+      "previous": "-4.3%",
       "actual": ""
     },
     {
