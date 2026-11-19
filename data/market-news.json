@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T18:46:13.877712+00:00",
+  "updated_at": "2026-11-19T01:49:42.090616+00:00",
   "source": "Google News RSS",
   "translation": "MyMemory (automated, when available)",
   "items": [
@@ -11,11 +11,18 @@
       "published_at": "Mon, 16 Nov 2026 06:52:42 GMT"
     },
     {
-      "title_ar": "النفط يعيد تسعير الأسواق.. الذهب يتراجع والدولار يترقب التضخم - الجزيرة نت",
-      "title_en": "Oil re-prices markets.. Gold is falling and the dollar is waiting for inflation - Al Jazeera Net",
-      "link": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQQUdrMEVCUm1sUXVWZXVydmZjMnptUTZxU2p5bXpxUUJ6bjRxOENSdFVrQlh4bEpUSGs4WVZPTFNPcDdLWnE1dDlFU2poeVJQMWFraGY1MzFOUVlfbTQ0eVFOY0RpU2JsU1JHaGRPN29DQjdFa09uUG9MeHN5N3VNV0tkb0NZYjl4aEJxRWlTZUZmcl91SlBFTXkxekZPeHdUTzBILUpOUEdxVm5xXzdhRlVmM3p2LUdSbFdhY0N1cjRkdVpPUmxoLUs4dkpjNThmdGxjQ2RHUXpvaURGYU1WR3ZpaVlTaVd0SmtZT1RaUGJYQkxKbi1wSElDWDBoWVJCTWdBX2E1M3JJRk5yNmdvNUp0WmUyNC1Bd2ZxUGtIUmk5Nk9WT3NyYms3ZEVQSlVBQV90czFJLTFDUmdEVk5Sejdrcy1XcGg4Vm9TMDFVUXo0LThyb1dCWENGcUNGTnRJ?oc=5",
+      "title_ar": "الدولار يصعد والذهب والنفط يتراجعان.. كيف تحركت الأسواق مع بداية الأسبوع؟ - Masrawy",
+      "title_en": "The dollar rises, while gold and oil decline. How did the markets move at the start of the week? - Masrawy",
+      "link": "https://news.google.com/rss/articles/CBMi5wRBVV95cUxPVjFZdFhIZmdKakhiaFhiWkVrOGJlOHlWalFobTZNc1ZWQWRWNDJNMjVrb1BWYTFjdjJpS0kwWWdUb3JIOTU0SmNSSVFmU0Rwbk5Xdnd0YWpmZ3MwMmNlX1BFRGhsNEozZnhKVklTZE1qOVFoRDBJTFFZZHVad3JmaXpPcG81ZTFmSXB4R2J0QlFQd0pCeTFmM1dsbGN2a2hWTDhiWXl1bFktTzAtcjBVU0Zqa0tXdzFRMlFfYndib0NuUTZhRkRxTlZGY1hoU19McE5hR2dQeG0tRjFoS181QUFWT0JpQmZ0am14OC1BVlJJRWJhNkNPNF82SWh3Tk1qYVlQUmFmcllWQ1B3Ri1sM1djTjFQYl9abmdrOXRBa3lVQm5KRWtyRWgyanNFWnNub3VCNXBGdVljNnZTSjh2Ukl5QUdNWVVseGt2clRHMlU5WER6SkplU0tEdHU2MVY1a2lRaTYtUllSMW1oUFBrOTVWcnBtenVUc3daWlZqdnZ1MzJyS1pmZ0k4Z0FCamktanprcE1rR2ZaaTh1RE1hSjNkZFd3cWg3cGNHQVV4b3JzSjFiOVU0bTdQdUJaVk5pMHVQZC01YnRpTEtaY1ZHdVRrM0dvZUZ2dzVDUlZRZ2dxLS0wcDlUemx0emxhbTRneDhmVHlqN2ZjTWtha3BlR2dfcmVrMmVCTFVaakZFTU9RWVlqUHl5TS1CWHgtLV9PdGtxc25UX2ZlQ0tzd1hrV0hjOC1TZ2pfcGtKeHEyYkI1ZXB4d2h0ZW40c0Z5VEFMQlNRLUk3VWJqMHFITjE4TXZNTGpiRFXSAewEQVVfeXFMT0x6Z215c1NNblVIWFpYQzg0OW9ndlNwSWtUTUVOaGVLQy1qVnZIdC04REs0alVJSVlrTFZ0a0pOd2k4WXppLURteXNMSVFlbklvZVdBempZZGkwREsweG05cWpkSjhSY3p2S253V0ItTi1OV2RGM3duX2tfRDNBS01meTduM3h6SFVUbWoxMHk0TTJOUElTaUYzOU1rY1U2c0pkUmZZRmg1TnJMVGlMZFo5eVpZOTU5WVhTVk02SjR6RGlYV0tGMWJ3a09EbVowdUJFYzhwb0JkU2E1YWlDTE5YZm9HYkRjVXF3dnB1RTFaVjQ1VUo3dG5DM0NCQ283SUJVang0ZFlRSEtUSjlPSkc3NmdVS2w3NENwcjluODdKUm5YT3VhN09CYjNJUEtkWDRtV01sTlJLOVFsZHJYUE5ZbWxaTDJZLUlEamlEcnFsUjJyUkc3Zlg1T1RFenFNLW5HbTI4U0RZeVNuMzVuVmFCSXBaQ1hpZ3Y0YnVDZ0VnVnMyOTRYV05aMnBYY3p1RXNlT1dmUTNQRW5xWUVyMVNKNzZQRjFiLUFPZHpudTdqT3JqeXJpR1FWWkx5b29UYjJISi1RR0ROVkxlS0Y1dkdBWXlpVjNGUElMenVlSTR1RzhTRWgtOUUtUVZiMWxEUUJkSDhDSUJ5UDRBNkpyTndVaHJBbTdJRFJTYUxRMFVkaGtPZHFNUmlxUWZsS3I4WU10Nkx4ZlVkazM2c2NFRndFN3Y3SHdOQWM2QjQySzEtUGN5aHlOVk9hbm9Ncm5XY21RTmpMOE14MHpkRGpCRnZVLVRJVjdxUGJLQ1o?oc=5",
+      "source": "Masrawy",
+      "published_at": "Mon, 16 Nov 2026 12:51:23 GMT"
+    },
+    {
+      "title_ar": "النفط قرب قمة 6 أسابيع والذهب يقفز 2% - الجزيرة نت",
+      "title_en": "Oil nears a 6-week high and gold surges by 2% - Al Jazeera Net",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5rQXFLQXB6QmZLRWhSM2p4cGM3cFdwQnp0ZGlIcmdIS3pDM2doTGZEbi04SmtTRjUxbE9LYTJQYjljTWlfV2lqUlRoYy0tMndhU3pKQ25GVG54TjRWaGUtNV96WGtTeFJITVhJ?oc=5",
       "source": "الجزيرة نت",
-      "published_at": "Thu, 16 Jul 2026 07:00:00 GMT"
+      "published_at": "Thu, 03 Sep 2026 07:00:00 GMT"
     },
     {
       "title_ar": "النفط يرتفع والذهب يتراجع والدولار يستقر - عرب 48",
@@ -25,25 +32,18 @@
       "published_at": "Thu, 22 Oct 2026 07:00:00 GMT"
     },
     {
-      "title_ar": "انهيار الهدنة بين أمريكا وإيران يشعل الأسواق.. النفط والدولار يقفزان والذهب يتراجع - Masrawy",
-      "title_en": "The breakdown of the truce between the U.S. and Iran ignites the markets... Oil and the dollar surge, while gold declines - Masrawy",
-      "link": "https://news.google.com/rss/articles/CBMirAVBVV95cUxORjl6c1BNSzlDWUl3NTNZemQ4c0ZVZW5fZWhtMTVIczZLbmJ5Vkc0N3NPdWllZDV5XzdKMi0yM1oxUlJuSjZ4RnpjdkdwWnNHc1RTVWJWa3VjMk5kdG5fd0loY042aWZMWUdTNkFuZzFTYmlJQ0paYzM4THhlbTNHU1Rlb3c5Ym1xVFRjY3VjaU9DVWJUd2NNUkk0dnZyX2VuR0xGR2ExN1ItcjFHSEZsbUczTURJckRYYkF1c3FpSTZpalJwcmJpSkhNaUdMS2M5ek0tX3ZES3FxWGk1bjBHOWxoM1ZpT1FzbVY3WUFNSjFxRkZJQUVFTXdDQzRoTnNQT0tkSmNNSTdQMXVhRktDWXVVYmtVbnNwX211bTJYTzJPRGM5dkZHNkZEU0lCRlcwYmt0eWQ4M1hyZjNZcTFYalVWc0xqYUFBMk1ZSHRBN3BRSVQ2Z1FaSE96UXNQUFJKdEdSTjNndGo4TGE5R1pTeXFNdDF0YVA3VTZEMHQ0RzZ0Ny00RWkwaFdtdlFfLXBhcFRmNEZiMkZSbFF6bFBDZlpqYTdlMEpLdkl5MVpRVFlOZnNIOWE2d3JLX090VHhUSmxYSDJPNmdfRHR0ZmlmcDI2NkVyMFlIT3g4cG5sSEt0ZVpDTDJITFNIcGd1S2E0QWR5RXBULW5XV19vME9IZjJyOXVKcVZQVVNNMjhUcGtfbmZLOS1ZZXRnNXhkVVkwcUdYSERhQ1E3aDlnMEhFQkMyZWV0ZmpQYTdkMUJScjFqTFlEUFlWWlktdUpsUThTZnd2UGhFbmt0UXZveklxR2ZqcU90MEo4bF9kbXh3MWNINk4zTDBCdkVRbHhodjZJTlFzNjMwN1JNZUt2bV93aURlM3FHQzRkQlRZeDRRcWtwS1JYekx0TldIM2XSAbIFQVVfeXFMT0NiWnYzUTFTc3dYSF9Sd1Y1MTR0bExVaGZYQUxfRVQ0Z0p2S1dsUkVUVTJKb1JTZDhRWGpybnNqWDNxSFZ4N3U0cExnaVFMZXVPVVdNbDZLZWFkTTlwYk1peHBYME15U3pfNDI4WGNxY0FnaVlmQWJpUkJ2Q2d4VmhuV2p1Q0w5S3IwOHQzVGhoRTJGRmxLTllxUFAzOGJzVmc3aEZkZjQ1dmljaGhrc1laWFNtdUE5YWhQOE9xRWVOV0w2TzBJR0FPc3VIV0VyZF80UXRyLW8taTFpeTdLaGcwQ2NlanRtckhWNGJIaG1EZXdqaGVWZ1dWbEVwc0Z3aFdidEw0YXNsQ1o4alN3Q1RFT1p5b09DcTRKVm1WSUNRZDFYOGNQYkZDOHRaRVRLM0FKNi1QaFdsNEJtSlpLUkx4NmFKd1U1N00zb0FZYW15S2tucjZDdkNoWjRiRjI5QUo1VXpRVE5hMkFDVHg4ejJjbUhsRjlxU183a0ZFS3FaNTRTcHJmY3hkUE9Gb2RoVUpyTjJLMWNPSXdjMkhuSktydDBOc1lxTlFnWC12N0FSVjV3bE0wUFJmRDZmblNGV1gteUlzd0hoR0tjUlFLSmJGMFVMSFFLc3c4T3lVOTI0Q0wzb2ZDWE5CZDRtX09sZDdxSldncVNGLTYwbkpZZlZzTnZkcjhpaHZhUEtHeUM3T1ZBU0UtdXFKU1NqR3FreUZHYXVtemZCZ3ZydV85YXlfTWR6RWgzeFFSSENrOHFhOEVHMWJSTTJTbDBIV1MydllleFA1MmNWalVwWS1vVV9NeGlRRU05b090ZXQ0TzRfMEx3V2szMmhaQjFPTE12SVdUaDVUc2FaQTBndFFqOUdwOGVHdGxiZUpFRzRoaFRmRmZMTy04WVJDdHdWS1UtMHpR?oc=5",
-      "source": "Masrawy",
-      "published_at": "Wed, 08 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "title_ar": "النفط يتباين والذهب يهبط مع توتر بالخليج - الجزيرة نت",
-      "title_en": "Oil prices fluctuate and gold prices fall amid Gulf tensions - Al Jazeera Net",
-      "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNRHFDREJlTWMtZU5jV2txdnVRM0VEMjJZeWppR2VoOWM1RXZrdm9zVHlYa3VMNXF1Y0xEcVktdV9JXzlZTV9SUDk0MUpSOTFlb2V1Z2c4T3BRRTVQLVJabTVDWk9UbmlRYlQyVWNWWGN0UlAxTmlXTjR6NUpuSi1GcnJnM1l2alExSmV2WkZBN0Zxc2xHSHZVSkFZcXVjN3JDbk9IUUtVR2diXzFod3lqdXZFUThQQ2IyV2JvbjVzRzVKeElBalZrVHVoM0JrWk96SVdPYXBlR0lpLVZUeTRqaVN6WEdMV3FmVE1sOG9FU2JxYUNzMFRud3d4VTZDbUh2ZlNqUXRfZ2NLbUJnc0V3c0hpU0ZMMF9YeHhMR0xBSFFOel9jZll0MFhZYm9pX0VveUtSZEd4RQ?oc=5",
-      "source": "الجزيرة نت",
-      "published_at": "Fri, 05 Jun 2026 07:00:00 GMT"
-    },
-    {
-      "title_ar": "الأسواق اليوم | تراجع النفط وارتفاع الذهب وتباين في العملات - العربي الجديد",
-      "title_en": "Markets Today | Oil Prices Decline, Gold Prices Rise, and Mixed Currency Performance - Al-Araby Al-Jadeed",
-      "link": "https://news.google.com/rss/articles/CBMi3ANBVV95cUxPVnF0LXZOTW1pRGxVQW1hOWNSQ1ZqU2oxM0lYZkRoOEFxQ1NXUTI4cE9IX0VwN04tb1RVazNBb0ZSdUN0Q3Q2THl5eTFFUmxoU1k2LUh0RU9JTEExN2FaMXJ1cThnNVk3SUpBQ1lEWHVTazQ4SVBZdV9pWUVSVmloeHhHWjRuem1FN1BiMURQb280clRhUVNoUmJGazE2VlozWXh6TVFjWTF6UFNRSFpJcFdWWUpLN3Q0ZjlwZ19RUHBSZzJ0UGcxcDdQRE5kcDNjTl9VSW9EWW5ndm5pc3lDSVJxdHZjRVllREE0d3FTaFBBR2ZxcFhwS2hURUdhMW1yVzJEaGlaNTdLWlF6VnBFRm83bGVuWE1KZXV5ZTQ1ZHFNVktzaWVib0hCZkk0OS12emZCVUxYbUVHVFVPT1MyXzZBNS1wMHZrdHo1d2RLSklvdzJwVVMtdHltd1RpWk9yd2dCTDY1SjRZbHJpcHdMNkpkWlBmNWtrUF92Y0t5UWFMRS00UFp0NWdmZ1JER015V3BOWk9KU0hFYnJaNU1Wd3doWTQxOGlmenFrUlR1Q1FRdndPYTJGX1lQMjM3UFExV3RKMVBCM2dVcDBoak4yUGxFOVo4V3p1bkRMM9IB4gNBVV95cUxQRnNxblZLQURjaWx1VllISXczQjJ2dUpxZk1IeGtQdTA5QnVZZ2NpRldfdFBHcVBLbUVBU21rdGF4eHNhcGNUbl9vODdEOGxTTnA3UlRHYzc0QVhmaEZrY0dvUEZQMWUwR01GQlhJVllacHJjR1htMDZPeS1Nb29wajBETzVld1VEWWR2eUEwXzhWRHFNbllVNldXY2xsN193SGk3eTFWb2FZRENuSzRha3BsTm52X0pfVXoxMkxSU3l3VWFyNndqa0czM2VZNTYyX2gzTnYyT3pQZUkzSWF1UTVMc251NmdkODRHQXI3NW1HZ0JZU2dMQWlwTUxOSXU0TUV3MnJPZk1kcGhwNFVjc1dPUkh6cDZKR2hUWHF4NGw2S2s1NlVhNGkzVkRZLXFldkZORkdVc2JPRDMxRThHOFBDYjdsbjBVZG5pSllhbXozeXY2SjZETlJQOFZsXzYwRVg4SVJ4N1VwVmJZUlR1WGw2ZDF2NlM5YW9HRkRqNHN4ZXlteGZ2YkxXbnpuNUhPaVNFN1dJMUVtWEFaUmRnMFVER09XUnA1SjNkX3VOOE9YZkdXT0tYQVFNX0o0eVlsc0hTR25Rdm8wcWpEeFFHWG9EMExkMHlFWEpYVjBOMXlWUQ?oc=5",
+      "title_ar": "الأسواق اليوم | النفط يواصل الصعود وأسعار الفائدة تضغط على الذهب - العربي الجديد",
+      "title_en": "Markets Today | Oil Continues to Rise and Interest Rates Put Pressure on Gold - Al-Araby Al-Jadeed",
+      "link": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxQYnNwOFZCTW4zSWw3QUlRTmJlMjhqYWdiU1ZuV1VabW4xRW1NaHo1ZGpmN3UyODRXVm82WFFwUWpFVWtXa1FOdmNEcTVlbU9ILTdPbnU4VW05MG5LSkV4SDBqRHBlM29tVEM1RW9ma1Jpb1I4Xy1DTXpBNDB5dXpxdHVONEVCRFozZWhJNGJuVU10VC1scS0xcnYzTHZPUk5pSTVoWnZrRlo3WEdJcERqTWlLVkstTUdnOTg2VE9CSEJvcm5oOW1aTnIwZ1ZfVGNjZTZxM2RRMnBpYW5LdmhmSTVxNmVUV3BKZmR3cnZVV0dIeDhYMDRqNC1jNDdjOGpsd0ZwZUhoTlMtb3lCTm94amRuRlBXYS1HajhSeThjTFZ1ZTBVLWsxdTNySExXWE54RXNHWUgxd2l6OHFxc1pqWFNtZmRldW5WRUpkLVdtYV9rcDh3TS0zOE4zaHZ0WEhDNWRMNEZsRS1XLWVESFpSbVlndVBLcHc2MkpRdHE5T1JtUklHcWRSSnFtMjRGNWlHQ1NHX1NOd09WNmd5WTlWcmRVR2tHRzFMYU5JQ0oyeUdKX2hHejF6dWZxUlAzcFJsVWU3bUJ5empGdjR0bVoxLVB4ZG9RcERRNVZndm1BWXdjNWRHTUJMYk03eHl2NUZ6a3lJT3dHX1J1Ti05VWfSAYMEQVVfeXFMTzVaZzU2YTNobHZiRk9aa09mTUhUODVXaDVMQ2E2VV9kQU13UWJiYndPZXB6YkkwaDhCRVJBUDRnVWZmd0piU1BOUFR1dVpPVlZxMXFtSGREU05USmZ2M2xqalJ0QkpQODRDVHZvOHhHMVVtSV9wYTdQbkhTdmZ0c1FONFJwaTVaQkF3bGpkY2VQTU1KRV9EU2hFQU9aTC1UbVY1UGNrX3NxZS0ta2FOR2Qxb3RBd196TzJiaXZlV21oNTU2S0FjMEx1N3pIRS1xUG0tSVVfYWdraXBGODdIUTdJY21fbS14ZURCdHNFRmZnLU4xYlBYUEVndmtkZi1mV094cVFtcG9EYzNaXzdxVnZYZ3BFbzhnMFNKc1ZsTXI5UGlVTTh5RDBqbG1wMl81X3B4UXZPTWt3aFp2WTRSRml2dVhxSTBSanQ2aG83aVNXNFRkZi1FQ2dSZjRaUGtudTdydFhmdzNLQ2V1dlRLdjd6RVNiT1RORVVLWHFRZTRsZ0xndi1JOGh4OTk0TGNmd0NjdWg0VllWanVWTGdkT1kzenFEbm5PbHJoeVFnazh5R3ZLWWM0ZjhYekhjNjFpbElITndMTnlJQTRRTVEyN1J0ZVVEamNmb3l3bGZfeVA1UmxfMGd0ak50Nkk4dTUwQ2g3RXZGRXZTSGNpX0cySGFNTFE?oc=5",
       "source": "العربي الجديد",
-      "published_at": "Fri, 16 Oct 2026 07:00:00 GMT"
+      "published_at": "Fri, 30 Oct 2026 07:00:00 GMT"
+    },
+    {
+      "title_ar": "النفط فوق 100 دولار يضغط على الأسواق.. الأسهم تتراجع والذهب يصعد - الجزيرة نت",
+      "title_en": "Oil prices above $100 put pressure on markets... Stocks decline and gold rises - Al Jazeera Net",
+      "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxObFp1UFFlM2ZSZ29lejcxYUFjdTh5bkJrc2JDRXlDYzVBWVVjLWR0ald2ZmFNcUxOeGQyOFlWb1g5WjBMdTAwRHUzYnRiekNRRDdnRWRwYzMwWVU3R1hyNVZPWnJ6TjJwanc4M0tfNDVMSDBBTmJES2tHdF9mVWcxMUYzY09wSDBzWXRZYklnZXlzMmtUYUZMZklOUjZkTTlyb0taMmpJQ0lhb1lJcHNUNjIwUzI4YURQSERuWWc2QjFveEp0aUJqd1dodUxHY0RnNHd5R25mVnplNGxRczlpTXNrdEc5VkNXcEw0bTNFcXA4SGpDX0gzQmFoNm5idFV6N214dl8zMDV6aDlmRUVVSU5ST1RUWXRIS2RvNTgzM0c3TlRKNEw1eEJOVExmUDhOSWp1b2k0WmFfZ2hFUnc?oc=5",
+      "source": "الجزيرة نت",
+      "published_at": "Thu, 10 Sep 2026 07:00:00 GMT"
     },
     {
       "title_ar": "النفط والذهب يرتفعان والدولار يستقر قرب أعلى مستوى - عرب 48",
@@ -53,11 +53,11 @@
       "published_at": "Thu, 08 Oct 2026 07:00:00 GMT"
     },
     {
-      "title_ar": "النفط يقفز والذهب يتراجع بعد إعلان ترمب انتهاء اتفاق إيران - الجزيرة نت",
-      "title_en": "Oil surges and gold declines after Trump's announcement of the end of the Iran agreement - Al Jazeera Net",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9RNGp3dGkyVFdDelVLY3JKMmJ6SGFSODc5UlFpOXVJY09aV2ZZOGpCbTZZWE1xV3RJUl9IVFpSRTZOREJ2b2liNHh5YmVVbFlUUjRYOHN4VG8tQ05aTzYxMGFlUTJOdzZLNFBDZC1YWHdnVW5xdlBFbVBPUmc?oc=5",
+      "title_ar": "النفط يعيد تسعير الأسواق.. الذهب يتراجع والدولار يترقب التضخم - الجزيرة نت",
+      "title_en": "Oil re-prices markets.. Gold is falling and the dollar is waiting for inflation - Al Jazeera Net",
+      "link": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQQUdrMEVCUm1sUXVWZXVydmZjMnptUTZxU2p5bXpxUUJ6bjRxOENSdFVrQlh4bEpUSGs4WVZPTFNPcDdLWnE1dDlFU2poeVJQMWFraGY1MzFOUVlfbTQ0eVFOY0RpU2JsU1JHaGRPN29DQjdFa09uUG9MeHN5N3VNV0tkb0NZYjl4aEJxRWlTZUZmcl91SlBFTXkxekZPeHdUTzBILUpOUEdxVm5xXzdhRlVmM3p2LUdSbFdhY0N1cjRkdVpPUmxoLUs4dkpjNThmdGxjQ2RHUXpvaURGYU1WR3ZpaVlTaVd0SmtZT1RaUGJYQkxKbi1wSElDWDBoWVJCTWdBX2E1M3JJRk5yNmdvNUp0WmUyNC1Bd2ZxUGtIUmk5Nk9WT3NyYms3ZEVQSlVBQV90czFJLTFDUmdEVk5Sejdrcy1XcGg4Vm9TMDFVUXo0LThyb1dCWENGcUNGTnRJ?oc=5",
       "source": "الجزيرة نت",
-      "published_at": "Wed, 08 Jul 2026 07:00:00 GMT"
+      "published_at": "Thu, 16 Jul 2026 07:00:00 GMT"
     }
   ]
 }
