@@ -1,15 +1,8 @@
 {
-  "updated_at": "2026-11-25T11:38:59.056318+00:00",
+  "updated_at": "2026-11-25T21:31:52.177467+00:00",
   "source": "Google News RSS",
   "translation": "MyMemory (automated, when available)",
   "items": [
-    {
-      "title_ar": "الأسواق اليوم | تراجع الذهب والنفط وسط تزايد فرص رفع الفائدة عالمياً - العربي الجديد",
-      "title_en": "Markets Today | Gold and oil decline amid increasing prospects of global interest rate hikes - Al-Araby Al-Jadeed",
-      "link": "https://news.google.com/rss/articles/CBMikgRBVV95cUxNMnMtbG81dGU0RXRxaVlyMmVsNGJKc0x3WWRCTmZKRngtOFpDSW40aTg1VXRoNEZ5aW5CaFFHbEt5aVRNNVh3d0dHclJPV1hhQlJmbC1FWC1nMURvWjFRX0JNQm95OG12V3FVWVdOZFZwdmhIQjFMRXdldVRlcUhrS1dIc0RCdVJZSG9kMWYwTmhPYjZNazRoTFRFVFhOeE93U3Ntdl84TkNJY2tWbHZRSVpYZE5oZjI1ZUQ5UHVZd3E0V2VhTXNwYlZVM04xLWswZUZ1UHhKMTJJdkFxSjd3YkNiUkFqVU9uUUQ4LU14eGZiRFlYa1Bma0t2MlRNbEJFMnI5YmhseGtuVWRZQ3pHX2VNcVduV1dDTGhiUGVjc3BFR3hOZVFHRVpFaURFVlRhQUY0ckYzTVRCVlpqbGI1MHU2RUQ0Y2hFdVdxSUJFSjdDRDRHQk02ckZwbXhNcjVDT2JOc3NDREtoRk11VmM5ZGhXZGV5WjFCbWtqVmM4ZmtOWG16eWJaTnQyRElTUWQtVXdrb21GeUt1djBoUW4yYWVrTXJvX2RxZ3dFWFdUZUYwVFJrUkE3YlgwZThqVm5OSlY1aV9wb1hKTjFuQkItakdweE9CaEVNY1E2YmloUmR5SU1tYmstU3Y5aFN1WVlRSHRwUEFXZTdONWdDVnN3MjF0M3ViblozUnFzSlU1ME8xUQ?oc=5",
-      "source": "العربي الجديد",
-      "published_at": "Wed, 25 Nov 2026 09:19:05 GMT"
-    },
     {
       "title_ar": "الأسواق اليوم | ارتفاع أسعار الذهب وتراجع النفط والدولار - العربي الجديد",
       "title_en": "Markets Today | Gold Prices Rise, Oil and Dollar Decline - Al-Araby Al-Jadeed",
@@ -32,6 +25,20 @@
       "published_at": "Tue, 24 Nov 2026 07:07:53 GMT"
     },
     {
+      "title_ar": "قوة الدولار وتراجع النفط يهبطان بالذهب لأدنى مستوى منذ 7 أسابيع - الجزيرة نت",
+      "title_en": "The strength of the dollar and the decline in oil prices push gold to its lowest level in 7 weeks - Al Jazeera Net",
+      "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPWFNyZm95UzNTNlVLcFRSMkNKU2FHUGNsc3NkbFNlTzNmUWtBb0pRRVo3aTgycUhjUElaX3gyZnYtOVpfQXFmTGFCQmxJNXctZmtIZ3E0SkllUVQtUXI5czkyNE9WeG5PV0czV1dLcWJXZE1kZmU1Nno3eER5ckJ2RExIWTRVNG9CdXFZeUF5U0pKbUJmQmQwelRpTU1xMDFXSklLbmhwbVc2NnpldXRKWTY2djNRNTRZVVRBNkJwV3NrNUtGdHE2dG1OZ0pzWkVlMkswSVVsN2ZpSEpVQXZ0Ykdmd21TNkpzclhVaGcxRlV4a0twcFRfSmIxWW10emRQZjhnd1E1TjlSWDRyaldJUlptZW1kdXhhRGExRXdTM1BUT1R6OUJ3aThRTUpleUJXLVRVRnlXVnNYN0RnNmVVQ19FNkt1UjY4WXUzSA?oc=5",
+      "source": "الجزيرة نت",
+      "published_at": "Mon, 28 Sep 2026 07:00:00 GMT"
+    },
+    {
+      "title_ar": "الأسواق اليوم | النفط يواصل الصعود وأسعار الفائدة تضغط على الذهب - العربي الجديد",
+      "title_en": "Markets Today | Oil Continues to Rise and Interest Rates Put Pressure on Gold - Al-Araby Al-Jadeed",
+      "link": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxQYnNwOFZCTW4zSWw3QUlRTmJlMjhqYWdiU1ZuV1VabW4xRW1NaHo1ZGpmN3UyODRXVm82WFFwUWpFVWtXa1FOdmNEcTVlbU9ILTdPbnU4VW05MG5LSkV4SDBqRHBlM29tVEM1RW9ma1Jpb1I4Xy1DTXpBNDB5dXpxdHVONEVCRFozZWhJNGJuVU10VC1scS0xcnYzTHZPUk5pSTVoWnZrRlo3WEdJcERqTWlLVkstTUdnOTg2VE9CSEJvcm5oOW1aTnIwZ1ZfVGNjZTZxM2RRMnBpYW5LdmhmSTVxNmVUV3BKZmR3cnZVV0dIeDhYMDRqNC1jNDdjOGpsd0ZwZUhoTlMtb3lCTm94amRuRlBXYS1HajhSeThjTFZ1ZTBVLWsxdTNySExXWE54RXNHWUgxd2l6OHFxc1pqWFNtZmRldW5WRUpkLVdtYV9rcDh3TS0zOE4zaHZ0WEhDNWRMNEZsRS1XLWVESFpSbVlndVBLcHc2MkpRdHE5T1JtUklHcWRSSnFtMjRGNWlHQ1NHX1NOd09WNmd5WTlWcmRVR2tHRzFMYU5JQ0oyeUdKX2hHejF6dWZxUlAzcFJsVWU3bUJ5empGdjR0bVoxLVB4ZG9RcERRNVZndm1BWXdjNWRHTUJMYk03eHl2NUZ6a3lJT3dHX1J1Ti05VWfSAYMEQVVfeXFMTzVaZzU2YTNobHZiRk9aa09mTUhUODVXaDVMQ2E2VV9kQU13UWJiYndPZXB6YkkwaDhCRVJBUDRnVWZmd0piU1BOUFR1dVpPVlZxMXFtSGREU05USmZ2M2xqalJ0QkpQODRDVHZvOHhHMVVtSV9wYTdQbkhTdmZ0c1FONFJwaTVaQkF3bGpkY2VQTU1KRV9EU2hFQU9aTC1UbVY1UGNrX3NxZS0ta2FOR2Qxb3RBd196TzJiaXZlV21oNTU2S0FjMEx1N3pIRS1xUG0tSVVfYWdraXBGODdIUTdJY21fbS14ZURCdHNFRmZnLU4xYlBYUEVndmtkZi1mV094cVFtcG9EYzNaXzdxVnZYZ3BFbzhnMFNKc1ZsTXI5UGlVTTh5RDBqbG1wMl81X3B4UXZPTWt3aFp2WTRSRml2dVhxSTBSanQ2aG83aVNXNFRkZi1FQ2dSZjRaUGtudTdydFhmdzNLQ2V1dlRLdjd6RVNiT1RORVVLWHFRZTRsZ0xndi1JOGh4OTk0TGNmd0NjdWg0VllWanVWTGdkT1kzenFEbm5PbHJoeVFnazh5R3ZLWWM0ZjhYekhjNjFpbElITndMTnlJQTRRTVEyN1J0ZVVEamNmb3l3bGZfeVA1UmxfMGd0ak50Nkk4dTUwQ2g3RXZGRXZTSGNpX0cySGFNTFE?oc=5",
+      "source": "العربي الجديد",
+      "published_at": "Fri, 30 Oct 2026 07:00:00 GMT"
+    },
+    {
       "title_ar": "النفط يعيد تسعير الأسواق.. الذهب يتراجع والدولار يترقب التضخم - الجزيرة نت",
       "title_en": "Oil is repricing markets... Gold is declining and the dollar is watching inflation - Al Jazeera Net",
       "link": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQQUdrMEVCUm1sUXVWZXVydmZjMnptUTZxU2p5bXpxUUJ6bjRxOENSdFVrQlh4bEpUSGs4WVZPTFNPcDdLWnE1dDlFU2poeVJQMWFraGY1MzFOUVlfbTQ0eVFOY0RpU2JsU1JHaGRPN29DQjdFa09uUG9MeHN5N3VNV0tkb0NZYjl4aEJxRWlTZUZmcl91SlBFTXkxekZPeHdUTzBILUpOUEdxVm5xXzdhRlVmM3p2LUdSbFdhY0N1cjRkdVpPUmxoLUs4dkpjNThmdGxjQ2RHUXpvaURGYU1WR3ZpaVlTaVd0SmtZT1RaUGJYQkxKbi1wSElDWDBoWVJCTWdBX2E1M3JJRk5yNmdvNUp0WmUyNC1Bd2ZxUGtIUmk5Nk9WT3NyYms3ZEVQSlVBQV90czFJLTFDUmdEVk5Sejdrcy1XcGg4Vm9TMDFVUXo0LThyb1dCWENGcUNGTnRJ?oc=5",
@@ -39,25 +46,18 @@
       "published_at": "Thu, 16 Jul 2026 07:00:00 GMT"
     },
     {
-      "title_ar": "ماذا تخبرنا أسعار النفط والذهب عن مسار الأزمات والكوارث؟ - Al Akhbar",
-      "title_en": "What do oil and gold prices tell us about the trajectory of crises and disasters? - Al Akhbar",
-      "link": "https://news.google.com/rss/articles/CBMi2gNBVV95cUxOcGVzT2MtUU5nVkh5dVhNZTVMemN1dm9uMWlYM0U1TG4tdnRBdFB4REVhZWN1WWg5NmQ0UENBM01DcTZpejdFMEZVaGtEa3ZabGx3ME1JNzNSVW80WjY0QlBYZWIzdzFEbEM1WHRobERtc3FMNDhMTmh3aUU3X3g1Z3g2QnBzMnduWE1UTDBmcHBrc1NyemhxSjViUUNjb3FHUXhKYXhRYTlBV2VFX0gyaDhxMEtEU3ZQcHhFcExjRmsxZlh3MVM4TTR5ZzItU1FUbUVzUjV4c3NUSDRYQlRkbnZDNDg0UWVBX3hOUWZQN0JmMldRNHZhMFV0UWhPTmQ0REE0WXBZemZoVGJCRGxDM05uaHg0TmpqSnFZMWFIYzFKeElVaHJGTkVNbjFITGVRbFdzVGZaT0FFMVplTjJUQ3B4dV9ONlZXbVlKb204cGQ2LVphOVg4M09jcG1fVGxBdk1JWFlTVG15anBsZVNLelhDUGh2ZHNudGRkZ0FQeUVHNXNCN2toVmM3dGoyMGtWUmcwM0VLSmd3XzZPdE9VeTZmTWg3SjBNWmlhRmxlQk1tSjRxclhVY083cHZQcjBLckZsSjFDaDVvaUxPanJUaVBHbDUxb3Nod1E?oc=5",
-      "source": "Al Akhbar",
-      "published_at": "Tue, 27 Oct 2026 07:00:00 GMT"
+      "title_ar": "108 أيام من الحرب.. كيف غيرت حركة الذهب وأشتعلت النفط ودعمت الدولار؟ - اليوم السابع",
+      "title_en": "108 days of war... How did it change the gold market, ignite the oil market, and support the dollar? - Al-Yawm al-Sabi'",
+      "link": "https://news.google.com/rss/articles/CBMiogNBVV95cUxNOXB1SkFmakNTeVFjcDNTbUpQWF9RTG1wakJpSm92UDZYMEpsTl9XVjFBalRfdDF2b0wzU0taaERza2U0TE1sWGlvTUtaSjRrOEhtdVFHcl9hNDBiekdQckV6ZDNOLUpxTmVDUWNqY3lhdTluQjktaUlJZmNSeTBXRkFKck1QUVlZSXVEVzVVN2FWb1g0Q2NZUUtzYmt6YjlDUElfOXI2ZWlqNUl3SkhVMEhzdnJEcVNiR19ydFFTRHAyaHZRSW12dnNoSkRkNXVqSlpLb0dsVFE4LXZOWEpUbWxVOHVQUXJsdVRPcm9QVXhTLWFTN24ybEtubDgwcXp0bFlsdU81UkRzVHRUdE12QzlZT0FNSjlocTZ5Z254b1Z3cFF2bDkxN1FCTnpzMnRNbVprbHVTeTVuWDJtLTNhRnJ3V0IwakRBZkpKVVZDNnJmZDk4VnVyQ2dxWkZmbE5RM21kUFpRcVNYLU9OT1pUUTVVV2hfMlRxMHpQOWltdGxtNlIwQmFBS1FqRGJBVXhNbVdNSEc1WVh2VXNOR0otalBR0gGcA0FVX3lxTE9WaXRnODhmVTRLdXd0Wm90QlU3QTU4aks4eHZqcEk0ekhBRWlFVlRyazlZMEhIdFpfWXBTTWYwSlhreEdqY0dyRFl2a3ZSTDFGX2RNYWdIbURVbFVQcUJmQUZSLWlOS3FXVFY0ZjZvaURWNFZKYXZIN0RfQlNDbS1WcklvUTc3ekRVeXFfMTBBRDZrSUlKNnhSaFcyMUVpUnhqWEZrOUdtaEtEUUZJQUdoTVhfSmEzdnhBaDFGWHV5OVRGUUxzVTdiMWJ2cnc3TjVnUnZTaVhzUnVxRWRDbjBMT0tRYXFCUGFoVDlRdVRlTFdNQ0w5MXcxeDVDV1c0UXR3SjV5UjdUUzBzMTZNR3Zua1RPMXBvYVpjV2RhQkZUMnMzUGVWMjRMMXpLVVF0X1JrZS1ENzYybHM1clI3eUphckJNUmVqa09lUzIwRkxYZ2phUG9udjJ0UXI5ZHc1dkczWEhIOFJYWjAtMFYwQW5yYktCN19SSEttRTRCem45WnFRZWgtWVZlZlFfbGRmcFVCblBsMWNmbnF3Yjc?oc=5",
+      "source": "اليوم السابع",
+      "published_at": "Mon, 15 Jun 2026 07:00:00 GMT"
     },
     {
-      "title_ar": "الحصار الأمريكي على إيران يربك أسواق النفط والذهب والدولار.. ماذا يحدث؟ - Masrawy",
-      "title_en": "The U.S. embargo on Iran is disrupting the oil, gold, and dollar markets. What's happening? - Masrawy",
-      "link": "https://news.google.com/rss/articles/CBMi1wRBVV95cUxOQl9yWmk1VXFKU0hYSTRpNFo5ZmdHaTVGWnFZcHVoQkxsVC1fZGFYMmpiWmY4NDdpMW5DNkZWazJRanZCZE9VRUtnTlhyTV9nUHJTRUJkd3l5UWRoNlJLNzIxTXRKb2dVeHJfemFhcmJvVkg5aVMybk56dU4wUjNKN1h2dFdpWkltUm96Q29KYW5ZRUI5c1BrdE9DOUNnRVhZeHNqVTF5YXlqSm5TbmNqaFhOc0QzVElrRXVuWnowb0l1ZnItWG9BM1FmdHVOVnQ1Vk8td3BqNmZHT2VzSDFJVHdhWGpOUnFBdVQ2NlVOT0tYdmZCcE1LaTZ3aVFYSno2MVBqNm05bDJrS0FMckVualJzZXlVV3JSRUllMXRWSTVUZGRnREdDR2poSFBJa3FVblRIRVB3ZG44TkVMa2Rub0FKQUVQV3NENWtQMkszMGZDcWdOVnlkR2xlRG9LOGZxYW00Mm1MbGo1bGNFTmREbVFtaEh1Q0FoR1BsT2VkQTVBWVFMM1RneE9lTmtJQWtfY0JkX1FnSGZSMUdrcTJjbWVSd09VVi03ZE4xVExHUWpIU0g0M0VfallweE8tWm1oOFdMSl9yTlFKUUNTZWM0cHNsVTM5eFZhNldoZEtweEVhV1RHenM1US10aEx3TUtlTkV2eWU2SC1IeUZEVjBsbTFXMDRWbFZUOS1uRXZNQXZZekNUUmppbjA1NnA5VXYtYW9NWlo4MFNkMklZcWF2QVhLTjVOZWZXVjVxSklmd2ptVFpSd0g2ZmpSb1N4NUp3bE5KRTNSTdIB3ARBVV95cUxOSkRvRVlzZi1yWG11TW0zRjF4X3JfTW4xVXg3TFVJNEd3cHlzblhkTDIxSUc3bVBJUEhKMkN1REhnYVRiNFZlOEVBeFRONzFaUy1BNEE4SEhBUEJvUnltSGZEczI5cnJWLXJkelFuNkpmTEdIZ0t6OHZ0a2VLR25jX212MXh5V2dXenVmZEpQeUhRcUc2ZENrRE1nUjBSaXlFdVRWTUtERWQ5WTFEenFKZ055aS01RWhlRTlKcVF4RDJOa3NGbWhOZGlkNy1VRDc1c2cxOFZoYVlKNHRXc2s3Ql84Qm9rNFlmdnlDMHcwaUVOUVFPSjhuRGZvelptUkM0bmIxeFBfY251dHpzbjlzSl84RlYyY2x5b2FSSUd4bHFHUGxzOGdKRlNIV2NwNmkwbV9PZVFSQUstWV9nbnJSTFp1V3FqaTlidFFBcTRZemhFQ2p6Rjl6ajFJb2V5YkhzRHVubEJSdFk0dnJxWVk1dWRId3VvSEd1RTR6SVFreXNqb25qWFFkV0tHaG1QT0RnSC1ZWlJwMzFDSjNjUVR3UU9ScHdGNGNxampzRUh6UDB1cllRTUJZcXdCa1pMMkl5eHlHekozM0JmSGgzTmVmRDEtbzVIZzk1NmpKeXVjSWNGejhjQjZ1clZKRG9QYUs0Ti03SG9aQTBpd1Vac2YzV1N4Wi1Ga0stSXh2WVF4V2t5ZExTaTFvdElsUGh2SFB1eGh3RjB1Tzdabi0wZGdLVWJDNk10bGZETW5iNFJmM1puWDhWZFI2cm0taG5KczJmR3F1VnBNZ0xYMzJZ?oc=5",
-      "source": "Masrawy",
-      "published_at": "Sun, 15 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "title_ar": "الأسواق اليوم| استقرار النفط وارتفاع الذهب والدولار عند ذروة 19 شهرا - العربي الجديد",
-      "title_en": "Today's Markets | Stable Oil Prices, Rising Gold, and the Dollar at a 19-Month High - Al-Araby Al-Jadeed",
-      "link": "https://news.google.com/rss/articles/CBMikgRBVV95cUxOanZfVDE2Q2hobzlFWGV2NU1ocUFzNUE1R0toeXpRNzJvYkEwQWdaX0JDYzhQTFBxTTMyYlRxTGRNX1d2N0xtdXlva3lxVGwxbk5OS1JmS1dqM1RRVjFrTEI2UlJKemJqV3JabFZSYXpycFZrbzFzcWEzYnFGS19hc0JPRGJaNGNtQzM1R0UwNUlDX2ZaOFkxZWp3dTl5QjBvR2lNZXRhU0JiQk9aUFpQMWg1MGM2cV82bDVLeXZmNmd4alFXbFM3WXlZa3FTc0tQMEJHb2F3V21kbk9SVWdmRE90aExTY19JSGdxeGdNbXk5ZWd2WU5XYWNJMjZPTzFwWlNUVUc5bEdmRUR2QVJuRFdIWmZudUU4am9PUHFUejVRTWo5R1p5NGg1YzQtZlBUc19jYVVqOWFQa3lQcFloaExzeFBRdHZjTkFWUEdEZFJQSkpvZ1lydlg2RXdYd1YzQ2FHcHA0SWNOVWZfaDRKc05PbGdPMjg2T2ktZGVUWTRZRk1BSnRzaHNmXzJPb1ZkT1VBQ0tURXZEbVFaZzdfd0hJRlVsMGxzR1hMNnh1YW16djZXdkJwNFZBMkpYQVRmbWhXUDVqQlNtdS0xaWFvN0FENE5fdUZKM0N0V19uYVdoc25xcWMxSVVoYWxRNGlSQVZlMC1hSHV1ajUzNzhXaUtISzR5MFNkTU1YRUNBYXc2UdIBlwRBVV95cUxOb245S2ZXR3EtS0Y4VUR1U1g1Q05HM1BiRUNnMEtjOUNMRkNMaHM5ZVUtR2lsa29LT2NVMVFUalVMc2JrY3MtT1RFcFJneGtmRWRvX1N4UHdJckdBWURPZGptLTdmUDFpYVZ1R2xGcTNHakUxWWE3M2RMOVQ2YVlRMWpQV0pHaHZGQjI3Nzdna2lvdVZfNEI4MjB2TUhtckpHMHBJbTBNTWNka2lQYzJRZG9iNUQzY1JOcEJKMFNxTGJKQ1ZqUW9hLWtWNG5odlNmRGoxUWZYSlFVRWY5U1gycnNyVlh6SXdqRzVnZ1Nnc1MwMkZLWFFyOVdxcS1rWUtMdGxxVC1NaDN6WjRZcXRLV081S0VYMEotc1FyT1ZiVkNhVWc2b0RBaHUwTmo0OXJ5MmRDcFNKMmoyOTNDcHd4WFNDNTZtTkljQmhvR3lPY3g2ODZWbjJodjlhTURXMkwyZGJrZlNlU1A0emZaVUt0SDEtbE5PS284RXdEZlNjV0VaQk9TaWtIZVFyOVRjQ3NkMzMyNFVBUFR6UzFzbWdCaTYwUVRxZmxUQU9aXzlGTlNWMjhpRHJtd0JjSHZncmwxcTNQa1Q2bUZFVFV2VEFlSzZhamZLSEJoQ0lMQ3NKOUI5OVp2ZmNJT2VsVGdyd1dzTDl2X1VDQkVHSTRoMGdNWHNhTkV6aDByYmhIOVh3RHFVR1hKeWRr?oc=5",
-      "source": "العربي الجديد",
-      "published_at": "Thu, 19 Nov 2026 07:52:05 GMT"
+      "title_ar": "النفط والذهب يرتفعان والدولار يستقر قرب أعلى مستوى - عرب 48",
+      "title_en": "Oil and gold rise, and the dollar stabilizes near its highest level - Arab48",
+      "link": "https://news.google.com/rss/articles/CBMivwRBVV95cUxQTVVrdDRhUXg2VmpOZ18xd3NTSnl0aV9FcW50c1EyVWR1Sm94bERuN1JDN3JqOWlick95azRVcDZ5TTd2d1JxbFNjQTlYM25GZW5IdDQ2U1FHS1hheUk1ZVN5YzBtMUUzM0FGY2lUTUZUc3dKUHQ3dnJVaDEzbTdJWnBmdm1GeVdWTUFtTmwtYmNqRm5IeldZQnFCX3hTNHZCSGRpdk5TOWNGc2I3ZkhCWXNiajNTaU95eHVBYmdkeHhxbTJSWE5xemhudW83S1JqbzJ0YkhMVUVnRWtwNF9lY2Fmc0pIUEF1Uno5dTdIM1YyV09ialZOVUM1SzlLVG5aejFFYUtwUTBtTmxQUUtBcUQzenZ4YW9HNy10WV9uSkhpOGZycjFxNUJYS2JqZ1ZVUVo0aG5kNVh5YXl3aTBJbHRHbE9ZaE9HUmt0TlJ3MEdkb1ZOdklBMTl1a1JDU0xxNVhYbGctdDI2Wmp1M3R5Zks5bUx4RGtUUXdHOW54QzA1NGg5c3BIa3BHdUFuX2w0NENReDdnVGZncjNya0p3NTdZRndfTVFaQ3Z4SHRhaVU4OFBNU05QYU9PNWE5Z0oyUms5X3FBOWlJSXV6dV96bmxSRE9WMUlaUlRtdzZleXJ6b2pLSVE1cVVGaTRxdC1DcVZVSHpGQ2QwUkRLNkZ3YlZMeEh2STZvbHVLVXQ3dHFHLWR6YUpMWFFHc012T3pTd2xoem5zMXZwVTJTUHZyUnN3bE1xa3VPV3N5S1ZkTdIBxARBVV95cUxNSGwwcUhZdGp4RTJXOTFUVEh2QzRORzhUbmp1R0x0SmZFdWJiYWtsNWtMdms3eHJNTUJmUWxQbllzSE04YUtWSVpMRFlNRVRyeDNCT3djeF8zRVIyS1pFT2dNY3VKcG1GVXdCQmkwWExJU2hoNlo1ZWsyUmhqUTNoRlplM0FWN2poMWZaeUNRbUFFc3FaZm9DdGdjQ1VObGVaTm1vNG1uUEpxOFFTRzYycmI0Q0dSX3VxTURRNG4yTE42SW9Xc0JwVW5FbG9xdTR5QzR0ZFNTTjBCY0dVSTFheW1TSGRfS2VhS2E0dXpiRzhqbTNYQ1REeXA5dkVEZHp5NnJET0FHUXhYOXgzYTJSTG1tRklqaFdQcWVMeHhRVi1IZVRENklZTlJzUjdjMDhMUEtzbUUtSXU1c1ZnVVB1bl9CYTh4cy1NVGZhYWVjUFN1Q2ZyN1hrRkRPR1pQWWw4TTl0MEQ0ZnpfdmNTSHp3V3dCcVhYelJaRUMyQTFXT0thV05IY0U4TDFNMTlZVDV4Y0w3VnlINEtmejlhNGhZLUpZSklUZ0gzd0h6c2ZTaTAzeklwaHVOV0x0ckZ5V2NCc2w1UkRBYVRsY0x6NmV1NXBUNDY0MGgyUkp0dDRuRGdKRkhSWlBxMEdTR2IyQkpaN3czTHc5NlBncThIMUFURUhDWm5HYWx2MktOdGdyVm5fYWdXY0g0T1k3ZkdrSjJRTjVGY2tCVHVvMXgyNzVtb3IxVFF3RTJmR0JnMDJ6cXNZeWdW?oc=5",
+      "source": "عرب 48",
+      "published_at": "Thu, 08 Oct 2026 07:00:00 GMT"
     }
   ]
 }
